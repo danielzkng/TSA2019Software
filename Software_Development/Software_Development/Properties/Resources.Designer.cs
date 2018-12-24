@@ -63,9 +63,9 @@ namespace Software_Development.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dc1ccf636ee9507ca3b3756564be4660_isometric_flat_house_building_by_vexels {
+        internal static System.Drawing.Bitmap blackcross {
             get {
-                object obj = ResourceManager.GetObject("dc1ccf636ee9507ca3b3756564be4660_isometric_flat_house_building_by_vexels", resourceCulture);
+                object obj = ResourceManager.GetObject("blackcross", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,29 @@ namespace Software_Development.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap kazuend_71543_unsplash {
+        internal static System.Drawing.Bitmap loginicon {
             get {
-                object obj = ResourceManager.GetObject("kazuend_71543_unsplash", resourceCulture);
+                object obj = ResourceManager.GetObject("loginicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loginimage {
+            get {
+                object obj = ResourceManager.GetObject("loginimage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whitecross {
+            get {
+                object obj = ResourceManager.GetObject("whitecross", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

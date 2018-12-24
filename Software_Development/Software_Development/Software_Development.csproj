@@ -109,5 +109,11 @@
   <ItemGroup>
     <None Include="Resources\kazuend-71543-unsplash.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whitecross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackcross.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

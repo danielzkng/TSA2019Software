@@ -43,7 +43,6 @@ namespace Software_Development
             {
                 //user did not enter a username or a password, display a message box
                 MessageBox.Show("No username or password entered.", "Abort!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                textBoxUsername.Focus();
             }
             else
             {
@@ -67,7 +66,6 @@ namespace Software_Development
                 if (!success)
                 {
                     MessageBox.Show("Username/password is incorrect. Please try again.", "Abort!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    textBoxUsername.Focus();
                 }
             }
         }
@@ -82,22 +80,28 @@ namespace Software_Development
             labelUsername.Visible = textBoxUsername.Text == "";
         }
 
+<<<<<<< HEAD
         private void textBoxUsername_Enter(object sender, EventArgs e)
         {
             //highlight all text when we focus this text box
             textBoxUsername.SelectAll();
         }
 
+=======
+>>>>>>> parent of 2c9b1f6... minor QoL changes
         private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
             //set the username label visible if the text is empty and set it invisible otherwise
             labelPassword.Visible = textBoxPassword.Text == "";
         }
+<<<<<<< HEAD
 
         private void textBoxPassword_Enter(object sender, EventArgs e)
         {
             //highlight all text when we focus this text box
             textBoxUsername.SelectAll();
         }
+=======
+>>>>>>> parent of 2c9b1f6... minor QoL changes
     }
 }

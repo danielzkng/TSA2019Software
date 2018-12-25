@@ -36,14 +36,14 @@
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelUsername = new System.Windows.Forms.Label();
-            this.labelPassword = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -90,7 +90,6 @@
             this.textBoxPassword.Size = new System.Drawing.Size(521, 32);
             this.textBoxPassword.TabIndex = 16;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
-            this.textBoxPassword.Enter += new System.EventHandler(this.textBoxPassword_Enter);
             // 
             // buttonRegister
             // 
@@ -131,7 +130,6 @@
             this.textBoxUsername.Size = new System.Drawing.Size(521, 32);
             this.textBoxUsername.TabIndex = 15;
             this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
-            this.textBoxUsername.Enter += new System.EventHandler(this.textBoxUsername_Enter);
             // 
             // buttonLogin
             // 
@@ -165,28 +163,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(624, 539);
             this.panel1.TabIndex = 21;
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Segoe UI Light", 11.12727F);
-            this.labelUsername.ForeColor = System.Drawing.Color.White;
-            this.labelUsername.Location = new System.Drawing.Point(74, 237);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(92, 25);
-            this.labelUsername.TabIndex = 20;
-            this.labelUsername.Text = "Username";
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Segoe UI Light", 11.12727F);
-            this.labelPassword.ForeColor = System.Drawing.Color.White;
-            this.labelPassword.Location = new System.Drawing.Point(74, 292);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(85, 25);
-            this.labelPassword.TabIndex = 19;
-            this.labelPassword.Text = "Password";
             // 
             // panel2
             // 
@@ -259,6 +235,28 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Segoe UI Light", 11.12727F);
+            this.labelPassword.ForeColor = System.Drawing.Color.White;
+            this.labelPassword.Location = new System.Drawing.Point(74, 292);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(85, 25);
+            this.labelPassword.TabIndex = 19;
+            this.labelPassword.Text = "Password";
+            // 
+            // labelUsername
+            // 
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Segoe UI Light", 11.12727F);
+            this.labelUsername.ForeColor = System.Drawing.Color.White;
+            this.labelUsername.Location = new System.Drawing.Point(74, 237);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(92, 25);
+            this.labelUsername.TabIndex = 20;
+            this.labelUsername.Text = "Username";
             // 
             // login
             // 

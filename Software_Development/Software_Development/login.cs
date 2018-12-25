@@ -72,22 +72,26 @@ namespace Software_Development
             }
         }
 
+        /// <summary>
+        /// These next few methods deal with the behavior of the username and password text boxes.
+        /// </summary>
+
         private void textBoxUsername_TextChanged(object sender, EventArgs e)
         {
             //set the username label visible if the text is empty and set it invisible otherwise
             labelUsername.Visible = textBoxUsername.Text == "";
         }
 
-        private void textBoxPassword_TextChanged(object sender, EventArgs e)
-        {
-            //set the username label visible if the text is empty and set it invisible otherwise
-            labelPassword.Visible = textBoxPassword.Text == "";
-        }
-
         private void textBoxUsername_Enter(object sender, EventArgs e)
         {
             //highlight all text when we focus this text box
             textBoxUsername.SelectAll();
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+            //set the username label visible if the text is empty and set it invisible otherwise
+            labelPassword.Visible = textBoxPassword.Text == "";
         }
 
         private void textBoxPassword_Enter(object sender, EventArgs e)

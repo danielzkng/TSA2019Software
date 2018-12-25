@@ -1,0 +1,11 @@
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\bin\Debug\Software_Development.exe.config
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\bin\Debug\Software_Development.exe
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\bin\Debug\Software_Development.pdb
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\obj\Debug\Software_Development.Form1.resources
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\obj\Debug\Software_Development.login.resources
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\obj\Debug\Software_Development.Properties.Resources.resources
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\obj\Debug\Software_Development.csproj.GenerateResource.Cache
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\obj\Debug\Software_Development.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\obj\Debug\Software_Development.exe
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\obj\Debug\Software_Development.pdb
+C:\Users\Daniel Ng\Documents\GitHub\TSA2019Software\Software_Development\Software_Development\obj\Debug\Software_Development.csprojAssemblyReference.cache

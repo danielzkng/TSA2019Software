@@ -80,34 +80,22 @@ namespace Software_Development
             labelUsername.Visible = textBoxUsername.Text == "";
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         private void textBoxUsername_Enter(object sender, EventArgs e)
         {
             //highlight all text when we focus this text box
             textBoxUsername.SelectAll();
         }
 
-=======
->>>>>>> parent of 2c9b1f6... minor QoL changes
-=======
->>>>>>> parent of 2c9b1f6... minor QoL changes
         private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
             //set the username label visible if the text is empty and set it invisible otherwise
             labelPassword.Visible = textBoxPassword.Text == "";
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         private void textBoxPassword_Enter(object sender, EventArgs e)
         {
             //highlight all text when we focus this text box
             textBoxUsername.SelectAll();
         }
-=======
->>>>>>> parent of 2c9b1f6... minor QoL changes
-=======
->>>>>>> parent of 2c9b1f6... minor QoL changes
     }
 }

@@ -28,7 +28,7 @@ bld/
 #wwwroot/
 
 # VS2017 temp files of various sorts
-*.config
+*.exe.config
 *.exe
 
 # MSTest test Results

@@ -39,15 +39,15 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,10 +81,10 @@
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI Light", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.ForeColor = System.Drawing.Color.White;
-            this.textBoxPassword.Location = new System.Drawing.Point(48, 236);
+            this.textBoxPassword.Location = new System.Drawing.Point(48, 235);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '●';
-            this.textBoxPassword.Size = new System.Drawing.Size(391, 30);
+            this.textBoxPassword.Size = new System.Drawing.Size(376, 30);
             this.textBoxPassword.TabIndex = 16;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
@@ -95,7 +95,7 @@
             this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRegister.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRegister.ForeColor = System.Drawing.Color.White;
-            this.buttonRegister.Location = new System.Drawing.Point(317, 298);
+            this.buttonRegister.Location = new System.Drawing.Point(300, 298);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(124, 50);
             this.buttonRegister.TabIndex = 13;
@@ -121,7 +121,7 @@
             this.textBoxUsername.ForeColor = System.Drawing.Color.White;
             this.textBoxUsername.Location = new System.Drawing.Point(48, 191);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(391, 30);
+            this.textBoxUsername.Size = new System.Drawing.Size(376, 30);
             this.textBoxUsername.TabIndex = 15;
             this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
             // 
@@ -134,7 +134,7 @@
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
             this.buttonLogin.Location = new System.Drawing.Point(50, 298);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(228, 50);
+            this.buttonLogin.Size = new System.Drawing.Size(192, 50);
             this.buttonLogin.TabIndex = 12;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -191,6 +191,16 @@
             this.panel2.Size = new System.Drawing.Size(333, 357);
             this.panel2.TabIndex = 22;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Software_Development.Properties.Resources.loginicon;
+            this.pictureBox2.Location = new System.Drawing.Point(85, 179);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(164, 156);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -226,16 +236,6 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Software_Development.Properties.Resources.loginicon;
-            this.pictureBox2.Location = new System.Drawing.Point(85, 179);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(164, 156);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Software_Development.Properties.Resources.loginimage;
@@ -266,8 +266,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

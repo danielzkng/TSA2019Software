@@ -73,6 +73,16 @@ namespace Software_Development.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar {
+            get {
+                object obj = ResourceManager.GetObject("calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loginicon {
             get {
                 object obj = ResourceManager.GetObject("loginicon", resourceCulture);
@@ -86,6 +96,16 @@ namespace Software_Development.Properties {
         internal static System.Drawing.Bitmap loginimage {
             get {
                 object obj = ResourceManager.GetObject("loginimage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap robot {
+            get {
+                object obj = ResourceManager.GetObject("robot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

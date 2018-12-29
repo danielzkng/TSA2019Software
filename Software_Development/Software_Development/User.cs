@@ -9,7 +9,7 @@ namespace Software_Development
     class User
     {
         //class for a user, currently a placeholder with just a name
-        public string Name { get; set; };
+        public string Name { get; set; }
 
 		//blank constructor
 		public User()

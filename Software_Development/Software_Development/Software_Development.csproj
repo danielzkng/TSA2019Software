@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendar.cs" />
     <Compile Include="CalEvent.cs" />
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>

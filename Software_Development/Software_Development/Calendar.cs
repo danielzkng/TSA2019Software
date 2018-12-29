@@ -11,5 +11,7 @@ namespace Software_Development
     /// </summary>
     class Calendar
     {
+        public string Name { get; set; }
+
     }
 }

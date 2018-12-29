@@ -54,12 +54,22 @@ namespace Software_Development
                     //check if username and password are both equal to the correct number
                     if(textBoxUsername.Text == usernames[i] && textBoxPassword.Text == passwords[i])
                     {
-                        //display a messagebox indicating a successful login
+                        //display a messagebox indicating a successful login and display the main client
+                        dashboard MainScreen = new dashboard();
+                        MainScreen.Show();
 
-                        //TODO make this link to main client once that is built
-                        MessageBox.Show("Login successful!", "Congratulations!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         success = true;
-                        break;
+
+                        //if this form is returned to after the client is shown, clear the text boxes
+                        textBoxUsername.Text = "";
+                        textBoxPassword.Text = "";
+                        labelPassword.Visible = true;
+                        labelUsername.Visible = true;
+                        textBoxUsername.Focus();
+
+                        //hide this form and show the main client window
+                        this.Hide();
+                        MainScreen.Show();
                     }
                 }
                 //if login unsuccessful then display a messagebox saying that it wasn't
@@ -67,6 +77,9 @@ namespace Software_Development
                 {
                     MessageBox.Show("Username/password is incorrect. Please try again.", "Abort!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+
+                //focus on the username text box
+                textBoxUsername.Focus();
             }
         }
 
@@ -96,6 +109,16 @@ namespace Software_Development
         {
             //highlight all text when we focus this text box
             textBoxUsername.SelectAll();
+        }
+
+        private void labelUsername_Click(object sender, EventArgs e)
+        {
+            textBoxUsername.Focus();
+        }
+
+        private void labelPassword_Click(object sender, EventArgs e)
+        {
+            textBoxPassword.Focus();
         }
     }
 }

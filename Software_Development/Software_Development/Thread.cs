@@ -34,14 +34,16 @@ namespace Software_Development
         public List<string> Keywords { get; }
         public List<Message> Replies { get; set; }
         public Message FirstPost { get; }
+        public int ID { get; set; }
 
         //list of keywords
         private List<string> keywords;
 
         //constructor with all info filled in
-        public Thread(string s, string c, Message f)
+        public Thread(string s, string c, Message f, int i)
         {
             //set the various variables equal to their corresponding information
+            ID = i;
             Subject = s;
             Containing = c;
             Keywords = new List<string>();

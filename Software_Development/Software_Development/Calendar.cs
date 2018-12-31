@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Software_Development
 {
@@ -13,7 +14,9 @@ namespace Software_Development
     {
         public string Name { get; set; }
         public List<CalEvent> Events { get; set; }
+        public List<int> EventIDs { get; set; }
         public User Creator { get; set; }
+        public int ID { get; set; }
 
         //blank constructor
         public Calendar()
@@ -23,11 +26,12 @@ namespace Software_Development
             Name = "";
         }
 
-        public Calendar(string n, User c)
+        public Calendar(string n, User c, int i)
         {
             Creator = c;
             Name = n;
             Events = new List<CalEvent>();
+            ID = i;
         }
 
         public void AddEvent(CalEvent c)

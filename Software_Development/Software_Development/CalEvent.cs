@@ -15,6 +15,8 @@ namespace Software_Development
         public string Description { get; set; }
         public string Title { get; set; }
 
+        public int ID { get; set; }
+
         //blank constructor for new event
         public CalEvent()
         {
@@ -26,10 +28,11 @@ namespace Software_Development
             //blank out description and title
             Description = "";
             Title = "";
+            ID = -1;
         }
 
         //constructor with necessary info filled in
-        public CalEvent(DateTime s, DateTime e, User c, string d, string t) 
+        public CalEvent(DateTime s, DateTime e, User c, string d, string t, int i) 
         {
             //set everything equal to the correct values
             Start = s;
@@ -37,6 +40,7 @@ namespace Software_Development
             Creator = c;
             Description = d;
             Title = t;
+            ID = i;
         }
 
         //search method

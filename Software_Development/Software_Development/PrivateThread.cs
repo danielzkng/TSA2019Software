@@ -10,7 +10,7 @@ namespace Software_Development
     {
         public List<User> Members { get; set; }
 
-        public PrivateThread(string s, string c, Message f) : base(s, c, f)
+        public PrivateThread(string s, string c, Message f, int i) : base(s, c, f, i)
         {
             //initialize the list of users who can access this thread
             Members = new List<User>();

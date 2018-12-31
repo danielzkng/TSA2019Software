@@ -21,6 +21,8 @@ namespace Software_Development
         //timestamp
         public DateTime Timestamp { get; }
 
+        public int ID { get; set; }
+
         //field for whether the post has been reported or not
         bool Reported { get; set; }
 
@@ -37,7 +39,7 @@ namespace Software_Development
         }
 
         //constructor with everything on it
-        public Message(string c, User u)
+        public Message(string c, User u, int i)
         {
             //set the various variables equal to their contents
             Content = c;
@@ -46,6 +48,7 @@ namespace Software_Development
             lastEdit = DateTime.Now;
             edits = 0;
             Reported = false;
+            ID = i;
         }
 
         //method to edit the content of the post

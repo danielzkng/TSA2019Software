@@ -8,27 +8,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Software_Development
 {
     public partial class login : Form
     {
-        //define instance variables for reading input from the logins file
-        private StreamReader logins = new StreamReader("logins.db");
         //create a list of strings for usernames and for passwords
         private List<string> usernames = new List<string>();
         private List<string> passwords = new List<string>();
 
+        //new formatter
+        BinaryFormatter serializer = new BinaryFormatter();
+
+        //int for number of logins
+        int accounts;
+
         public login()
         {
+
             InitializeComponent();
+            //define instance variables for reading input from the logins database
+            FileStream logins = new FileStream("logins.db", FileMode.Open);
+
+            accounts = (int)serializer.Deserialize(logins);
+
             //initialize our usernames and passwords using the StreamReader
-            while (logins.Peek() != -1)
+            for(int i = 0; i < accounts; i++)
             {
                 //get the next username and password
-                usernames.Add(logins.ReadLine());
-                passwords.Add(logins.ReadLine());
+                usernames.Add((string)serializer.Deserialize(logins));
+                passwords.Add((string)serializer.Deserialize(logins));
             }
+            logins.Close();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -119,6 +131,18 @@ namespace Software_Development
         private void labelPassword_Click(object sender, EventArgs e)
         {
             textBoxPassword.Focus();
+        }
+
+        private void login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //file stream for write out
+            FileStream loginsOut = new FileStream("logins.db", FileMode.Create);
+            serializer.Serialize(loginsOut, accounts);
+            for(int i = 0; i < usernames.Count; i++)
+            {
+                serializer.Serialize(loginsOut, usernames[i]);
+                serializer.Serialize(loginsOut, passwords[i]);
+            }
         }
     }
 }

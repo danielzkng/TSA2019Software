@@ -106,5 +106,10 @@ namespace Software_Development
                 Keywords.Add(s);
             }
         }
+
+        public User getOP()
+        {
+            return FirstPost.Poster;
+        }
     }
 }

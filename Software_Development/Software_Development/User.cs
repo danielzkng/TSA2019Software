@@ -10,6 +10,7 @@ namespace Software_Development
     {
         //class for a user, currently a placeholder with just a name
         public string Name { get; set; }
+        public List<Calendar> Subscribed { get; set; }
 
 		//blank constructor
 		public User()

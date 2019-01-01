@@ -29,6 +29,42 @@ namespace Software_Development
         //method to read all events
         //a CALENDAR will just be a glorified list of events by ID stored in a separate db (each calendar has some basic data about it + list of events)
 
+        //end these get by id methods
+
+        public static void ReadAllInfo()
+        {
+            //ultimately ends up being a collection of all 6 types of imports
+            ReadAllInfo(Objty.Calendar);
+            ReadAllInfo(Objty.Event);
+            ReadAllInfo(Objty.Message);
+            ReadAllInfo(Objty.Private);
+            ReadAllInfo(Objty.Thread);
+            ReadAllInfo(Objty.User);
+        }
+
+        public static void ReadAllInfo(Objty o)
+        {
+            //import all the data of one type to its corresponding list from its file
+        }
+
+        public static void ExportAllInfo()
+        {
+            ExportAllInfo(Objty.Calendar);
+            ExportAllInfo(Objty.Event);
+            ExportAllInfo(Objty.Message);
+            ExportAllInfo(Objty.Private);
+            ExportAllInfo(Objty.Thread);
+            ExportAllInfo(Objty.User);
+        }
+
+        public static void ExportAllInfo(Objty o)
+        {
+            //exports only one of the six lists to its corresponding data file
+        }
+
+        //HEY DANIEL DON'T BOTHER LOOKING PAST HERE, THESE METHODS ALL WORK AND ARE REAL BASIC
+
+        //methods to read each data type
         //methods to find each piece of data by ID
         public static Message GetMessage(int i)
         {
@@ -101,41 +137,8 @@ namespace Software_Development
             }
             return null;
         }
-        //end these get by id methods
 
-        public static void ReadAllInfo()
-        {
-            //ultimately ends up being a collection of all 6 types of imports
-            ReadAllInfo(Objty.Calendar);
-            ReadAllInfo(Objty.Event);
-            ReadAllInfo(Objty.Message);
-            ReadAllInfo(Objty.Private);
-            ReadAllInfo(Objty.Thread);
-            ReadAllInfo(Objty.User);
-        }
-
-        public static void ReadAllInfo(Objty o)
-        {
-            //something something data files something
-        }
-
-        public static void ExportAllInfo()
-        {
-            ExportAllInfo(Objty.Calendar);
-            ExportAllInfo(Objty.Event);
-            ExportAllInfo(Objty.Message);
-            ExportAllInfo(Objty.Private);
-            ExportAllInfo(Objty.Thread);
-            ExportAllInfo(Objty.User);
-        }
-
-        public static void ExportAllInfo(Objty o)
-        {
-            //exports only one of the six arrays
-        }
-
-        //methods to read each data type
-
+        //enum for data types (Objty = OBJect TYpe)
         public enum Objty
         {
             Message,

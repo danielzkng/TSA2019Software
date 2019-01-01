@@ -9,7 +9,7 @@ namespace Software_Development
     /// <summary>
     /// This class contains all the attributes for a forum thread, including the opening post, a list of messages, and voting data about the post.
     /// </summary>
-    class Thread
+    public class Thread
     {
         public int Upvotes {
             get

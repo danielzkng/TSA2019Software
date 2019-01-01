@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Software_Development
 {
-    class User
+    public class User
     {
         //class for a user, currently a placeholder with just a name
         public string Name { get; set; }

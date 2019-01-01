@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Software_Development
 {
-    class CalEvent
+    public class CalEvent
     {
         //instance variables for a calendar event
         public DateTime Start { get; set; }

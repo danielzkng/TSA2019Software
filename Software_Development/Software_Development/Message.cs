@@ -9,7 +9,7 @@ namespace Software_Development
     /// <summary>
     /// This class includes data about a forum message, including message data, poster, and 
     /// </summary>
-    class Message
+    public class Message
     {
         //fields about the message
         public string Content { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Software_Development
 {
-    class PrivateThread : Thread
+    public class PrivateThread : Thread
     {
         public List<User> Members { get; set; }
 

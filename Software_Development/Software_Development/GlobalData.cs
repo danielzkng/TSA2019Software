@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Windows.Forms;
 
 namespace Software_Development
 {
@@ -19,6 +22,8 @@ namespace Software_Development
         public static List<Calendar> CalendarsDB { get; set; }
         public static List<Thread> ThreadsDB { get; set; }
         public static List<PrivateThread> PrivateDB { get; set; }
+
+        private BinaryFormatter serializer = new BinaryFormatter();
 
         //method to read all posts
         //a THREAD will just be a glorified list of posts by ID stored in a separate db (each thread has some basic data about it + list of posts)
@@ -44,7 +49,8 @@ namespace Software_Development
 
         public static void ReadAllInfo(Objty o)
         {
-            //import all the data of one type to its corresponding list from its file
+            //TODO import all the data of one type to its corresponding list from its file
+            
         }
 
         public static void ExportAllInfo()
@@ -59,7 +65,7 @@ namespace Software_Development
 
         public static void ExportAllInfo(Objty o)
         {
-            //exports only one of the six lists to its corresponding data file
+            //TODO exports only one of the six lists to its corresponding data file
         }
 
         //HEY DANIEL DON'T BOTHER LOOKING PAST HERE, THESE METHODS ALL WORK AND ARE REAL BASIC

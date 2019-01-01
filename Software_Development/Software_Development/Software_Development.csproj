@@ -53,6 +53,7 @@
     <Compile Include="dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalData.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>

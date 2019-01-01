@@ -105,6 +105,7 @@
             this.buttonRegister.TabIndex = 13;
             this.buttonRegister.Text = "Register";
             this.buttonRegister.UseVisualStyleBackColor = false;
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
             // label2
             // 

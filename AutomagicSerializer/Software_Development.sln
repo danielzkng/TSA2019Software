@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoSerializer", "AutoSerializer\AutoSerializer.csproj", "{270A27A4-61C4-4781-BEA5-8D1C92F8E5E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Software_Development", "AutomagicSerializer\Software_Development.csproj", "{72D55DF9-73D0-46ED-AFA9-D7E20DF6F7D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{270A27A4-61C4-4781-BEA5-8D1C92F8E5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{270A27A4-61C4-4781-BEA5-8D1C92F8E5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{270A27A4-61C4-4781-BEA5-8D1C92F8E5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{270A27A4-61C4-4781-BEA5-8D1C92F8E5E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D55DF9-73D0-46ED-AFA9-D7E20DF6F7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D55DF9-73D0-46ED-AFA9-D7E20DF6F7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D55DF9-73D0-46ED-AFA9-D7E20DF6F7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D55DF9-73D0-46ED-AFA9-D7E20DF6F7D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {290A4C99-5AD5-40FB-A2E3-D1EF6BF7F5C2}
+		SolutionGuid = {53913C47-F218-49E3-AB49-4D41128A23D7}
 	EndGlobalSection
 EndGlobal

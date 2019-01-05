@@ -10,8 +10,7 @@ namespace Software_Development
     public class CalEvent
     {
         //instance variables for a calendar event
-        public DateTime Start { get; set; }
-        public DateTime End { get; set; }
+        public DateTime Date { get; set; }
         public int CreatorID { get; set; }
         public string Description { get; set; }
         public string Title { get; set; }
@@ -22,8 +21,7 @@ namespace Software_Development
         public CalEvent()
         {
             //default values
-            Start = DateTime.Now;
-            End = DateTime.Now;
+            Date = DateTime.Now;
             //initialize creator to null
             CreatorID = 0;
             //blank out description and title
@@ -33,11 +31,10 @@ namespace Software_Development
         }
 
         //constructor with necessary info filled in
-        public CalEvent(DateTime s, DateTime e, int c, string d, string t, int i) 
+        public CalEvent(DateTime s, int c, string t, string d, int i)
         {
             //set everything equal to the correct values
-            Start = s;
-            End = e;
+            Date = s;
             CreatorID = c;
             Description = d;
             Title = t;

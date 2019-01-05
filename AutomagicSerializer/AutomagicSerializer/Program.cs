@@ -19,13 +19,29 @@ namespace Software_Development
             //Modifying literally anything in this program that isn't labeled "MODIFY" or "ADD" has potential to make something SERIOUSLY stop working.
 
             //MODIFY the file name as is necessary, don't touch anything else
-            FileStream activeFile = new FileStream("messages.db", FileMode.Create);
+            FileStream activeFile = new FileStream("calendars.db", FileMode.Create);
 
             //MODIFY user to your chosen data type
-            List<Message> toAdd = new List<Message>();
+            List<Calendar> toAdd = new List<Calendar>();
 
             //ADD everything to the array here
-            
+            Calendar sports = new Calendar("Sports", 8, 0);
+            sports.AddEvent(3);
+            sports.AddEvent(5);
+            sports.AddEvent(6);
+            toAdd.Add(sports);
+            Calendar tests = new Calendar("Tests", 8, 1);
+            tests.AddEvent(2);
+            tests.AddEvent(4);
+            tests.AddEvent(8);
+            toAdd.Add(tests);
+            Calendar clubs = new Calendar("Clubs", 8, 2);
+            clubs.AddEvent(0);
+            clubs.AddEvent(1);
+            clubs.AddEvent(7);
+            clubs.AddEvent(9);
+            toAdd.Add(clubs);
+
             //...and so on...
 
             //DO NOT TOUCH ANYTHING PAST THIS LINE!!!

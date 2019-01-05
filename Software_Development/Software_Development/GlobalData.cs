@@ -39,18 +39,102 @@ namespace Software_Development
         public static void ReadAllInfo()
         {
             //ultimately ends up being a collection of all 6 types of imports
-            ReadAllInfo(Objty.Calendar);
-            ReadAllInfo(Objty.Event);
-            ReadAllInfo(Objty.Message);
-            ReadAllInfo(Objty.Private);
-            ReadAllInfo(Objty.Thread);
-            ReadAllInfo(Objty.User);
+            ReadInfo(Objty.Calendar);
+            ReadInfo(Objty.Event);
+            ReadInfo(Objty.Message);
+            ReadInfo(Objty.Private);
+            ReadInfo(Objty.Thread);
+            ReadInfo(Objty.User);
         }
 
-        public static void ReadAllInfo(Objty o)
+        //this code is so bad and i never want to look at it again
+        public static void ReadInfo(Objty o)
         {
             //TODO import all the data of one type to its corresponding list from its file
-            
+            switch (o)
+            {
+                case Objty.User:
+                    //since we are reading all users, flush the users database
+                    UsersDB = new List<User>();
+                    //create new file stream
+                    FileStream f = new FileStream("users.db", FileMode.Open);
+                    while(f.Position != f.Length)
+                    {
+                        //get the next user
+                        User toAdd = (User)serializer.Deserialize(f);
+                        UsersDB.Add(toAdd);
+                        MessageBox.Show(toAdd.ToString());
+                    }
+                    f.Close();
+                    break;
+                case Objty.Calendar:
+                    CalendarsDB = new List<Calendar>();
+                    //create new file stream
+                    FileStream c = new FileStream("calendars.db", FileMode.Open);
+                    while (c.Position != c.Length)
+                    {
+                        //get the next user
+                        Calendar toAdd = (Calendar)serializer.Deserialize(c);
+                        CalendarsDB.Add(toAdd);
+                        MessageBox.Show(toAdd.ToString());
+                    }
+                    c.Close();
+                    break;
+                case Objty.Event:
+                    EventsDB = new List<CalEvent>();
+                    //create new file stream
+                    FileStream e = new FileStream("events.db", FileMode.Open);
+                    while (e.Position != e.Length)
+                    {
+                        //get the next user
+                        CalEvent toAdd = (CalEvent)serializer.Deserialize(e);
+                        EventsDB.Add(toAdd);
+                        MessageBox.Show(toAdd.ToString());
+                    }
+                    e.Close();
+                    break;
+                case Objty.Message:
+                    PostDB = new List<Message>();
+                    //create new file stream
+                    FileStream m = new FileStream("messages.db", FileMode.Open);
+                    while (m.Position != m.Length)
+                    {
+                        //get the next user
+                        Message toAdd = (Message)serializer.Deserialize(m);
+                        PostDB.Add(toAdd);
+                        MessageBox.Show(toAdd.ToString());
+                    }
+                    m.Close();
+                    break;
+                case Objty.Thread:
+                    ThreadsDB = new List<Thread>();
+                    //create new file stream
+                    FileStream t = new FileStream("threads.db", FileMode.Open);
+                    while (t.Position != t.Length)
+                    {
+                        //get the next user
+                        Thread toAdd = (Thread)serializer.Deserialize(t);
+                        ThreadsDB.Add(toAdd);
+                        MessageBox.Show(toAdd.ToString());
+                    }
+                    t.Close();
+                    break;
+                case Objty.Private:
+                    PrivateDB = new List<PrivateThread>();
+                    //create new file stream
+                    FileStream p = new FileStream("privatemsgs.db", FileMode.Open);
+                    while (p.Position != p.Length)
+                    {
+                        //get the next user
+                        PrivateThread toAdd = (PrivateThread)serializer.Deserialize(p);
+                        PrivateDB.Add(toAdd);
+                        MessageBox.Show(toAdd.ToString());
+                    }
+                    p.Close();
+                    break;
+                default:
+                    break;
+            }
         }
 
         public static void ExportAllInfo()
@@ -153,16 +237,6 @@ namespace Software_Development
             User,
             Calendar,
             Event
-        }
-
-        public static void TestMethod()
-        {
-            FileStream messagestest = new FileStream("messages.db", FileMode.Open);
-            Message m1 = (Message)serializer.Deserialize(messagestest);
-            Message m2 = (Message)serializer.Deserialize(messagestest);
-            MessageBox.Show("Content: " + m1.Content + Environment.NewLine + "UID: " + m1.PosterID + Environment.NewLine + "PID: " + m1.ID);
-            MessageBox.Show("Content: " + m2.Content + Environment.NewLine + "UID: " + m2.PosterID + Environment.NewLine + "PID: " + m2.ID);
-            messagestest.Close();
         }
     }
 }

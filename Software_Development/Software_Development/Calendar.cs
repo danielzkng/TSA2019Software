@@ -45,22 +45,15 @@ namespace Software_Development
             EventIDs.Add(c);
         }
 
-        //TODO figure out some sort of serialization to write everything to file
-
-        public void AddtoDB()
-        {
-            //push the object to the database
-            BinaryFormatter serializer = new BinaryFormatter();
-            FileStream calendars = new FileStream("calendars.db", FileMode.Append);
-            serializer.Serialize(calendars, this);
-
-            GlobalData.CalendarsDB.Add(this);
-        }
-
         //TODO figure this out for debugging purposes
         public override string ToString()
         {
-            return "";
+            string evids = "";
+            foreach(int i in EventIDs)
+            {
+                evids += i + ", ";
+            }
+            return "Name: " + Name + Environment.NewLine + "Event IDs: " + evids + Environment.NewLine + "CreatorID: " + CreatorID + Environment.NewLine + "CalID: " + ID;
         }
 
     }

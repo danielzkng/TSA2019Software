@@ -52,6 +52,18 @@ namespace Software_Development
             ID = i;
         }
 
+        public Message(string c, int u, int i, DateTime t)
+        {
+            //set the various variables equal to their contents
+            Content = c;
+            PosterID = u;
+            Timestamp = t;
+            lastEdit = DateTime.Now;
+            edits = 0;
+            Reported = false;
+            ID = i;
+        }
+
         //method to edit the content of the post
         public void EditPost(string c)
         {

@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Windows.Forms;
 
+
+//this entire class is literally just to satisfy some random reqs vs has
 namespace Software_Development
 {
     /// <summary>
@@ -153,16 +154,6 @@ namespace Software_Development
             User,
             Calendar,
             Event
-        }
-
-        public static void TestMethod()
-        {
-            FileStream messagestest = new FileStream("messages.db", FileMode.Open);
-            Message m1 = (Message)serializer.Deserialize(messagestest);
-            Message m2 = (Message)serializer.Deserialize(messagestest);
-            MessageBox.Show("Content: " + m1.Content + Environment.NewLine + "UID: " + m1.PosterID + Environment.NewLine + "PID: " + m1.ID);
-            MessageBox.Show("Content: " + m2.Content + Environment.NewLine + "UID: " + m2.PosterID + Environment.NewLine + "PID: " + m2.ID);
-            messagestest.Close();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Software_Development
         public int ID { get; set; }
 
         //field for whether the post has been reported or not
-        bool Reported { get; set; }
+        public bool Reported { get; set; }
 
         //constructors
         public Message(int u)
@@ -87,6 +87,11 @@ namespace Software_Development
                 //there is an edit, so we need to return number of edits and time of last edit as well
                 return Timestamp.ToShortDateString() + " at " + Timestamp.ToShortTimeString() + "\nThis post has been edited " + edits + "times, last edit on " + lastEdit.ToShortDateString() + " at " + lastEdit.ToShortTimeString();
             }
+        }
+
+        public override string ToString()
+        {
+            return "Content: " + Content + Environment.NewLine + "PID: " + PosterID + Environment.NewLine + "ID: " + ID + Environment.NewLine + "Timestamp: " + Timestamp.ToShortDateString() + " at " + Timestamp.ToShortTimeString();
         }
     }
 }

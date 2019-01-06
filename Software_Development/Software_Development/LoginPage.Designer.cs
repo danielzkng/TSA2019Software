@@ -1,6 +1,6 @@
 ﻿namespace Software_Development
 {
-    partial class login
+    partial class LoginPage
     {
         /// <summary>
         /// Required designer variable.

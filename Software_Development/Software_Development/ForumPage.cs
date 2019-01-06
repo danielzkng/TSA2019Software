@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Software_Development
 {
-    public partial class calendarform : Form
+    public partial class ForumPage : Form
     {
-        public calendarform()
+        public ForumPage()
         {
             InitializeComponent();
         }
-
     }
 }

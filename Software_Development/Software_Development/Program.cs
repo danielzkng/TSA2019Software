@@ -17,20 +17,20 @@ namespace Software_Development
         public class FormsInProgram
         {
             //property of FormsInProgram to access the form itself (which is private)
-            public static login loginInUse
+            public static LoginPage loginInUse
             {
                 get
                 {
                     //if no such form created yet, create the form (this only executes once, when loginInUse is called from Program.cs)
                     if (login == null)
                     {
-                        login = new login();
+                        login = new LoginPage();
                     }
                     return login;
                 }
             }
             //private form -- this is the form itself, not just a public way to access it
-            private static login login;
+            private static LoginPage login;
         }
 
         /// <summary>

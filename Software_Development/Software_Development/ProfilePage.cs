@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Software_Development
 {
-    public partial class resourcesform : Form
+    public partial class ProfilePage : Form
     {
-        public resourcesform()
+        public ProfilePage()
         {
             InitializeComponent();
         }

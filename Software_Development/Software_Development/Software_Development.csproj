@@ -46,28 +46,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calendar.cs" />
-    <Compile Include="calendarform.cs">
+    <Compile Include="CalendarPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="calendarform.Designer.cs">
-      <DependentUpon>calendarform.cs</DependentUpon>
+    <Compile Include="CalendarPage.Designer.cs">
+      <DependentUpon>CalendarPage.cs</DependentUpon>
     </Compile>
     <Compile Include="CalEvent.cs" />
-    <Compile Include="dashboard.cs">
+    <Compile Include="DashboardPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="dashboard.Designer.cs">
-      <DependentUpon>dashboard.cs</DependentUpon>
+    <Compile Include="DashboardPage.Designer.cs">
+      <DependentUpon>DashboardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForumPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForumPage.Designer.cs">
+      <DependentUpon>ForumPage.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalData.cs" />
-    <Compile Include="login.cs">
+    <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
-      <DependentUpon>login.cs</DependentUpon>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Message.cs" />
     <Compile Include="PrivateThread.cs" />
+    <Compile Include="ProfilePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfilePage.Designer.cs">
+      <DependentUpon>ProfilePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -75,29 +87,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="resourcesform.cs">
+    <Compile Include="ResourcesPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="resourcesform.Designer.cs">
-      <DependentUpon>resourcesform.cs</DependentUpon>
+    <Compile Include="ResourcesPage.Designer.cs">
+      <DependentUpon>ResourcesPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Thread.cs" />
-    <EmbeddedResource Include="calendarform.resx">
-      <DependentUpon>calendarform.cs</DependentUpon>
+    <EmbeddedResource Include="CalendarPage.resx">
+      <DependentUpon>CalendarPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="dashboard.resx">
-      <DependentUpon>dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="DashboardPage.resx">
+      <DependentUpon>DashboardPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.cs</DependentUpon>
+    <EmbeddedResource Include="ForumPage.resx">
+      <DependentUpon>ForumPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilePage.resx">
+      <DependentUpon>ProfilePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="resourcesform.resx">
-      <DependentUpon>resourcesform.cs</DependentUpon>
+    <EmbeddedResource Include="ResourcesPage.resx">
+      <DependentUpon>ResourcesPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -151,6 +169,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

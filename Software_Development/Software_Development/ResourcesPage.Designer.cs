@@ -1,6 +1,6 @@
 ﻿namespace Software_Development
 {
-    partial class resourcesform
+    partial class ResourcesPage
     {
         /// <summary>
         /// Required designer variable.
@@ -49,6 +49,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
@@ -71,7 +73,7 @@
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(219, 50);
             this.buttonLogin.TabIndex = 43;
-            this.buttonLogin.Text = "Generic Button";
+            this.buttonLogin.Text = "Send a Message";
             this.buttonLogin.UseVisualStyleBackColor = false;
             // 
             // panel4
@@ -260,11 +262,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(34, 13);
+            this.label7.Location = new System.Drawing.Point(63, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 25);
+            this.label7.Size = new System.Drawing.Size(94, 25);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Teacher Directory";
+            this.label7.Text = "Resources";
             // 
             // panel5
             // 
@@ -290,15 +292,45 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(34, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 25);
+            this.label4.Size = new System.Drawing.Size(167, 25);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Teacher Directory";
+            this.label4.Text = "School Information";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.button1.Location = new System.Drawing.Point(460, 469);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(219, 50);
+            this.button1.TabIndex = 56;
+            this.button1.Text = "See More";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.SteelBlue;
+            this.button2.Location = new System.Drawing.Point(713, 469);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(219, 50);
+            this.button2.TabIndex = 57;
+            this.button2.Text = "School Website";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // resourcesform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 539);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel8);
@@ -355,5 +387,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Software_Development
 {
-    partial class calendarform
+    partial class CalendarPage
     {
         /// <summary>
         /// Required designer variable.
@@ -41,15 +41,15 @@
             this.buttonHome = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -200,7 +200,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(278, 306);
+            this.monthCalendar1.Location = new System.Drawing.Point(278, 316);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 39;
             // 
@@ -209,20 +209,55 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(277, 82);
+            this.panel4.Location = new System.Drawing.Point(277, 92);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(255, 198);
             this.panel4.TabIndex = 40;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(9, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(184, 84);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "- School 7:40AM - 2:00PM\r\n- Club Meeting 2:30PM\r\n- Dinner 6:00PM\r\n- Soccer Practi" +
+    "ce 8:00PM\r\n";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(51, 15);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(151, 25);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Today\'s Schedule";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(600, 82);
+            this.panel5.Location = new System.Drawing.Point(600, 92);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(256, 198);
             this.panel5.TabIndex = 41;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(13, 54);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(201, 84);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "- Math Homework \r\n- Spanish Art Project\r\n- History Report\r\n- Study with Emily for" +
+    " Physics\r\n";
             // 
             // label4
             // 
@@ -242,7 +277,7 @@
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.SteelBlue;
-            this.buttonLogin.Location = new System.Drawing.Point(600, 454);
+            this.buttonLogin.Location = new System.Drawing.Point(600, 464);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(256, 50);
             this.buttonLogin.TabIndex = 13;
@@ -254,56 +289,10 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel6.Controls.Add(this.label9);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(600, 306);
+            this.panel6.Location = new System.Drawing.Point(600, 316);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(256, 126);
             this.panel6.TabIndex = 42;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(53, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 25);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Upcoming Events";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(51, 15);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 25);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Today\'s Schedule";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(9, 54);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(184, 84);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "- School 7:40AM - 2:00PM\r\n- Club Meeting 2:30PM\r\n- Dinner 6:00PM\r\n- Soccer Practi" +
-    "ce 8:00PM\r\n";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(13, 54);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(201, 84);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "- Math Homework \r\n- Spanish Art Project\r\n- History Report\r\n- Study with Emily for" +
-    " Physics\r\n";
             // 
             // label9
             // 
@@ -315,6 +304,17 @@
             this.label9.Size = new System.Drawing.Size(185, 84);
             this.label9.TabIndex = 4;
             this.label9.Text = "- Football Game on Friday\r\n- Club Social next Monday\r\n\r\n\r\n";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(53, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 25);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Upcoming Events";
             // 
             // calendarform
             // 

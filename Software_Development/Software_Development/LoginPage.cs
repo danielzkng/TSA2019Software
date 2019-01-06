@@ -12,7 +12,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Software_Development
 {
-    public partial class login : Form
+    public partial class LoginPage : Form
     {
         //create a list of strings for usernames and for passwords
         private List<string> usernames = new List<string>();
@@ -24,7 +24,7 @@ namespace Software_Development
         //int for number of logins
         int accounts;
 
-        public login()
+        public LoginPage()
         {
 
             InitializeComponent();
@@ -67,7 +67,7 @@ namespace Software_Development
                     if(textBoxUsername.Text == usernames[i] && textBoxPassword.Text == passwords[i])
                     {
                         //display a messagebox indicating a successful login and display the main client
-                        dashboard MainScreen = new dashboard();
+                        DashboardPage MainScreen = new DashboardPage();
                         MainScreen.Show();
 
                         success = true;

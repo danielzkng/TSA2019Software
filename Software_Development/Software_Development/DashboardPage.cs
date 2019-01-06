@@ -11,24 +11,26 @@ using static Software_Development.Program;
 
 namespace Software_Development
 {
-    public partial class dashboard : Form
+    public partial class DashboardPage : Form
     {
         //instance variables
         bool logout = false; //boolean variable for declaring whether or not a form-close is a logout or not
 
-        public dashboard()
+        public DashboardPage()
         {
             InitializeComponent();
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
+            //Highlight the button when clicked
             buttonCalendar.BackColor = Color.FromArgb(52, 73, 94);
             buttonHome.BackColor = Color.FromArgb(44, 62, 80);
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
+            //Highlight the button when clicked
             buttonHome.BackColor = Color.FromArgb(52, 73, 94);
             buttonCalendar.BackColor = Color.FromArgb(44, 62, 80);
         }

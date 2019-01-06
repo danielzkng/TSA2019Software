@@ -33,6 +33,16 @@ namespace Software_Development
             //Highlight the button when clicked
             buttonHome.BackColor = Color.FromArgb(52, 73, 94);
             buttonCalendar.BackColor = Color.FromArgb(44, 62, 80);
+            //create a new calendar form
+            CalendarPage calendar = new CalendarPage();
+            calendar.ShowDialog();
+        }
+
+        private void buttonForum_Click(object sender, EventArgs e)
+        {
+            //create a new forum page
+            ForumPage forum = new ForumPage();
+            forum.ShowDialog();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -61,6 +71,18 @@ namespace Software_Development
                 //this is a logout, we need to show the login screen again
                 FormsInProgram.loginInUse.Show();
             }
+        }
+
+        private void buttonResources_Click(object sender, EventArgs e)
+        {
+            //open the resources form
+            ResourcesPage resources = new ResourcesPage();
+            resources.ShowDialog();
+        }
+
+        private void DashboardPage_Load(object sender, EventArgs e)
+        {
+            GlobalData.ReadAllInfo();
         }
     }
 }

@@ -16,5 +16,15 @@ namespace Software_Development
         {
             InitializeComponent();
         }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panelThread1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You clicked thread 1!");
+        }
     }
 }

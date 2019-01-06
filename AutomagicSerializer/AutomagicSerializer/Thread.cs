@@ -17,6 +17,10 @@ namespace Software_Development
             {
                 return upvotes;
             }
+            set
+            {
+                upvotes = value;
+            }
         }
 
         public int Downvotes
@@ -32,16 +36,17 @@ namespace Software_Development
         private int downvotes = 0;
         public string Subject { get; set; }
         public string Containing { get; set; }
-        public List<string> Keywords { get; }
+        public List<string> Keywords { get; set; }
         public List<int> Replies { get; set; }
-        public Message FirstPost { get; }
+        public int FirstPost { get; }
         public int ID { get; set; }
+        public int Views { get; set; }
 
         //list of keywords
         private List<string> keywords;
 
         //constructor with all info filled in
-        public Thread(string s, string c, Message f, int i)
+        public Thread(string s, string c, int f, int i)
         {
             //set the various variables equal to their corresponding information
             ID = i;
@@ -117,7 +122,7 @@ namespace Software_Development
 
         public User getOP()
         {
-            int opid = FirstPost.PosterID;
+            int opid = getOPID();
             foreach(User u in GlobalData.UsersDB)
             {
                 if(u.ID == opid)
@@ -130,7 +135,7 @@ namespace Software_Development
 
         public int getOPID()
         {
-            return FirstPost.PosterID;
+            return GlobalData.GetMessage(FirstPost).PosterID;
         }
     }
 }

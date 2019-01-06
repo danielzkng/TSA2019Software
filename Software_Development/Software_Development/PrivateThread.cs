@@ -11,7 +11,10 @@ namespace Software_Development
     {
         public List<int> Members { get; set; }
 
-        public PrivateThread(string s, string c, Message f, int i) : base(s, c, f, i)
+        /// <param name="s">Subject</param>
+        /// <param name="f">ID of first post</param>
+        /// <param name="i">ID of user</param>
+        public PrivateThread(string s, int f, int i) : base(s, "Private Messages", f, i)
         {
             //initialize the list of users who can access this thread
             Members = new List<int>();
@@ -21,9 +24,9 @@ namespace Software_Development
 
         public bool IsInMsg(User u)
         {
-            foreach(int m in Members)
+            foreach (int m in Members)
             {
-                if(u.ID == m)
+                if (u.ID == m)
                 {
                     return true;
                 }

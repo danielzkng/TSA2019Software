@@ -45,6 +45,7 @@ namespace Software_Development
             ReadInfo(Objty.Private);
             ReadInfo(Objty.Thread);
             ReadInfo(Objty.User);
+            MessageBox.Show("Abort!");
         }
 
         //this code is so bad and i never want to look at it again
@@ -63,9 +64,10 @@ namespace Software_Development
                         //get the next user
                         User toAdd = (User)serializer.Deserialize(f);
                         UsersDB.Add(toAdd);
-                        MessageBox.Show(toAdd.ToString());
                     }
                     f.Close();
+                    //sort by ID
+                    UsersDB.Sort((x, y) => x.ID.CompareTo(y.ID));
                     break;
                 case Objty.Calendar:
                     CalendarsDB = new List<Calendar>();
@@ -76,8 +78,8 @@ namespace Software_Development
                         //get the next user
                         Calendar toAdd = (Calendar)serializer.Deserialize(c);
                         CalendarsDB.Add(toAdd);
-                        MessageBox.Show(toAdd.ToString());
                     }
+                    CalendarsDB.Sort((x, y) => x.ID.CompareTo(y.ID));
                     c.Close();
                     break;
                 case Objty.Event:
@@ -89,9 +91,9 @@ namespace Software_Development
                         //get the next user
                         CalEvent toAdd = (CalEvent)serializer.Deserialize(e);
                         EventsDB.Add(toAdd);
-                        MessageBox.Show(toAdd.ToString());
                     }
                     e.Close();
+                    EventsDB.Sort((x, y) => x.ID.CompareTo(y.ID));
                     break;
                 case Objty.Message:
                     PostDB = new List<Message>();
@@ -102,9 +104,9 @@ namespace Software_Development
                         //get the next user
                         Message toAdd = (Message)serializer.Deserialize(m);
                         PostDB.Add(toAdd);
-                        MessageBox.Show(toAdd.ToString());
                     }
                     m.Close();
+                    PostDB.Sort((x, y) => x.Timestamp.CompareTo(y.Timestamp));
                     break;
                 case Objty.Thread:
                     ThreadsDB = new List<Thread>();
@@ -115,8 +117,9 @@ namespace Software_Development
                         //get the next user
                         Thread toAdd = (Thread)serializer.Deserialize(t);
                         ThreadsDB.Add(toAdd);
-                        MessageBox.Show(toAdd.ToString());
                     }
+                    //fml this code sucks but w/e
+                    ThreadsDB.Sort((x, y) => PostDB.IndexOf(GetMessage(x.LastPost())).CompareTo(PostDB.IndexOf(GetMessage(y.LastPost()))));
                     t.Close();
                     break;
                 case Objty.Private:
@@ -128,8 +131,8 @@ namespace Software_Development
                         //get the next user
                         PrivateThread toAdd = (PrivateThread)serializer.Deserialize(p);
                         PrivateDB.Add(toAdd);
-                        MessageBox.Show(toAdd.ToString());
                     }
+                    PrivateDB.Sort((x, y) => x.ID.CompareTo(y.ID));
                     p.Close();
                     break;
                 default:

@@ -19,28 +19,42 @@ namespace Software_Development
             //Modifying literally anything in this program that isn't labeled "MODIFY" or "ADD" has potential to make something SERIOUSLY stop working.
 
             //MODIFY the file name as is necessary, don't touch anything else
-            FileStream activeFile = new FileStream("calendars.db", FileMode.Create);
+            FileStream activeFile = new FileStream("threads.db", FileMode.Create);
 
             //MODIFY user to your chosen data type
-            List<Calendar> toAdd = new List<Calendar>();
+            List<Thread> toAdd = new List<Thread>();
 
-            //ADD everything to the array here
-            Calendar sports = new Calendar("Sports", 8, 0);
-            sports.AddEvent(3);
-            sports.AddEvent(5);
-            sports.AddEvent(6);
-            toAdd.Add(sports);
-            Calendar tests = new Calendar("Tests", 8, 1);
-            tests.AddEvent(2);
-            tests.AddEvent(4);
-            tests.AddEvent(8);
-            toAdd.Add(tests);
-            Calendar clubs = new Calendar("Clubs", 8, 2);
-            clubs.AddEvent(0);
-            clubs.AddEvent(1);
-            clubs.AddEvent(7);
-            clubs.AddEvent(9);
-            toAdd.Add(clubs);
+            //ADD all messages to the array here
+            toAdd.Add(new Thread("Tonight's Algebra II Homework?", "General Discussion", 3, 0));
+            toAdd.Add(new Thread("BASKETBALL GAME TONIGHT!", "General Discussion", 0, 1));
+            toAdd.Add(new Thread("Volunteer Opportunity at the Library", "General Discussion", 9, 2));
+            toAdd.Add(new Thread("Orchestra is performing tomorrow night from 6-7 pm. Come to the theatre to support us!", "General Discussion", 12, 3));
+            toAdd.Add(new Thread("Food drive runs for the next 3 weeks! Bring canned goods to support our local food banks!", "General Discussion", 14, 4));
+
+            toAdd[0].addReply(4);
+            toAdd[0].addReply(5);
+            toAdd[0].addReply(7);
+            toAdd[1].addReply(1);
+            toAdd[1].addReply(2);
+            toAdd[1].addReply(6);
+            toAdd[1].addReply(8);
+            toAdd[2].addReply(10);
+            toAdd[2].addReply(11);
+            toAdd[3].addReply(13);
+            toAdd[3].addReply(17);
+            toAdd[4].addReply(15);
+            toAdd[4].addReply(16);
+
+            toAdd[0].Upvotes = 17;
+            toAdd[0].Views = 25;
+            toAdd[1].Upvotes = 152;
+            toAdd[1].Views = 301;
+            toAdd[2].Upvotes = 80;
+            toAdd[2].Views = 155;
+            toAdd[3].Upvotes = 4;
+            toAdd[3].Views = 10;
+            toAdd[4].Upvotes = 27;
+            toAdd[4].Views = 97;
 
             //...and so on...
 

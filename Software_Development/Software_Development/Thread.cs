@@ -12,7 +12,8 @@ namespace Software_Development
     [Serializable]
     public class Thread
     {
-        public int Upvotes {
+        public int Upvotes
+        {
             get
             {
                 return upvotes;
@@ -34,14 +35,15 @@ namespace Software_Development
         public string Containing { get; set; }
         public List<string> Keywords { get; }
         public List<int> Replies { get; set; }
-        public Message FirstPost { get; }
+        public int FirstPost { get; }
         public int ID { get; set; }
+        public int Views { get; set; }
 
         //list of keywords
         private List<string> keywords;
 
         //constructor with all info filled in
-        public Thread(string s, string c, Message f, int i)
+        public Thread(string s, string c, int f, int i)
         {
             //set the various variables equal to their corresponding information
             ID = i;
@@ -51,10 +53,10 @@ namespace Software_Development
             //split up subject by spaces and set the keywords equal to these words (except for common ones)
             string[] keywords = s.Split(separator: ' ');
 
-            foreach(string k in keywords)
+            foreach (string k in keywords)
             {
                 //add each keyword to the list of keywords unless it's already either in use or is 5 characters or less (these are usually not important)
-                if(!Keywords.Contains(k) && k.Length > 5)
+                if (!Keywords.Contains(k) && k.Length > 5)
                 {
                     Keywords.Add(k);
                 }
@@ -97,10 +99,10 @@ namespace Software_Development
         //boolean method to check if a particular keyword is used
         public bool keywordUsed(string s)
         {
-            foreach(string k in keywords)
+            foreach (string k in keywords)
             {
                 //keyword is correct, return true
-                if(k == s) return true;
+                if (k == s) return true;
             }
             //keyword not found, return false
             return false;
@@ -115,12 +117,18 @@ namespace Software_Development
             }
         }
 
+        public int LastPost()
+        {
+            Replies.Sort();
+            return Replies.Last();
+        }
+
         public User getOP()
         {
-            int opid = FirstPost.PosterID;
-            foreach(User u in GlobalData.UsersDB)
+            int opid = getOPID();
+            foreach (User u in GlobalData.UsersDB)
             {
-                if(u.ID == opid)
+                if (u.ID == opid)
                 {
                     return u;
                 }
@@ -130,7 +138,7 @@ namespace Software_Development
 
         public int getOPID()
         {
-            return FirstPost.PosterID;
+            return GlobalData.GetMessage(FirstPost).PosterID;
         }
     }
 }

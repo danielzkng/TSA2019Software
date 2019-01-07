@@ -53,6 +53,13 @@
       <DependentUpon>CalendarPage.cs</DependentUpon>
     </Compile>
     <Compile Include="CalEvent.cs" />
+    <Compile Include="CurrentUserData.cs" />
+    <Compile Include="DailyPoll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyPoll.Designer.cs">
+      <DependentUpon>DailyPoll.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashboardPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +103,9 @@
     <Compile Include="Thread.cs" />
     <EmbeddedResource Include="CalendarPage.resx">
       <DependentUpon>CalendarPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyPoll.resx">
+      <DependentUpon>DailyPoll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardPage.resx">
       <DependentUpon>DashboardPage.cs</DependentUpon>

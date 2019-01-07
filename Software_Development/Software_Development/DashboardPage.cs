@@ -84,5 +84,12 @@ namespace Software_Development
         {
             GlobalData.ReadAllInfo();
         }
+
+        private void buttonPoll_Click(object sender, EventArgs e)
+        {
+            //create and show a new daily poll form
+            DailyPoll poll = new DailyPoll();
+            poll.ShowDialog();
+        }
     }
 }

@@ -43,8 +43,9 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelSchedDescrip = new System.Windows.Forms.Label();
             this.labelPersonalSched = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panelViewList = new System.Windows.Forms.Panel();
             this.buttonAddAss = new System.Windows.Forms.Button();
+            this.checkedListBoxAssignments = new System.Windows.Forms.CheckedListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -55,7 +56,12 @@
             this.labelDescriptionHeader = new System.Windows.Forms.Label();
             this.comboBoxFilters = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.checkedListBoxAssignments = new System.Windows.Forms.CheckedListBox();
+            this.panelAddNew = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxNewName = new System.Windows.Forms.TextBox();
+            this.buttonAddFinish = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -63,9 +69,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panelViewList.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panelAddNew.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -264,17 +271,17 @@
             this.labelPersonalSched.TabIndex = 1;
             this.labelPersonalSched.Text = "My Schedule for Today";
             // 
-            // panel5
+            // panelViewList
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.panel5.Controls.Add(this.buttonAddAss);
-            this.panel5.Controls.Add(this.checkedListBoxAssignments);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(756, 113);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(385, 244);
-            this.panel5.TabIndex = 41;
+            this.panelViewList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.panelViewList.Controls.Add(this.buttonAddAss);
+            this.panelViewList.Controls.Add(this.checkedListBoxAssignments);
+            this.panelViewList.Controls.Add(this.label4);
+            this.panelViewList.Location = new System.Drawing.Point(756, 113);
+            this.panelViewList.Margin = new System.Windows.Forms.Padding(4);
+            this.panelViewList.Name = "panelViewList";
+            this.panelViewList.Size = new System.Drawing.Size(385, 244);
+            this.panelViewList.TabIndex = 41;
             // 
             // buttonAddAss
             // 
@@ -290,6 +297,21 @@
             this.buttonAddAss.TabIndex = 43;
             this.buttonAddAss.Text = "Add an Assignment";
             this.buttonAddAss.UseVisualStyleBackColor = false;
+            this.buttonAddAss.Click += new System.EventHandler(this.buttonAddAss_Click);
+            // 
+            // checkedListBoxAssignments
+            // 
+            this.checkedListBoxAssignments.CheckOnClick = true;
+            this.checkedListBoxAssignments.FormattingEnabled = true;
+            this.checkedListBoxAssignments.Items.AddRange(new object[] {
+            "Math Homework",
+            "Study with Emily for Physics",
+            "History Test",
+            "Orchestra Rehearsal"});
+            this.checkedListBoxAssignments.Location = new System.Drawing.Point(20, 45);
+            this.checkedListBoxAssignments.Name = "checkedListBoxAssignments";
+            this.checkedListBoxAssignments.Size = new System.Drawing.Size(341, 140);
+            this.checkedListBoxAssignments.TabIndex = 50;
             // 
             // label4
             // 
@@ -410,19 +432,82 @@
             this.label6.TabIndex = 49;
             this.label6.Text = "Filter By:";
             // 
-            // checkedListBoxAssignments
+            // panelAddNew
             // 
-            this.checkedListBoxAssignments.CheckOnClick = true;
-            this.checkedListBoxAssignments.FormattingEnabled = true;
-            this.checkedListBoxAssignments.Items.AddRange(new object[] {
-            "Math Homework",
-            "Study with Emily for Physics",
-            "History Test",
-            "Orchestra Rehearsal"});
-            this.checkedListBoxAssignments.Location = new System.Drawing.Point(20, 45);
-            this.checkedListBoxAssignments.Name = "checkedListBoxAssignments";
-            this.checkedListBoxAssignments.Size = new System.Drawing.Size(341, 140);
-            this.checkedListBoxAssignments.TabIndex = 50;
+            this.panelAddNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.panelAddNew.Controls.Add(this.buttonCancel);
+            this.panelAddNew.Controls.Add(this.buttonAddFinish);
+            this.panelAddNew.Controls.Add(this.textBoxNewName);
+            this.panelAddNew.Controls.Add(this.label7);
+            this.panelAddNew.Controls.Add(this.label5);
+            this.panelAddNew.Location = new System.Drawing.Point(756, 113);
+            this.panelAddNew.Margin = new System.Windows.Forms.Padding(4);
+            this.panelAddNew.Name = "panelAddNew";
+            this.panelAddNew.Size = new System.Drawing.Size(385, 244);
+            this.panelAddNew.TabIndex = 51;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(94, 9);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(211, 28);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Upcoming Assignments";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(20, 60);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 28);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Name:";
+            // 
+            // textBoxNewName
+            // 
+            this.textBoxNewName.Location = new System.Drawing.Point(96, 67);
+            this.textBoxNewName.Name = "textBoxNewName";
+            this.textBoxNewName.Size = new System.Drawing.Size(260, 22);
+            this.textBoxNewName.TabIndex = 2;
+            // 
+            // buttonAddFinish
+            // 
+            this.buttonAddFinish.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonAddFinish.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.buttonAddFinish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddFinish.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddFinish.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonAddFinish.Location = new System.Drawing.Point(25, 171);
+            this.buttonAddFinish.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddFinish.Name = "buttonAddFinish";
+            this.buttonAddFinish.Size = new System.Drawing.Size(341, 38);
+            this.buttonAddFinish.TabIndex = 51;
+            this.buttonAddFinish.Text = "Add to List";
+            this.buttonAddFinish.UseVisualStyleBackColor = false;
+            this.buttonAddFinish.Click += new System.EventHandler(this.buttonAddFinish_Click);
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonCancel.Location = new System.Drawing.Point(25, 120);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(341, 38);
+            this.buttonCancel.TabIndex = 52;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // CalendarPage
             // 
@@ -430,12 +515,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1285, 663);
+            this.Controls.Add(this.panelAddNew);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBoxFilters);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panelViewList);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.panel3);
@@ -446,6 +532,7 @@
             this.Name = "CalendarPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CalendarPage_FormClosing);
             this.Load += new System.EventHandler(this.CalendarPage_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -458,12 +545,14 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.panelViewList.ResumeLayout(false);
+            this.panelViewList.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panelAddNew.ResumeLayout(false);
+            this.panelAddNew.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,7 +573,7 @@
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panelViewList;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelPersonalSched;
         private System.Windows.Forms.Button buttonLogin;
@@ -499,5 +588,11 @@
         private System.Windows.Forms.ComboBox comboBoxFilters;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckedListBox checkedListBoxAssignments;
+        private System.Windows.Forms.Panel panelAddNew;
+        private System.Windows.Forms.Button buttonAddFinish;
+        private System.Windows.Forms.TextBox textBoxNewName;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }

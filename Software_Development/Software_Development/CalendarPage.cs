@@ -17,6 +17,14 @@ namespace Software_Development
         public CalendarPage()
         {
             InitializeComponent();
+            panelViewList.Visible = true;
+            panelAddNew.Visible = false;
+            //populate the assignment list
+            checkedListBoxAssignments.Items.Clear();
+            foreach(string s in GlobalData.CurrentUser.TasksToDo)
+            {
+                checkedListBoxAssignments.Items.Add(s);
+            }
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
@@ -104,6 +112,50 @@ namespace Software_Development
                 labelDescriptionHeader.Text = "No event selected.";
                 labelEventDescription.Text = "";
             }
+        }
+
+        private void buttonAddAss_Click(object sender, EventArgs e)
+        {
+            panelAddNew.Visible = true;
+            panelViewList.Visible = false;
+            textBoxNewName.Text = "";
+        }
+
+        private void buttonAddFinish_Click(object sender, EventArgs e)
+        {
+            if(textBoxNewName.Text == "")
+            {
+                //message box them because they goofed
+                MessageBox.Show("You have to put in a title for the assignment first!");
+            }
+            else
+            {
+                GlobalData.CurrentUser.TasksToDo.Add(textBoxNewName.Text);
+                checkedListBoxAssignments.Items.Add(textBoxNewName.Text);
+                panelAddNew.Visible = false;
+                panelViewList.Visible = true;
+            }
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            panelAddNew.Visible = false;
+            panelViewList.Visible = true;
+        }
+
+        private void CalendarPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            List<string> newtasks = new List<string>();
+            //get rid of the checked items on the master to do list
+            for(int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
+            {
+                if(checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
+                {
+                    //user is not done with this task, add it to the new list of tasks
+                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
+                }
+            }
+            GlobalData.CurrentUser.TasksToDo = newtasks;
         }
     }
 }

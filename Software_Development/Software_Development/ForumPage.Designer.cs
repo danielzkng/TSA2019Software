@@ -68,13 +68,16 @@
             this.labelTitleT3 = new System.Windows.Forms.Label();
             this.pictureBoxT3 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.buttonGo = new System.Windows.Forms.Button();
             this.labelnumpages = new System.Windows.Forms.Label();
             this.textBoxPage = new System.Windows.Forms.TextBox();
             this.labelPageSelect = new System.Windows.Forms.Label();
             this.buttonPrevious = new System.Windows.Forms.Button();
             this.buttonNext = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.buttonGo = new System.Windows.Forms.Button();
+            this.labelUsernameT1 = new System.Windows.Forms.Label();
+            this.labelUsernameT2 = new System.Windows.Forms.Label();
+            this.labelUsernameT3 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -104,6 +107,7 @@
             this.buttonCreatePost.TabIndex = 69;
             this.buttonCreatePost.Text = "Create Post";
             this.buttonCreatePost.UseVisualStyleBackColor = false;
+            this.buttonCreatePost.Click += new System.EventHandler(this.buttonCreatePost_Click);
             // 
             // panel3
             // 
@@ -300,6 +304,7 @@
             // panelThread1
             // 
             this.panelThread1.BackColor = System.Drawing.Color.White;
+            this.panelThread1.Controls.Add(this.labelUsernameT1);
             this.panelThread1.Controls.Add(this.labelUpvotesT1);
             this.panelThread1.Controls.Add(this.labelPreviewT1);
             this.panelThread1.Controls.Add(this.labelTimestampT1);
@@ -407,6 +412,7 @@
             // panelThread2
             // 
             this.panelThread2.BackColor = System.Drawing.Color.White;
+            this.panelThread2.Controls.Add(this.labelUsernameT2);
             this.panelThread2.Controls.Add(this.labelUpvotesT2);
             this.panelThread2.Controls.Add(this.labelPreviewT2);
             this.panelThread2.Controls.Add(this.labelTimestampT2);
@@ -514,6 +520,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.labelUsernameT3);
             this.panel6.Controls.Add(this.labelUpvotesT3);
             this.panel6.Controls.Add(this.labelPreviewT3);
             this.panel6.Controls.Add(this.labelTimestampT3);
@@ -633,6 +640,22 @@
             this.panel7.Size = new System.Drawing.Size(219, 182);
             this.panel7.TabIndex = 75;
             // 
+            // buttonGo
+            // 
+            this.buttonGo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonGo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.buttonGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGo.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGo.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonGo.Location = new System.Drawing.Point(159, 133);
+            this.buttonGo.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGo.Name = "buttonGo";
+            this.buttonGo.Size = new System.Drawing.Size(56, 38);
+            this.buttonGo.TabIndex = 49;
+            this.buttonGo.Text = "Go!";
+            this.buttonGo.UseVisualStyleBackColor = false;
+            this.buttonGo.Click += new System.EventHandler(this.buttonGo_Click);
+            // 
             // labelnumpages
             // 
             this.labelnumpages.AutoSize = true;
@@ -706,21 +729,41 @@
             this.panel8.Size = new System.Drawing.Size(219, 182);
             this.panel8.TabIndex = 76;
             // 
-            // buttonGo
+            // labelUsernameT1
             // 
-            this.buttonGo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonGo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.buttonGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGo.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGo.ForeColor = System.Drawing.Color.SteelBlue;
-            this.buttonGo.Location = new System.Drawing.Point(159, 133);
-            this.buttonGo.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonGo.Name = "buttonGo";
-            this.buttonGo.Size = new System.Drawing.Size(56, 38);
-            this.buttonGo.TabIndex = 49;
-            this.buttonGo.Text = "Go!";
-            this.buttonGo.UseVisualStyleBackColor = false;
-            this.buttonGo.Click += new System.EventHandler(this.buttonGo_Click);
+            this.labelUsernameT1.AutoSize = true;
+            this.labelUsernameT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsernameT1.ForeColor = System.Drawing.Color.Gray;
+            this.labelUsernameT1.Location = new System.Drawing.Point(573, 74);
+            this.labelUsernameT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUsernameT1.Name = "labelUsernameT1";
+            this.labelUsernameT1.Size = new System.Drawing.Size(81, 19);
+            this.labelUsernameT1.TabIndex = 12;
+            this.labelUsernameT1.Text = "usernameT1";
+            // 
+            // labelUsernameT2
+            // 
+            this.labelUsernameT2.AutoSize = true;
+            this.labelUsernameT2.Font = new System.Drawing.Font("Segoe UI Semilight", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsernameT2.ForeColor = System.Drawing.Color.Gray;
+            this.labelUsernameT2.Location = new System.Drawing.Point(573, 74);
+            this.labelUsernameT2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUsernameT2.Name = "labelUsernameT2";
+            this.labelUsernameT2.Size = new System.Drawing.Size(82, 19);
+            this.labelUsernameT2.TabIndex = 13;
+            this.labelUsernameT2.Text = "usernameT2";
+            // 
+            // labelUsernameT3
+            // 
+            this.labelUsernameT3.AutoSize = true;
+            this.labelUsernameT3.Font = new System.Drawing.Font("Segoe UI Semilight", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsernameT3.ForeColor = System.Drawing.Color.Gray;
+            this.labelUsernameT3.Location = new System.Drawing.Point(573, 74);
+            this.labelUsernameT3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUsernameT3.Name = "labelUsernameT3";
+            this.labelUsernameT3.Size = new System.Drawing.Size(81, 19);
+            this.labelUsernameT3.TabIndex = 13;
+            this.labelUsernameT3.Text = "usernameT3";
             // 
             // ForumPage
             // 
@@ -818,5 +861,8 @@
         private System.Windows.Forms.Button buttonForum;
         private System.Windows.Forms.Label labelnumpages;
         private System.Windows.Forms.Button buttonGo;
+        private System.Windows.Forms.Label labelUsernameT1;
+        private System.Windows.Forms.Label labelUsernameT2;
+        private System.Windows.Forms.Label labelUsernameT3;
     }
 }

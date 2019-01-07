@@ -56,23 +56,6 @@ namespace Software_Development
             this.Close();
         }
 
-        private void dashboard_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            //IGNORE this code for now - will be used later to implement logout functionality once more of the program is built
-
-            if (!logout)
-            {
-                //this is a standard issue exit
-                //the login screen also needs to be closed for a full exit
-                FormsInProgram.loginInUse.Close();
-            }
-            else
-            {
-                //this is a logout, we need to show the login screen again
-                FormsInProgram.loginInUse.Show();
-            }
-        }
-
         private void buttonResources_Click(object sender, EventArgs e)
         {
             //open the resources form
@@ -90,6 +73,34 @@ namespace Software_Development
             //create and show a new daily poll form
             DailyPoll poll = new DailyPoll();
             poll.ShowDialog();
+        }
+
+        private void dashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //IGNORE this code for now - will be used later to implement logout functionality once more of the program is built
+            //write user data to file
+            GlobalData.ExportCurrentUser();
+            if (!logout)
+            {
+                
+                //this is a standard issue exit
+                //the login screen also needs to be closed for a full exit
+                FormsInProgram.loginInUse.Close();
+            }
+            else
+            {
+                //clear current user's data
+                GlobalData.CurrentUser = null;
+                //this is a logout, we need to show the login screen again
+                FormsInProgram.loginInUse.Show();
+            }
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            //bring up the profile screen
+            ProfilePage p = new ProfilePage();
+            p.ShowDialog();
         }
     }
 }

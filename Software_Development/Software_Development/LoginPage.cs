@@ -79,6 +79,29 @@ namespace Software_Development
                         labelUsername.Visible = true;
                         textBoxUsername.Focus();
 
+                        //generate the user ID by adding 1000000 to i
+                        int UID = 1000000 + i;
+
+                        if (File.Exists("Profiles\\profile" + UID + ".bin"))
+                        {
+                            //create current user object with blank constructor
+                            GlobalData.CurrentUser = new CurrentUserData();
+                            //open the file
+                            FileStream f = new FileStream("Profiles\\profile" + UID + ".bin", FileMode.Open);
+                            //read the current user data
+                            GlobalData.CurrentUser = (CurrentUserData)serializer.Deserialize(f);
+                            f.Close();
+                        }
+                        else
+                        {
+                            //get basic user data
+                            BasicData basic = new BasicData();
+                            basic.ShowDialog();
+                            GlobalData.CurrentUser.ID = UID;
+                            //export user data
+                            GlobalData.ExportCurrentUser();
+                        }
+
                         //hide this form and show the main client window
                         this.Hide();
                         MainScreen.Show();
@@ -148,7 +171,6 @@ namespace Software_Development
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             //TODO make a registration screen and make this button actually do something, it's going to be used as a testing button for now
-            GlobalData.ReadAllInfo();
         }
     }
 }

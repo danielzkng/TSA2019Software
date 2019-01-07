@@ -73,6 +73,12 @@ namespace Software_Development
             }
         }
 
+        private void buttonCreatePost_Click(object sender, EventArgs e)
+        {
+            //TODO create thread
+
+        }
+
         private void buttonHome_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -112,6 +118,7 @@ namespace Software_Development
                 labelUpvotesT1.Text = first.Upvotes.ToString() + " Upvotes";
                 labelViewsT1.Text = first.Views.ToString() + " Views";
                 labelRepliesT1.Text = first.Replies.Count().ToString() + " Replies";
+                labelUsernameT1.Text = first.getOP().Username;
 
                 //import thread 2 data
                 if(second != null)
@@ -125,6 +132,7 @@ namespace Software_Development
                     labelUpvotesT2.Text = second.Upvotes.ToString() + " Upvotes";
                     labelViewsT2.Text = second.Views.ToString() + " Views";
                     labelRepliesT2.Text = second.Replies.Count().ToString() + " Replies";
+                    labelUsernameT2.Text = second.getOP().Username;
                     if(third != null)
                     {
                         panel6.Visible = true;
@@ -136,6 +144,7 @@ namespace Software_Development
                         labelUpvotesT3.Text = third.Upvotes.ToString() + " Upvotes";
                         labelViewsT3.Text = third.Views.ToString() + " Views";
                         labelRepliesT3.Text = third.Replies.Count().ToString() + " Replies";
+                        labelUsernameT3.Text = third.getOP().Username;
                     }
                     else
                     {

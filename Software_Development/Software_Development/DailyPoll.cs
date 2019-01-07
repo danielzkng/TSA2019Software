@@ -48,6 +48,7 @@ namespace Software_Development
                 MessageBox.Show("You need to choose an option before you can vote!");
             }
             Graphicize();
+            GlobalData.CurrentUser.PollsVoted++;
         }
 
         public void Graphicize()

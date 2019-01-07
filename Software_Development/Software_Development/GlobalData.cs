@@ -22,6 +22,7 @@ namespace Software_Development
         public static List<Calendar> CalendarsDB { get; set; }
         public static List<Thread> ThreadsDB { get; set; }
         public static List<PrivateThread> PrivateDB { get; set; }
+        public static CurrentUserData CurrentUser { get; set; }
 
         private static BinaryFormatter serializer = new BinaryFormatter();
 
@@ -153,6 +154,72 @@ namespace Software_Development
         public static void ExportAllInfo(Objty o)
         {
             //TODO exports only one of the six lists to its corresponding data file
+            switch (o)
+            {
+                case Objty.User:
+                    //create new file stream
+                    FileStream f = new FileStream("users.db", FileMode.Create);
+                    foreach(User u in UsersDB)
+                    {
+                        serializer.Serialize(f, u);
+                    }
+                    f.Close();
+                    break;
+                case Objty.Calendar:
+                    //create new file stream
+                    FileStream c = new FileStream("calendars.db", FileMode.Create);
+                    foreach (Calendar u in CalendarsDB)
+                    {
+                        serializer.Serialize(c, u);
+                    }
+                    c.Close();
+                    break;
+                case Objty.Message:
+                    //create new file stream
+                    FileStream m = new FileStream("messages.db", FileMode.Create);
+                    foreach (Message u in PostDB)
+                    {
+                        serializer.Serialize(m, u);
+                    }
+                    m.Close();
+                    break;
+                case Objty.Thread:
+                    //create new file stream
+                    FileStream t = new FileStream("users.db", FileMode.Create);
+                    foreach (Thread u in ThreadsDB)
+                    {
+                        serializer.Serialize(t, u);
+                    }
+                    t.Close();
+                    break;
+                case Objty.Private:
+                    //create new file stream
+                    FileStream p = new FileStream("privatemsgs.db", FileMode.Create);
+                    foreach (PrivateThread u in PrivateDB)
+                    {
+                        serializer.Serialize(p, u);
+                    }
+                    p.Close();
+                    break;
+                case Objty.Event:
+                    //create new file stream
+                    FileStream ce = new FileStream("events.db", FileMode.Create);
+                    foreach (CalEvent u in EventsDB)
+                    {
+                        serializer.Serialize(ce, u);
+                    }
+                    ce.Close();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public static void ExportCurrentUser()
+        {
+            FileStream f = new FileStream("Profiles\\profile" + CurrentUser.ID.ToString() + ".bin", FileMode.Create);
+            serializer.Serialize(f, CurrentUser);
+            f.Close();
         }
 
         //HEY DANIEL DON'T BOTHER LOOKING PAST HERE, THESE METHODS ALL WORK AND ARE REAL BASIC

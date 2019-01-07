@@ -37,12 +37,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonForum = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonCalendar = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
             this.richTextBoxNewmsg = new System.Windows.Forms.RichTextBox();
             this.textBoxNewtitle = new System.Windows.Forms.TextBox();
             this.panelThread1 = new System.Windows.Forms.Panel();
+            this.labelUpvotesT1 = new System.Windows.Forms.Label();
             this.labelPreviewT1 = new System.Windows.Forms.Label();
             this.labelTimestampT1 = new System.Windows.Forms.Label();
             this.labelViewsT1 = new System.Windows.Forms.Label();
@@ -50,6 +52,7 @@
             this.labelTitleT1 = new System.Windows.Forms.Label();
             this.pictureBoxThread1 = new System.Windows.Forms.PictureBox();
             this.panelThread2 = new System.Windows.Forms.Panel();
+            this.labelUpvotesT2 = new System.Windows.Forms.Label();
             this.labelPreviewT2 = new System.Windows.Forms.Label();
             this.labelTimestampT2 = new System.Windows.Forms.Label();
             this.labelViewsT2 = new System.Windows.Forms.Label();
@@ -57,6 +60,7 @@
             this.labelTitleT2 = new System.Windows.Forms.Label();
             this.pictureBoxT2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.labelUpvotesT3 = new System.Windows.Forms.Label();
             this.labelPreviewT3 = new System.Windows.Forms.Label();
             this.labelTimestampT3 = new System.Windows.Forms.Label();
             this.labelViewsT3 = new System.Windows.Forms.Label();
@@ -64,16 +68,13 @@
             this.labelTitleT3 = new System.Windows.Forms.Label();
             this.pictureBoxT3 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.buttonNext = new System.Windows.Forms.Button();
-            this.buttonPrevious = new System.Windows.Forms.Button();
-            this.labelUpvotesT3 = new System.Windows.Forms.Label();
-            this.labelUpvotesT2 = new System.Windows.Forms.Label();
-            this.labelUpvotesT1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.labelPageSelect = new System.Windows.Forms.Label();
-            this.buttonForum = new System.Windows.Forms.Button();
             this.labelnumpages = new System.Windows.Forms.Label();
+            this.textBoxPage = new System.Windows.Forms.TextBox();
+            this.labelPageSelect = new System.Windows.Forms.Label();
+            this.buttonPrevious = new System.Windows.Forms.Button();
+            this.buttonNext = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.buttonGo = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -200,6 +201,26 @@
             this.panel1.Size = new System.Drawing.Size(232, 585);
             this.panel1.TabIndex = 59;
             // 
+            // buttonForum
+            // 
+            this.buttonForum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(64)))), ((int)(((byte)(80)))));
+            this.buttonForum.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.buttonForum.FlatAppearance.BorderSize = 0;
+            this.buttonForum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonForum.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonForum.ForeColor = System.Drawing.Color.White;
+            this.buttonForum.Image = global::Software_Development.Properties.Resources.forum;
+            this.buttonForum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonForum.Location = new System.Drawing.Point(0, 189);
+            this.buttonForum.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonForum.Name = "buttonForum";
+            this.buttonForum.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
+            this.buttonForum.Size = new System.Drawing.Size(232, 97);
+            this.buttonForum.TabIndex = 48;
+            this.buttonForum.Text = "  Forum";
+            this.buttonForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonForum.UseVisualStyleBackColor = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -235,7 +256,7 @@
             // 
             // buttonHome
             // 
-            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.buttonHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.buttonHome.FlatAppearance.BorderSize = 0;
             this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -292,6 +313,19 @@
             this.panelThread1.Size = new System.Drawing.Size(729, 142);
             this.panelThread1.TabIndex = 72;
             this.panelThread1.Click += new System.EventHandler(this.panelThread1_Click);
+            // 
+            // labelUpvotesT1
+            // 
+            this.labelUpvotesT1.AutoSize = true;
+            this.labelUpvotesT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUpvotesT1.ForeColor = System.Drawing.Color.ForestGreen;
+            this.labelUpvotesT1.Location = new System.Drawing.Point(12, 106);
+            this.labelUpvotesT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUpvotesT1.Name = "labelUpvotesT1";
+            this.labelUpvotesT1.Size = new System.Drawing.Size(76, 19);
+            this.labelUpvotesT1.TabIndex = 11;
+            this.labelUpvotesT1.Text = "55 Upvotes";
+            this.labelUpvotesT1.Click += new System.EventHandler(this.panelThread1_Click);
             // 
             // labelPreviewT1
             // 
@@ -385,6 +419,20 @@
             this.panelThread2.Name = "panelThread2";
             this.panelThread2.Size = new System.Drawing.Size(729, 142);
             this.panelThread2.TabIndex = 73;
+            this.panelThread2.Click += new System.EventHandler(this.panelThread2_Click);
+            // 
+            // labelUpvotesT2
+            // 
+            this.labelUpvotesT2.AutoSize = true;
+            this.labelUpvotesT2.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUpvotesT2.ForeColor = System.Drawing.Color.ForestGreen;
+            this.labelUpvotesT2.Location = new System.Drawing.Point(12, 106);
+            this.labelUpvotesT2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUpvotesT2.Name = "labelUpvotesT2";
+            this.labelUpvotesT2.Size = new System.Drawing.Size(76, 19);
+            this.labelUpvotesT2.TabIndex = 10;
+            this.labelUpvotesT2.Text = "55 Upvotes";
+            this.labelUpvotesT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
             // labelPreviewT2
             // 
@@ -398,6 +446,7 @@
             this.labelPreviewT2.TabIndex = 8;
             this.labelPreviewT2.Text = "Come to Room 112 today to learn how to make model airplanes \r\nand join the glider" +
     " competition! You can pick up club passes and...\r\n";
+            this.labelPreviewT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
             // labelTimestampT2
             // 
@@ -410,6 +459,7 @@
             this.labelTimestampT2.Size = new System.Drawing.Size(131, 38);
             this.labelTimestampT2.TabIndex = 7;
             this.labelTimestampT2.Text = "Added 10 hours ago\r\n\r\n";
+            this.labelTimestampT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
             // labelViewsT2
             // 
@@ -422,6 +472,7 @@
             this.labelViewsT2.Size = new System.Drawing.Size(69, 19);
             this.labelViewsT2.TabIndex = 6;
             this.labelViewsT2.Text = "352 Views";
+            this.labelViewsT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
             // labelRepliesT2
             // 
@@ -434,6 +485,7 @@
             this.labelRepliesT2.Size = new System.Drawing.Size(76, 19);
             this.labelRepliesT2.TabIndex = 4;
             this.labelRepliesT2.Text = "1 Response";
+            this.labelRepliesT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
             // labelTitleT2
             // 
@@ -445,6 +497,7 @@
             this.labelTitleT2.Size = new System.Drawing.Size(249, 25);
             this.labelTitleT2.TabIndex = 3;
             this.labelTitleT2.Text = "New aviation club founded!";
+            this.labelTitleT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
             // pictureBoxT2
             // 
@@ -456,6 +509,7 @@
             this.pictureBoxT2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxT2.TabIndex = 2;
             this.pictureBoxT2.TabStop = false;
+            this.pictureBoxT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
             // panel6
             // 
@@ -472,6 +526,20 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(729, 142);
             this.panel6.TabIndex = 74;
+            this.panel6.Click += new System.EventHandler(this.panel6_Click);
+            // 
+            // labelUpvotesT3
+            // 
+            this.labelUpvotesT3.AutoSize = true;
+            this.labelUpvotesT3.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUpvotesT3.ForeColor = System.Drawing.Color.ForestGreen;
+            this.labelUpvotesT3.Location = new System.Drawing.Point(12, 106);
+            this.labelUpvotesT3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUpvotesT3.Name = "labelUpvotesT3";
+            this.labelUpvotesT3.Size = new System.Drawing.Size(76, 19);
+            this.labelUpvotesT3.TabIndex = 9;
+            this.labelUpvotesT3.Text = "55 Upvotes";
+            this.labelUpvotesT3.Click += new System.EventHandler(this.panel6_Click);
             // 
             // labelPreviewT3
             // 
@@ -485,6 +553,7 @@
             this.labelPreviewT3.TabIndex = 8;
             this.labelPreviewT3.Text = "Ms. Barnum here! I wanted to alert everyone about\r\nthe library closure this Wedne" +
     "sday for a staff meeting at 1.";
+            this.labelPreviewT3.Click += new System.EventHandler(this.panel6_Click);
             // 
             // labelTimestampT3
             // 
@@ -497,6 +566,7 @@
             this.labelTimestampT3.Size = new System.Drawing.Size(111, 38);
             this.labelTimestampT3.TabIndex = 7;
             this.labelTimestampT3.Text = "Added 1 day ago\r\n\r\n";
+            this.labelTimestampT3.Click += new System.EventHandler(this.panel6_Click);
             // 
             // labelViewsT3
             // 
@@ -509,6 +579,7 @@
             this.labelViewsT3.Size = new System.Drawing.Size(69, 19);
             this.labelViewsT3.TabIndex = 6;
             this.labelViewsT3.Text = "623 Views";
+            this.labelViewsT3.Click += new System.EventHandler(this.panel6_Click);
             // 
             // labelRepliesT3
             // 
@@ -521,6 +592,7 @@
             this.labelRepliesT3.Size = new System.Drawing.Size(84, 19);
             this.labelRepliesT3.TabIndex = 4;
             this.labelRepliesT3.Text = "0 Responses";
+            this.labelRepliesT3.Click += new System.EventHandler(this.panel6_Click);
             // 
             // labelTitleT3
             // 
@@ -532,6 +604,7 @@
             this.labelTitleT3.Size = new System.Drawing.Size(207, 25);
             this.labelTitleT3.TabIndex = 3;
             this.labelTitleT3.Text = "Weekly Library Update";
+            this.labelTitleT3.Click += new System.EventHandler(this.panel6_Click);
             // 
             // pictureBoxT3
             // 
@@ -543,12 +616,14 @@
             this.pictureBoxT3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxT3.TabIndex = 2;
             this.pictureBoxT3.TabStop = false;
+            this.pictureBoxT3.Click += new System.EventHandler(this.panel6_Click);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel7.Controls.Add(this.buttonGo);
             this.panel7.Controls.Add(this.labelnumpages);
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.textBoxPage);
             this.panel7.Controls.Add(this.labelPageSelect);
             this.panel7.Controls.Add(this.buttonPrevious);
             this.panel7.Controls.Add(this.buttonNext);
@@ -558,29 +633,37 @@
             this.panel7.Size = new System.Drawing.Size(219, 182);
             this.panel7.TabIndex = 75;
             // 
-            // panel8
+            // labelnumpages
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.panel8.Location = new System.Drawing.Point(1040, 377);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(219, 182);
-            this.panel8.TabIndex = 76;
+            this.labelnumpages.AutoSize = true;
+            this.labelnumpages.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelnumpages.ForeColor = System.Drawing.Color.White;
+            this.labelnumpages.Location = new System.Drawing.Point(92, 140);
+            this.labelnumpages.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelnumpages.Name = "labelnumpages";
+            this.labelnumpages.Size = new System.Drawing.Size(25, 23);
+            this.labelnumpages.TabIndex = 48;
+            this.labelnumpages.Text = "of";
             // 
-            // buttonNext
+            // textBoxPage
             // 
-            this.buttonNext.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonNext.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.buttonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNext.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNext.ForeColor = System.Drawing.Color.SteelBlue;
-            this.buttonNext.Location = new System.Drawing.Point(4, 76);
-            this.buttonNext.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonNext.Name = "buttonNext";
-            this.buttonNext.Size = new System.Drawing.Size(211, 38);
-            this.buttonNext.TabIndex = 44;
-            this.buttonNext.Text = "Next >>";
-            this.buttonNext.UseVisualStyleBackColor = false;
+            this.textBoxPage.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPage.Location = new System.Drawing.Point(61, 133);
+            this.textBoxPage.Name = "textBoxPage";
+            this.textBoxPage.Size = new System.Drawing.Size(26, 30);
+            this.textBoxPage.TabIndex = 46;
+            // 
+            // labelPageSelect
+            // 
+            this.labelPageSelect.AutoSize = true;
+            this.labelPageSelect.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPageSelect.ForeColor = System.Drawing.Color.White;
+            this.labelPageSelect.Location = new System.Drawing.Point(14, 140);
+            this.labelPageSelect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPageSelect.Name = "labelPageSelect";
+            this.labelPageSelect.Size = new System.Drawing.Size(46, 23);
+            this.labelPageSelect.TabIndex = 47;
+            this.labelPageSelect.Text = "Page";
             // 
             // buttonPrevious
             // 
@@ -596,95 +679,48 @@
             this.buttonPrevious.TabIndex = 45;
             this.buttonPrevious.Text = "<< Prev";
             this.buttonPrevious.UseVisualStyleBackColor = false;
+            this.buttonPrevious.Click += new System.EventHandler(this.buttonPrevious_Click);
             // 
-            // labelUpvotesT3
+            // buttonNext
             // 
-            this.labelUpvotesT3.AutoSize = true;
-            this.labelUpvotesT3.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpvotesT3.ForeColor = System.Drawing.Color.ForestGreen;
-            this.labelUpvotesT3.Location = new System.Drawing.Point(12, 106);
-            this.labelUpvotesT3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelUpvotesT3.Name = "labelUpvotesT3";
-            this.labelUpvotesT3.Size = new System.Drawing.Size(76, 19);
-            this.labelUpvotesT3.TabIndex = 9;
-            this.labelUpvotesT3.Text = "55 Upvotes";
+            this.buttonNext.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonNext.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.buttonNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNext.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNext.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonNext.Location = new System.Drawing.Point(4, 76);
+            this.buttonNext.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(211, 38);
+            this.buttonNext.TabIndex = 44;
+            this.buttonNext.Text = "Next >>";
+            this.buttonNext.UseVisualStyleBackColor = false;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
-            // labelUpvotesT2
+            // panel8
             // 
-            this.labelUpvotesT2.AutoSize = true;
-            this.labelUpvotesT2.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpvotesT2.ForeColor = System.Drawing.Color.ForestGreen;
-            this.labelUpvotesT2.Location = new System.Drawing.Point(12, 106);
-            this.labelUpvotesT2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelUpvotesT2.Name = "labelUpvotesT2";
-            this.labelUpvotesT2.Size = new System.Drawing.Size(76, 19);
-            this.labelUpvotesT2.TabIndex = 10;
-            this.labelUpvotesT2.Text = "55 Upvotes";
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.panel8.Location = new System.Drawing.Point(1040, 377);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(219, 182);
+            this.panel8.TabIndex = 76;
             // 
-            // labelUpvotesT1
+            // buttonGo
             // 
-            this.labelUpvotesT1.AutoSize = true;
-            this.labelUpvotesT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUpvotesT1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.labelUpvotesT1.Location = new System.Drawing.Point(12, 106);
-            this.labelUpvotesT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelUpvotesT1.Name = "labelUpvotesT1";
-            this.labelUpvotesT1.Size = new System.Drawing.Size(76, 19);
-            this.labelUpvotesT1.TabIndex = 11;
-            this.labelUpvotesT1.Text = "55 Upvotes";
-            this.labelUpvotesT1.Click += new System.EventHandler(this.panelThread1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(71, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(26, 30);
-            this.textBox1.TabIndex = 46;
-            // 
-            // labelPageSelect
-            // 
-            this.labelPageSelect.AutoSize = true;
-            this.labelPageSelect.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPageSelect.ForeColor = System.Drawing.Color.White;
-            this.labelPageSelect.Location = new System.Drawing.Point(24, 140);
-            this.labelPageSelect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelPageSelect.Name = "labelPageSelect";
-            this.labelPageSelect.Size = new System.Drawing.Size(46, 23);
-            this.labelPageSelect.TabIndex = 47;
-            this.labelPageSelect.Text = "Page";
-            // 
-            // buttonForum
-            // 
-            this.buttonForum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.buttonForum.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.buttonForum.FlatAppearance.BorderSize = 0;
-            this.buttonForum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonForum.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonForum.ForeColor = System.Drawing.Color.White;
-            this.buttonForum.Image = global::Software_Development.Properties.Resources.forum;
-            this.buttonForum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonForum.Location = new System.Drawing.Point(0, 189);
-            this.buttonForum.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonForum.Name = "buttonForum";
-            this.buttonForum.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
-            this.buttonForum.Size = new System.Drawing.Size(232, 97);
-            this.buttonForum.TabIndex = 48;
-            this.buttonForum.Text = "  Forum";
-            this.buttonForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonForum.UseVisualStyleBackColor = false;
-            // 
-            // labelnumpages
-            // 
-            this.labelnumpages.AutoSize = true;
-            this.labelnumpages.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelnumpages.ForeColor = System.Drawing.Color.White;
-            this.labelnumpages.Location = new System.Drawing.Point(104, 140);
-            this.labelnumpages.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelnumpages.Name = "labelnumpages";
-            this.labelnumpages.Size = new System.Drawing.Size(25, 23);
-            this.labelnumpages.TabIndex = 48;
-            this.labelnumpages.Text = "of";
+            this.buttonGo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonGo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.buttonGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGo.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGo.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonGo.Location = new System.Drawing.Point(159, 133);
+            this.buttonGo.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGo.Name = "buttonGo";
+            this.buttonGo.Size = new System.Drawing.Size(56, 38);
+            this.buttonGo.TabIndex = 49;
+            this.buttonGo.Text = "Go!";
+            this.buttonGo.UseVisualStyleBackColor = false;
+            this.buttonGo.Click += new System.EventHandler(this.buttonGo_Click);
             // 
             // ForumPage
             // 
@@ -777,9 +813,10 @@
         private System.Windows.Forms.Label labelUpvotesT1;
         private System.Windows.Forms.Label labelUpvotesT2;
         private System.Windows.Forms.Label labelUpvotesT3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPage;
         private System.Windows.Forms.Label labelPageSelect;
         private System.Windows.Forms.Button buttonForum;
         private System.Windows.Forms.Label labelnumpages;
+        private System.Windows.Forms.Button buttonGo;
     }
 }

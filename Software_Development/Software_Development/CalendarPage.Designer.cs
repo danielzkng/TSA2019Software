@@ -44,18 +44,18 @@
             this.labelSchedDescrip = new System.Windows.Forms.Label();
             this.labelPersonalSched = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.buttonAddAss = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.labelEventsFor = new System.Windows.Forms.Label();
-            this.buttonAddAss = new System.Windows.Forms.Button();
-            this.listBoxAssignments = new System.Windows.Forms.ListBox();
             this.listBoxEvents = new System.Windows.Forms.ListBox();
+            this.labelEventsFor = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.labelDescriptionHeader = new System.Windows.Forms.Label();
             this.labelEventDescription = new System.Windows.Forms.Label();
+            this.labelDescriptionHeader = new System.Windows.Forms.Label();
             this.comboBoxFilters = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.checkedListBoxAssignments = new System.Windows.Forms.CheckedListBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -75,7 +75,7 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBoxClose);
             this.panel3.Location = new System.Drawing.Point(231, -2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1056, 82);
             this.panel3.TabIndex = 38;
@@ -85,7 +85,7 @@
             this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
             this.pictureBoxLogout.Location = new System.Drawing.Point(972, 1);
-            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogout.Name = "pictureBoxLogout";
             this.pictureBoxLogout.Size = new System.Drawing.Size(40, 43);
             this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -110,7 +110,7 @@
             this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
             this.pictureBoxClose.Location = new System.Drawing.Point(1013, 9);
-            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(28, 27);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,7 +124,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(-1, -2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(232, 82);
             this.panel2.TabIndex = 37;
@@ -145,7 +145,7 @@
             // 
             this.pictureBox1.Image = global::Software_Development.Properties.Resources.robot;
             this.pictureBox1.Location = new System.Drawing.Point(36, 17);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -159,7 +159,7 @@
             this.panel1.Controls.Add(this.buttonCalendar);
             this.panel1.Controls.Add(this.buttonHome);
             this.panel1.Location = new System.Drawing.Point(-1, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 585);
             this.panel1.TabIndex = 36;
@@ -188,7 +188,7 @@
             this.buttonCalendar.Image = global::Software_Development.Properties.Resources.calendar;
             this.buttonCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCalendar.Location = new System.Drawing.Point(0, 97);
-            this.buttonCalendar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCalendar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalendar.Name = "buttonCalendar";
             this.buttonCalendar.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
             this.buttonCalendar.Size = new System.Drawing.Size(232, 97);
@@ -208,7 +208,7 @@
             this.buttonHome.Image = global::Software_Development.Properties.Resources.calendar;
             this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonHome.Location = new System.Drawing.Point(0, 0);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
             this.buttonHome.Size = new System.Drawing.Size(232, 97);
@@ -234,7 +234,7 @@
             this.panel4.Controls.Add(this.labelSchedDescrip);
             this.panel4.Controls.Add(this.labelPersonalSched);
             this.panel4.Location = new System.Drawing.Point(369, 113);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(379, 244);
             this.panel4.TabIndex = 40;
@@ -267,14 +267,29 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.panel5.Controls.Add(this.listBoxAssignments);
             this.panel5.Controls.Add(this.buttonAddAss);
+            this.panel5.Controls.Add(this.checkedListBoxAssignments);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Location = new System.Drawing.Point(756, 113);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(385, 244);
             this.panel5.TabIndex = 41;
+            // 
+            // buttonAddAss
+            // 
+            this.buttonAddAss.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonAddAss.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.buttonAddAss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddAss.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddAss.ForeColor = System.Drawing.Color.SteelBlue;
+            this.buttonAddAss.Location = new System.Drawing.Point(20, 192);
+            this.buttonAddAss.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddAss.Name = "buttonAddAss";
+            this.buttonAddAss.Size = new System.Drawing.Size(341, 38);
+            this.buttonAddAss.TabIndex = 43;
+            this.buttonAddAss.Text = "Add an Assignment";
+            this.buttonAddAss.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -296,7 +311,7 @@
             this.buttonLogin.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.SteelBlue;
             this.buttonLogin.Location = new System.Drawing.Point(693, 552);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(341, 62);
             this.buttonLogin.TabIndex = 13;
@@ -309,52 +324,10 @@
             this.panel6.Controls.Add(this.listBoxEvents);
             this.panel6.Controls.Add(this.labelEventsFor);
             this.panel6.Location = new System.Drawing.Point(693, 389);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(341, 155);
             this.panel6.TabIndex = 42;
-            // 
-            // labelEventsFor
-            // 
-            this.labelEventsFor.AutoSize = true;
-            this.labelEventsFor.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEventsFor.ForeColor = System.Drawing.Color.White;
-            this.labelEventsFor.Location = new System.Drawing.Point(93, 16);
-            this.labelEventsFor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelEventsFor.Name = "labelEventsFor";
-            this.labelEventsFor.Size = new System.Drawing.Size(156, 28);
-            this.labelEventsFor.TabIndex = 0;
-            this.labelEventsFor.Text = "Events for <day>";
-            // 
-            // buttonAddAss
-            // 
-            this.buttonAddAss.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.buttonAddAss.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.buttonAddAss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddAss.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddAss.ForeColor = System.Drawing.Color.SteelBlue;
-            this.buttonAddAss.Location = new System.Drawing.Point(20, 192);
-            this.buttonAddAss.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonAddAss.Name = "buttonAddAss";
-            this.buttonAddAss.Size = new System.Drawing.Size(341, 38);
-            this.buttonAddAss.TabIndex = 43;
-            this.buttonAddAss.Text = "Add an Assignment";
-            this.buttonAddAss.UseVisualStyleBackColor = false;
-            // 
-            // listBoxAssignments
-            // 
-            this.listBoxAssignments.FormattingEnabled = true;
-            this.listBoxAssignments.ItemHeight = 16;
-            this.listBoxAssignments.Items.AddRange(new object[] {
-            "Math Homework",
-            "Study with Emily for Physics",
-            "History Test",
-            "Orchestra Rehearsal"});
-            this.listBoxAssignments.Location = new System.Drawing.Point(20, 49);
-            this.listBoxAssignments.Name = "listBoxAssignments";
-            this.listBoxAssignments.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.listBoxAssignments.Size = new System.Drawing.Size(341, 132);
-            this.listBoxAssignments.TabIndex = 44;
             // 
             // listBoxEvents
             // 
@@ -369,6 +342,18 @@
             this.listBoxEvents.TabIndex = 45;
             this.listBoxEvents.SelectedIndexChanged += new System.EventHandler(this.listBoxEvents_SelectedIndexChanged);
             // 
+            // labelEventsFor
+            // 
+            this.labelEventsFor.AutoSize = true;
+            this.labelEventsFor.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEventsFor.ForeColor = System.Drawing.Color.White;
+            this.labelEventsFor.Location = new System.Drawing.Point(93, 16);
+            this.labelEventsFor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEventsFor.Name = "labelEventsFor";
+            this.labelEventsFor.Size = new System.Drawing.Size(156, 28);
+            this.labelEventsFor.TabIndex = 0;
+            this.labelEventsFor.Text = "Events for <day>";
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
@@ -379,18 +364,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(201, 225);
             this.panel7.TabIndex = 46;
-            // 
-            // labelDescriptionHeader
-            // 
-            this.labelDescriptionHeader.AutoSize = true;
-            this.labelDescriptionHeader.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescriptionHeader.ForeColor = System.Drawing.Color.White;
-            this.labelDescriptionHeader.Location = new System.Drawing.Point(0, 16);
-            this.labelDescriptionHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelDescriptionHeader.Name = "labelDescriptionHeader";
-            this.labelDescriptionHeader.Size = new System.Drawing.Size(166, 28);
-            this.labelDescriptionHeader.TabIndex = 1;
-            this.labelDescriptionHeader.Text = "No event selected.";
             // 
             // labelEventDescription
             // 
@@ -403,6 +376,18 @@
             this.labelEventDescription.Size = new System.Drawing.Size(42, 23);
             this.labelEventDescription.TabIndex = 2;
             this.labelEventDescription.Text = "filler";
+            // 
+            // labelDescriptionHeader
+            // 
+            this.labelDescriptionHeader.AutoSize = true;
+            this.labelDescriptionHeader.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescriptionHeader.ForeColor = System.Drawing.Color.White;
+            this.labelDescriptionHeader.Location = new System.Drawing.Point(0, 16);
+            this.labelDescriptionHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDescriptionHeader.Name = "labelDescriptionHeader";
+            this.labelDescriptionHeader.Size = new System.Drawing.Size(166, 28);
+            this.labelDescriptionHeader.TabIndex = 1;
+            this.labelDescriptionHeader.Text = "No event selected.";
             // 
             // comboBoxFilters
             // 
@@ -425,6 +410,20 @@
             this.label6.TabIndex = 49;
             this.label6.Text = "Filter By:";
             // 
+            // checkedListBoxAssignments
+            // 
+            this.checkedListBoxAssignments.CheckOnClick = true;
+            this.checkedListBoxAssignments.FormattingEnabled = true;
+            this.checkedListBoxAssignments.Items.AddRange(new object[] {
+            "Math Homework",
+            "Study with Emily for Physics",
+            "History Test",
+            "Orchestra Rehearsal"});
+            this.checkedListBoxAssignments.Location = new System.Drawing.Point(20, 45);
+            this.checkedListBoxAssignments.Name = "checkedListBoxAssignments";
+            this.checkedListBoxAssignments.Size = new System.Drawing.Size(341, 140);
+            this.checkedListBoxAssignments.TabIndex = 50;
+            // 
             // CalendarPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -443,7 +442,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CalendarPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
@@ -492,7 +491,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label labelEventsFor;
         private System.Windows.Forms.Label labelSchedDescrip;
-        private System.Windows.Forms.ListBox listBoxAssignments;
         private System.Windows.Forms.Button buttonAddAss;
         private System.Windows.Forms.ListBox listBoxEvents;
         private System.Windows.Forms.Panel panel7;
@@ -500,5 +498,6 @@
         private System.Windows.Forms.Label labelDescriptionHeader;
         private System.Windows.Forms.ComboBox comboBoxFilters;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckedListBox checkedListBoxAssignments;
     }
 }

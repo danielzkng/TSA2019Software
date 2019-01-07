@@ -140,5 +140,10 @@ namespace Software_Development
         {
             return GlobalData.GetMessage(FirstPost).PosterID;
         }
+
+        public override string ToString()
+        {
+            return "Title: " + Subject + Environment.NewLine + GlobalData.GetMessage(FirstPost).ToString();
+        }
     }
 }

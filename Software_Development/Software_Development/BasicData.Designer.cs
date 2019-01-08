@@ -59,7 +59,7 @@
             // 
             this.maskedTextBoxPhone.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBoxPhone.ForeColor = System.Drawing.Color.DimGray;
-            this.maskedTextBoxPhone.Location = new System.Drawing.Point(183, 234);
+            this.maskedTextBoxPhone.Location = new System.Drawing.Point(241, 234);
             this.maskedTextBoxPhone.Mask = "(999) 000-0000";
             this.maskedTextBoxPhone.Name = "maskedTextBoxPhone";
             this.maskedTextBoxPhone.Size = new System.Drawing.Size(189, 23);
@@ -81,8 +81,8 @@
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmail.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxEmail.Location = new System.Drawing.Point(183, 206);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxEmail.Location = new System.Drawing.Point(241, 206);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(189, 23);
             this.textBoxEmail.TabIndex = 105;
@@ -118,8 +118,8 @@
             "College Junior",
             "College Senior",
             "Postgraduate"});
-            this.comboBoxGrade.Location = new System.Drawing.Point(183, 179);
-            this.comboBoxGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxGrade.Location = new System.Drawing.Point(241, 179);
+            this.comboBoxGrade.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxGrade.Name = "comboBoxGrade";
             this.comboBoxGrade.Size = new System.Drawing.Size(189, 23);
             this.comboBoxGrade.TabIndex = 107;
@@ -140,8 +140,8 @@
             // 
             this.textBoxName.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxName.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxName.Location = new System.Drawing.Point(183, 152);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxName.Location = new System.Drawing.Point(241, 152);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(189, 23);
             this.textBoxName.TabIndex = 103;
@@ -174,12 +174,13 @@
             // buttonOK
             // 
             this.buttonOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.buttonOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
             this.buttonOK.FlatAppearance.BorderSize = 0;
             this.buttonOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOK.Font = new System.Drawing.Font("Segoe UI Semilight", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOK.ForeColor = System.Drawing.Color.White;
-            this.buttonOK.Location = new System.Drawing.Point(223, 331);
-            this.buttonOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonOK.Location = new System.Drawing.Point(281, 331);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(149, 46);
             this.buttonOK.TabIndex = 111;
@@ -191,8 +192,8 @@
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxUsername.Location = new System.Drawing.Point(183, 259);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxUsername.Location = new System.Drawing.Point(241, 259);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(189, 23);
             this.textBoxUsername.TabIndex = 113;
@@ -334,7 +335,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BasicData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome!";

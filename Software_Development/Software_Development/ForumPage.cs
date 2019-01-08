@@ -79,6 +79,32 @@ namespace Software_Development
 
         }
 
+        private void buttonHome_Click_1(object sender, EventArgs e)
+        {
+            //create a new calendar form
+            DashboardPage dashboard = new DashboardPage();
+            dashboard.ShowDialog();
+        }
+
+        private void buttonCalendar_Click(object sender, EventArgs e)
+        {
+            //create a new calendar form
+            CalendarPage calendar = new CalendarPage();
+            calendar.ShowDialog();
+        }
+
+        private void buttonMessaging_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Abort");
+        }
+
+        private void buttonResources_Click(object sender, EventArgs e)
+        {
+            //open the resources form
+            ResourcesPage resources = new ResourcesPage();
+            resources.ShowDialog();
+        }
+
         private void buttonHome_Click(object sender, EventArgs e)
         {
             this.Close();

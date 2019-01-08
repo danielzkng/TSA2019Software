@@ -62,5 +62,12 @@ namespace Software_Development
         {
             this.Close();
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            //create a new calendar form
+            DashboardPage dashboard = new DashboardPage();
+            dashboard.ShowDialog();
+        }
     }
 }

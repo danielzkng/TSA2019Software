@@ -79,20 +79,22 @@
             // labelQuestion
             // 
             this.labelQuestion.AutoSize = true;
+            this.labelQuestion.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelQuestion.Location = new System.Drawing.Point(10, 7);
             this.labelQuestion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelQuestion.Name = "labelQuestion";
-            this.labelQuestion.Size = new System.Drawing.Size(262, 13);
+            this.labelQuestion.Size = new System.Drawing.Size(291, 13);
             this.labelQuestion.TabIndex = 0;
             this.labelQuestion.Text = "Which of the following cafeteria foods is your favorite?";
             // 
             // radioButtonChicken
             // 
             this.radioButtonChicken.AutoSize = true;
+            this.radioButtonChicken.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonChicken.Location = new System.Drawing.Point(32, 41);
-            this.radioButtonChicken.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonChicken.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonChicken.Name = "radioButtonChicken";
-            this.radioButtonChicken.Size = new System.Drawing.Size(107, 17);
+            this.radioButtonChicken.Size = new System.Drawing.Size(113, 17);
             this.radioButtonChicken.TabIndex = 1;
             this.radioButtonChicken.Text = "Chicken Nuggets";
             this.radioButtonChicken.UseVisualStyleBackColor = true;
@@ -100,10 +102,11 @@
             // radioButtonBurger
             // 
             this.radioButtonBurger.AutoSize = true;
+            this.radioButtonBurger.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonBurger.Location = new System.Drawing.Point(32, 81);
-            this.radioButtonBurger.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonBurger.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonBurger.Name = "radioButtonBurger";
-            this.radioButtonBurger.Size = new System.Drawing.Size(96, 17);
+            this.radioButtonBurger.Size = new System.Drawing.Size(102, 17);
             this.radioButtonBurger.TabIndex = 2;
             this.radioButtonBurger.Text = "Cheeseburgers";
             this.radioButtonBurger.UseVisualStyleBackColor = true;
@@ -111,10 +114,11 @@
             // radioButtonNacho
             // 
             this.radioButtonNacho.AutoSize = true;
+            this.radioButtonNacho.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonNacho.Location = new System.Drawing.Point(32, 121);
-            this.radioButtonNacho.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonNacho.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonNacho.Name = "radioButtonNacho";
-            this.radioButtonNacho.Size = new System.Drawing.Size(62, 17);
+            this.radioButtonNacho.Size = new System.Drawing.Size(63, 17);
             this.radioButtonNacho.TabIndex = 3;
             this.radioButtonNacho.Text = "Nachos";
             this.radioButtonNacho.UseVisualStyleBackColor = true;
@@ -122,8 +126,9 @@
             // radioButtonPizza
             // 
             this.radioButtonPizza.AutoSize = true;
+            this.radioButtonPizza.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonPizza.Location = new System.Drawing.Point(32, 161);
-            this.radioButtonPizza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonPizza.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonPizza.Name = "radioButtonPizza";
             this.radioButtonPizza.Size = new System.Drawing.Size(50, 17);
             this.radioButtonPizza.TabIndex = 4;
@@ -132,13 +137,18 @@
             // 
             // buttonVote
             // 
+            this.buttonVote.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonVote.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonVote.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVote.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVote.ForeColor = System.Drawing.Color.White;
             this.buttonVote.Location = new System.Drawing.Point(149, 206);
-            this.buttonVote.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonVote.Margin = new System.Windows.Forms.Padding(2);
             this.buttonVote.Name = "buttonVote";
             this.buttonVote.Size = new System.Drawing.Size(122, 44);
             this.buttonVote.TabIndex = 6;
             this.buttonVote.Text = "Vote!";
-            this.buttonVote.UseVisualStyleBackColor = true;
+            this.buttonVote.UseVisualStyleBackColor = false;
             this.buttonVote.Click += new System.EventHandler(this.buttonVote_Click);
             // 
             // panelResults
@@ -151,79 +161,91 @@
             this.panelResults.Controls.Add(this.labelResults);
             this.panelResults.Controls.Add(this.labelHeader);
             this.panelResults.Location = new System.Drawing.Point(550, 133);
-            this.panelResults.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelResults.Margin = new System.Windows.Forms.Padding(2);
             this.panelResults.Name = "panelResults";
             this.panelResults.Size = new System.Drawing.Size(301, 275);
             this.panelResults.TabIndex = 7;
             // 
             // buttonClose
             // 
+            this.buttonClose.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonClose.FlatAppearance.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonClose.FlatAppearance.BorderSize = 0;
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose.Font = new System.Drawing.Font("Segoe UI Semilight", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClose.ForeColor = System.Drawing.Color.White;
             this.buttonClose.Location = new System.Drawing.Point(169, 226);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(122, 36);
             this.buttonClose.TabIndex = 7;
             this.buttonClose.Text = "Close";
-            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // labelPizzaRes
             // 
             this.labelPizzaRes.AutoSize = true;
-            this.labelPizzaRes.Location = new System.Drawing.Point(13, 226);
+            this.labelPizzaRes.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPizzaRes.Location = new System.Drawing.Point(8, 226);
             this.labelPizzaRes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPizzaRes.Name = "labelPizzaRes";
-            this.labelPizzaRes.Size = new System.Drawing.Size(111, 13);
+            this.labelPizzaRes.Size = new System.Drawing.Size(113, 13);
             this.labelPizzaRes.TabIndex = 6;
             this.labelPizzaRes.Text = "Pizza: 15 votes (7.5%)";
             // 
             // labelNachoRes
             // 
             this.labelNachoRes.AutoSize = true;
-            this.labelNachoRes.Location = new System.Drawing.Point(13, 183);
+            this.labelNachoRes.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNachoRes.Location = new System.Drawing.Point(8, 183);
             this.labelNachoRes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNachoRes.Name = "labelNachoRes";
-            this.labelNachoRes.Size = new System.Drawing.Size(129, 13);
+            this.labelNachoRes.Size = new System.Drawing.Size(132, 13);
             this.labelNachoRes.TabIndex = 5;
             this.labelNachoRes.Text = "Nachos: 98 votes (49.0%)";
             // 
             // labelBurgersRes
             // 
             this.labelBurgersRes.AutoSize = true;
-            this.labelBurgersRes.Location = new System.Drawing.Point(13, 140);
+            this.labelBurgersRes.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBurgersRes.Location = new System.Drawing.Point(8, 140);
             this.labelBurgersRes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelBurgersRes.Name = "labelBurgersRes";
-            this.labelBurgersRes.Size = new System.Drawing.Size(157, 13);
+            this.labelBurgersRes.Size = new System.Drawing.Size(165, 13);
             this.labelBurgersRes.TabIndex = 4;
             this.labelBurgersRes.Text = "Cheeseburgers: 19 votes (9.5%)";
             // 
             // labelNuggetsRes
             // 
             this.labelNuggetsRes.AutoSize = true;
-            this.labelNuggetsRes.Location = new System.Drawing.Point(13, 97);
+            this.labelNuggetsRes.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNuggetsRes.Location = new System.Drawing.Point(8, 97);
             this.labelNuggetsRes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNuggetsRes.Name = "labelNuggetsRes";
-            this.labelNuggetsRes.Size = new System.Drawing.Size(174, 13);
+            this.labelNuggetsRes.Size = new System.Drawing.Size(182, 13);
             this.labelNuggetsRes.TabIndex = 3;
             this.labelNuggetsRes.Text = "Chicken Nuggets: 68 votes (37.0%)";
             // 
             // labelResults
             // 
             this.labelResults.AutoSize = true;
-            this.labelResults.Location = new System.Drawing.Point(13, 59);
+            this.labelResults.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResults.Location = new System.Drawing.Point(8, 59);
             this.labelResults.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelResults.Name = "labelResults";
-            this.labelResults.Size = new System.Drawing.Size(117, 13);
+            this.labelResults.Size = new System.Drawing.Size(122, 13);
             this.labelResults.TabIndex = 2;
             this.labelResults.Text = "Total results: 200 votes";
             // 
             // labelHeader
             // 
             this.labelHeader.AutoSize = true;
-            this.labelHeader.Location = new System.Drawing.Point(13, 24);
+            this.labelHeader.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeader.Location = new System.Drawing.Point(8, 24);
             this.labelHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(262, 13);
+            this.labelHeader.Size = new System.Drawing.Size(291, 13);
             this.labelHeader.TabIndex = 1;
             this.labelHeader.Text = "Which of the following cafeteria foods is your favorite?";
             // 
@@ -236,8 +258,8 @@
             this.panelPoll.Controls.Add(this.radioButtonBurger);
             this.panelPoll.Controls.Add(this.radioButtonChicken);
             this.panelPoll.Controls.Add(this.labelQuestion);
-            this.panelPoll.Location = new System.Drawing.Point(552, 133);
-            this.panelPoll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelPoll.Location = new System.Drawing.Point(551, 135);
+            this.panelPoll.Margin = new System.Windows.Forms.Padding(2);
             this.panelPoll.Name = "panelPoll";
             this.panelPoll.Size = new System.Drawing.Size(304, 271);
             this.panelPoll.TabIndex = 7;
@@ -247,7 +269,7 @@
             this.radioButtonInvis.AutoSize = true;
             this.radioButtonInvis.Checked = true;
             this.radioButtonInvis.Location = new System.Drawing.Point(172, 77);
-            this.radioButtonInvis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButtonInvis.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonInvis.Name = "radioButtonInvis";
             this.radioButtonInvis.Size = new System.Drawing.Size(122, 17);
             this.radioButtonInvis.TabIndex = 7;
@@ -528,7 +550,7 @@
             this.Controls.Add(this.panelPoll);
             this.Controls.Add(this.panelResults);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DailyPoll";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Daily Poll";

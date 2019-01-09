@@ -171,6 +171,10 @@ namespace Software_Development
         private void buttonRegister_Click(object sender, EventArgs e)
         {
             //TODO make a registration screen and make this button actually do something, it's going to be used as a testing button for now
+            //create a new register form
+            BasicData register = new BasicData();
+            register.ShowDialog();
+            this.Close();
         }
     }
 }

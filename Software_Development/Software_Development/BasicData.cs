@@ -27,8 +27,15 @@ namespace Software_Development
             else
             {
                 GlobalData.CurrentUser = new CurrentUserData(textBoxName.Text, textBoxEmail.Text, maskedTextBoxPhone.Text, comboBoxGrade.Text, textBoxUsername.Text);
+                LoginPage login = new LoginPage();
+                login.ShowDialog();
                 this.Close();
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

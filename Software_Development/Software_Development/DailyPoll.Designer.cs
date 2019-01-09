@@ -53,12 +53,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> parent of 937737f... Creation of Blank Message Page
 =======
 >>>>>>> parent of 937737f... Creation of Blank Message Page
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -374,6 +377,7 @@
             this.panel1.TabIndex = 113;
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             // label5
             // 
             this.label5.AutoSize = true;
@@ -445,6 +449,8 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+=======
+>>>>>>> parent of 937737f... Creation of Blank Message Page
 =======
 >>>>>>> parent of 937737f... Creation of Blank Message Page
             // buttonResources

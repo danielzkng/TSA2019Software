@@ -62,5 +62,13 @@ namespace Software_Development
         {
             this.Close();
         }
+
+        private void buttonDone_Click(object sender, EventArgs e)
+        {
+            //create a new dashboard form
+            DashboardPage home = new DashboardPage();
+            home.ShowDialog();
+            this.Close();
+        }
     }
 }

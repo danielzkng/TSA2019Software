@@ -258,7 +258,7 @@
             // monthCalendar1
             // 
             this.monthCalendar1.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(277, 316);
+            this.monthCalendar1.Location = new System.Drawing.Point(195, 301);
             this.monthCalendar1.MaxSelectionCount = 1;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 39;
@@ -269,9 +269,9 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.panel4.Controls.Add(this.labelSchedDescrip);
             this.panel4.Controls.Add(this.labelPersonalSched);
-            this.panel4.Location = new System.Drawing.Point(277, 92);
+            this.panel4.Location = new System.Drawing.Point(195, 83);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(284, 198);
+            this.panel4.Size = new System.Drawing.Size(444, 198);
             this.panel4.TabIndex = 40;
             // 
             // labelSchedDescrip
@@ -291,7 +291,7 @@
             this.labelPersonalSched.AutoSize = true;
             this.labelPersonalSched.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPersonalSched.ForeColor = System.Drawing.Color.White;
-            this.labelPersonalSched.Location = new System.Drawing.Point(51, 15);
+            this.labelPersonalSched.Location = new System.Drawing.Point(129, 11);
             this.labelPersonalSched.Name = "labelPersonalSched";
             this.labelPersonalSched.Size = new System.Drawing.Size(198, 25);
             this.labelPersonalSched.TabIndex = 1;
@@ -303,7 +303,7 @@
             this.panelViewList.Controls.Add(this.buttonAddAss);
             this.panelViewList.Controls.Add(this.checkedListBoxAssignments);
             this.panelViewList.Controls.Add(this.label4);
-            this.panelViewList.Location = new System.Drawing.Point(567, 92);
+            this.panelViewList.Location = new System.Drawing.Point(654, 82);
             this.panelViewList.Name = "panelViewList";
             this.panelViewList.Size = new System.Drawing.Size(289, 198);
             this.panelViewList.TabIndex = 41;
@@ -325,17 +325,21 @@
             // 
             // checkedListBoxAssignments
             // 
+            this.checkedListBoxAssignments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.checkedListBoxAssignments.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBoxAssignments.CheckOnClick = true;
+            this.checkedListBoxAssignments.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBoxAssignments.ForeColor = System.Drawing.Color.White;
             this.checkedListBoxAssignments.FormattingEnabled = true;
             this.checkedListBoxAssignments.Items.AddRange(new object[] {
             "Math Homework",
             "Study with Emily for Physics",
             "History Test",
             "Orchestra Rehearsal"});
-            this.checkedListBoxAssignments.Location = new System.Drawing.Point(15, 37);
+            this.checkedListBoxAssignments.Location = new System.Drawing.Point(15, 41);
             this.checkedListBoxAssignments.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBoxAssignments.Name = "checkedListBoxAssignments";
-            this.checkedListBoxAssignments.Size = new System.Drawing.Size(257, 109);
+            this.checkedListBoxAssignments.Size = new System.Drawing.Size(257, 90);
             this.checkedListBoxAssignments.TabIndex = 50;
             // 
             // label4
@@ -343,7 +347,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(70, 7);
+            this.label4.Location = new System.Drawing.Point(48, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(205, 25);
             this.label4.TabIndex = 0;
@@ -356,7 +360,7 @@
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.SteelBlue;
-            this.buttonLogin.Location = new System.Drawing.Point(520, 448);
+            this.buttonLogin.Location = new System.Drawing.Point(462, 449);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(256, 50);
             this.buttonLogin.TabIndex = 13;
@@ -368,21 +372,26 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel6.Controls.Add(this.listBoxEvents);
             this.panel6.Controls.Add(this.labelEventsFor);
-            this.panel6.Location = new System.Drawing.Point(520, 316);
+            this.panel6.Location = new System.Drawing.Point(462, 301);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(256, 126);
             this.panel6.TabIndex = 42;
             // 
             // listBoxEvents
             // 
+            this.listBoxEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.listBoxEvents.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxEvents.Font = new System.Drawing.Font("Segoe UI Semilight", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxEvents.ForeColor = System.Drawing.Color.White;
             this.listBoxEvents.FormattingEnabled = true;
+            this.listBoxEvents.ItemHeight = 19;
             this.listBoxEvents.Items.AddRange(new object[] {
             "Orchestra Concert",
             "Basketball Game"});
-            this.listBoxEvents.Location = new System.Drawing.Point(15, 48);
+            this.listBoxEvents.Location = new System.Drawing.Point(11, 40);
             this.listBoxEvents.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxEvents.Name = "listBoxEvents";
-            this.listBoxEvents.Size = new System.Drawing.Size(227, 69);
+            this.listBoxEvents.Size = new System.Drawing.Size(227, 76);
             this.listBoxEvents.TabIndex = 45;
             this.listBoxEvents.SelectedIndexChanged += new System.EventHandler(this.listBoxEvents_SelectedIndexChanged);
             // 
@@ -391,20 +400,22 @@
             this.labelEventsFor.AutoSize = true;
             this.labelEventsFor.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEventsFor.ForeColor = System.Drawing.Color.White;
-            this.labelEventsFor.Location = new System.Drawing.Point(70, 13);
+            this.labelEventsFor.Location = new System.Drawing.Point(47, 13);
+            this.labelEventsFor.MaximumSize = new System.Drawing.Size(250, 25);
             this.labelEventsFor.Name = "labelEventsFor";
             this.labelEventsFor.Size = new System.Drawing.Size(154, 25);
             this.labelEventsFor.TabIndex = 0;
             this.labelEventsFor.Text = "Events for <day>";
+            this.labelEventsFor.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel7.Controls.Add(this.labelEventDescription);
             this.panel7.Controls.Add(this.labelDescriptionHeader);
-            this.panel7.Location = new System.Drawing.Point(782, 316);
+            this.panel7.Location = new System.Drawing.Point(733, 301);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(151, 183);
+            this.panel7.Size = new System.Drawing.Size(211, 198);
             this.panel7.TabIndex = 46;
             // 
             // labelEventDescription
@@ -412,7 +423,8 @@
             this.labelEventDescription.AutoSize = true;
             this.labelEventDescription.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEventDescription.ForeColor = System.Drawing.Color.White;
-            this.labelEventDescription.Location = new System.Drawing.Point(3, 48);
+            this.labelEventDescription.Location = new System.Drawing.Point(9, 48);
+            this.labelEventDescription.MaximumSize = new System.Drawing.Size(180, 300);
             this.labelEventDescription.Name = "labelEventDescription";
             this.labelEventDescription.Size = new System.Drawing.Size(40, 21);
             this.labelEventDescription.TabIndex = 2;
@@ -423,19 +435,21 @@
             this.labelDescriptionHeader.AutoSize = true;
             this.labelDescriptionHeader.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDescriptionHeader.ForeColor = System.Drawing.Color.White;
-            this.labelDescriptionHeader.Location = new System.Drawing.Point(0, 13);
+            this.labelDescriptionHeader.Location = new System.Drawing.Point(26, 13);
             this.labelDescriptionHeader.Name = "labelDescriptionHeader";
             this.labelDescriptionHeader.Size = new System.Drawing.Size(164, 25);
             this.labelDescriptionHeader.TabIndex = 1;
             this.labelDescriptionHeader.Text = "No event selected.";
+            this.labelDescriptionHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboBoxFilters
             // 
             this.comboBoxFilters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFilters.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFilters.FormattingEnabled = true;
             this.comboBoxFilters.Items.AddRange(new object[] {
             "All"});
-            this.comboBoxFilters.Location = new System.Drawing.Point(326, 497);
+            this.comboBoxFilters.Location = new System.Drawing.Point(279, 510);
             this.comboBoxFilters.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxFilters.Name = "comboBoxFilters";
             this.comboBoxFilters.Size = new System.Drawing.Size(148, 21);
@@ -445,10 +459,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(274, 499);
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(218, 510);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.Size = new System.Drawing.Size(55, 17);
             this.label6.TabIndex = 49;
             this.label6.Text = "Filter By:";
             // 
@@ -460,7 +475,7 @@
             this.panelAddNew.Controls.Add(this.textBoxNewName);
             this.panelAddNew.Controls.Add(this.label7);
             this.panelAddNew.Controls.Add(this.label5);
-            this.panelAddNew.Location = new System.Drawing.Point(567, 92);
+            this.panelAddNew.Location = new System.Drawing.Point(655, 83);
             this.panelAddNew.Name = "panelAddNew";
             this.panelAddNew.Size = new System.Drawing.Size(289, 198);
             this.panelAddNew.TabIndex = 51;
@@ -497,10 +512,10 @@
             // 
             // textBoxNewName
             // 
-            this.textBoxNewName.Location = new System.Drawing.Point(72, 54);
+            this.textBoxNewName.Location = new System.Drawing.Point(82, 54);
             this.textBoxNewName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNewName.Name = "textBoxNewName";
-            this.textBoxNewName.Size = new System.Drawing.Size(196, 20);
+            this.textBoxNewName.Size = new System.Drawing.Size(193, 20);
             this.textBoxNewName.TabIndex = 2;
             // 
             // label7
@@ -519,7 +534,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(70, 7);
+            this.label5.Location = new System.Drawing.Point(47, 11);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(205, 25);
             this.label5.TabIndex = 0;
@@ -565,6 +580,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(964, 539);
+            this.Controls.Add(this.panelViewList);
             this.Controls.Add(this.panelProfile);
             this.Controls.Add(this.panelAddNew);
             this.Controls.Add(this.label6);
@@ -572,7 +588,6 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.panelViewList);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.panel3);

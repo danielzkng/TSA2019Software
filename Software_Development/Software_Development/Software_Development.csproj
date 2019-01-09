@@ -225,5 +225,26 @@
   <ItemGroup>
     <None Include="Resources\dashboard.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polldashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messagesdashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forumdashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -65,7 +65,7 @@
             this.maskedTextBoxPhone.Mask = "(999) 000-0000";
             this.maskedTextBoxPhone.Name = "maskedTextBoxPhone";
             this.maskedTextBoxPhone.Size = new System.Drawing.Size(189, 23);
-            this.maskedTextBoxPhone.TabIndex = 106;
+            this.maskedTextBoxPhone.TabIndex = 4;
             // 
             // labelPhone
             // 
@@ -88,7 +88,7 @@
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(189, 23);
-            this.textBoxEmail.TabIndex = 105;
+            this.textBoxEmail.TabIndex = 3;
             // 
             // label4
             // 
@@ -126,7 +126,7 @@
             this.comboBoxGrade.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxGrade.Name = "comboBoxGrade";
             this.comboBoxGrade.Size = new System.Drawing.Size(189, 23);
-            this.comboBoxGrade.TabIndex = 107;
+            this.comboBoxGrade.TabIndex = 2;
             // 
             // labelGrade
             // 
@@ -149,7 +149,7 @@
             this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(189, 23);
-            this.textBoxName.TabIndex = 103;
+            this.textBoxName.TabIndex = 1;
             // 
             // labelName
             // 
@@ -174,7 +174,7 @@
             this.buttonOK.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(149, 46);
-            this.buttonOK.TabIndex = 111;
+            this.buttonOK.TabIndex = 6;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = false;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
@@ -188,7 +188,7 @@
             this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(189, 23);
-            this.textBoxUsername.TabIndex = 113;
+            this.textBoxUsername.TabIndex = 5;
             // 
             // labelUsername
             // 

@@ -98,7 +98,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(34, 13);
+            this.label6.Location = new System.Drawing.Point(47, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(129, 25);
             this.label6.TabIndex = 1;
@@ -324,11 +324,14 @@
             // 
             // listBoxTeachers
             // 
+            this.listBoxTeachers.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxTeachers.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxTeachers.FormattingEnabled = true;
+            this.listBoxTeachers.ItemHeight = 20;
             this.listBoxTeachers.Location = new System.Drawing.Point(2, 0);
             this.listBoxTeachers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxTeachers.Name = "listBoxTeachers";
-            this.listBoxTeachers.Size = new System.Drawing.Size(218, 303);
+            this.listBoxTeachers.Size = new System.Drawing.Size(218, 304);
             this.listBoxTeachers.TabIndex = 0;
             // 
             // panel8
@@ -342,11 +345,14 @@
             // 
             // listBoxResources
             // 
+            this.listBoxResources.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxResources.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxResources.FormattingEnabled = true;
+            this.listBoxResources.ItemHeight = 20;
             this.listBoxResources.Location = new System.Drawing.Point(0, 0);
             this.listBoxResources.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxResources.Name = "listBoxResources";
-            this.listBoxResources.Size = new System.Drawing.Size(218, 303);
+            this.listBoxResources.Size = new System.Drawing.Size(218, 304);
             this.listBoxResources.TabIndex = 1;
             // 
             // panel9
@@ -363,7 +369,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(63, 13);
+            this.label7.Location = new System.Drawing.Point(62, 13);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 25);
             this.label7.TabIndex = 1;
@@ -372,6 +378,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.Location = new System.Drawing.Point(713, 142);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(219, 305);
@@ -391,7 +398,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(34, 13);
+            this.label4.Location = new System.Drawing.Point(32, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(167, 25);
             this.label4.TabIndex = 1;

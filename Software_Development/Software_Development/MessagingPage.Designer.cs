@@ -51,6 +51,7 @@
             this.textBoxMessage = new System.Windows.Forms.TextBox();
             this.listBoxChat = new System.Windows.Forms.ListBox();
             this.listBoxUsers = new System.Windows.Forms.ListBox();
+            this.listBoxTeachers = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
@@ -316,9 +317,9 @@
             this.label5.Location = new System.Drawing.Point(206, 92);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 23);
+            this.label5.Size = new System.Drawing.Size(116, 23);
             this.label5.TabIndex = 131;
-            this.label5.Text = "Your Friends:";
+            this.label5.Text = "Your Contacts:";
             // 
             // labelMsg
             // 
@@ -365,8 +366,20 @@
             this.listBoxUsers.Location = new System.Drawing.Point(208, 124);
             this.listBoxUsers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxUsers.Name = "listBoxUsers";
-            this.listBoxUsers.Size = new System.Drawing.Size(214, 251);
+            this.listBoxUsers.Size = new System.Drawing.Size(214, 118);
             this.listBoxUsers.TabIndex = 126;
+            // 
+            // listBoxTeachers
+            // 
+            this.listBoxTeachers.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxTeachers.ForeColor = System.Drawing.Color.DimGray;
+            this.listBoxTeachers.FormattingEnabled = true;
+            this.listBoxTeachers.ItemHeight = 19;
+            this.listBoxTeachers.Location = new System.Drawing.Point(210, 257);
+            this.listBoxTeachers.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxTeachers.Name = "listBoxTeachers";
+            this.listBoxTeachers.Size = new System.Drawing.Size(214, 118);
+            this.listBoxTeachers.TabIndex = 134;
             // 
             // MessagingPage
             // 
@@ -374,6 +387,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 539);
+            this.Controls.Add(this.listBoxTeachers);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
@@ -427,5 +441,6 @@
         private System.Windows.Forms.TextBox textBoxMessage;
         private System.Windows.Forms.ListBox listBoxChat;
         private System.Windows.Forms.ListBox listBoxUsers;
+        private System.Windows.Forms.ListBox listBoxTeachers;
     }
 }

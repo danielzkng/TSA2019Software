@@ -133,6 +133,9 @@
   <data name="forum" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="forumdashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forumdashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,8 +148,20 @@
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="man1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\man2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="messages" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\messages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messagesdashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messagesdashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="polldashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\polldashboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="robot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\robot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +169,14 @@
   <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Visions_of_Grandeur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\visions of grandeur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="whitecross" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\whitecross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woman1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\woman1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="xicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

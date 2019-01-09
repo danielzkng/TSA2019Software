@@ -323,7 +323,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 22.25455F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(28, 33);
+            this.label4.Location = new System.Drawing.Point(25, 33);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(257, 47);
             this.label4.TabIndex = 26;
@@ -357,6 +357,7 @@
             this.button2.TabIndex = 82;
             this.button2.Text = "Messages";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox3
             // 
@@ -370,8 +371,8 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Software_Development.Properties.Resources.loginicon;
-            this.pictureBox5.Location = new System.Drawing.Point(714, 363);
+            this.pictureBox5.Image = global::Software_Development.Properties.Resources.messagesdashboard;
+            this.pictureBox5.Location = new System.Drawing.Point(714, 350);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(112, 105);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -380,8 +381,8 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Software_Development.Properties.Resources.loginicon;
-            this.pictureBox4.Location = new System.Drawing.Point(506, 363);
+            this.pictureBox4.Image = global::Software_Development.Properties.Resources.forumdashboard;
+            this.pictureBox4.Location = new System.Drawing.Point(506, 350);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(112, 105);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -390,8 +391,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Software_Development.Properties.Resources.loginicon;
-            this.pictureBox2.Location = new System.Drawing.Point(293, 363);
+            this.pictureBox2.Image = global::Software_Development.Properties.Resources.polldashboard;
+            this.pictureBox2.Location = new System.Drawing.Point(293, 350);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(112, 105);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

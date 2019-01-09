@@ -47,40 +47,40 @@
             this.radioButtonInvis = new System.Windows.Forms.RadioButton();
             this.buttonDone = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panelProfile = new System.Windows.Forms.Panel();
             this.labelProfile = new System.Windows.Forms.Label();
-            this.pictureBoxProfile = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonResources = new System.Windows.Forms.Button();
-            this.buttonMessaging = new System.Windows.Forms.Button();
-            this.buttonForum = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.buttonCalendar = new System.Windows.Forms.Button();
-            this.buttonHome = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.labelPolls = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+            this.pictureBoxProfile = new System.Windows.Forms.PictureBox();
+            this.buttonResources = new System.Windows.Forms.Button();
+            this.buttonMessaging = new System.Windows.Forms.Button();
+            this.buttonForum = new System.Windows.Forms.Button();
+            this.buttonCalendar = new System.Windows.Forms.Button();
+            this.buttonHome = new System.Windows.Forms.Button();
             this.panelResults.SuspendLayout();
             this.panelPoll.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.panelProfile.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // labelQuestion
             // 
             this.labelQuestion.AutoSize = true;
             this.labelQuestion.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuestion.Location = new System.Drawing.Point(10, 7);
+            this.labelQuestion.Location = new System.Drawing.Point(6, 7);
             this.labelQuestion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelQuestion.Name = "labelQuestion";
             this.labelQuestion.Size = new System.Drawing.Size(291, 13);
@@ -160,7 +160,7 @@
             this.panelResults.Controls.Add(this.labelNuggetsRes);
             this.panelResults.Controls.Add(this.labelResults);
             this.panelResults.Controls.Add(this.labelHeader);
-            this.panelResults.Location = new System.Drawing.Point(550, 133);
+            this.panelResults.Location = new System.Drawing.Point(570, 133);
             this.panelResults.Margin = new System.Windows.Forms.Padding(2);
             this.panelResults.Name = "panelResults";
             this.panelResults.Size = new System.Drawing.Size(301, 275);
@@ -258,7 +258,7 @@
             this.panelPoll.Controls.Add(this.radioButtonBurger);
             this.panelPoll.Controls.Add(this.radioButtonChicken);
             this.panelPoll.Controls.Add(this.labelQuestion);
-            this.panelPoll.Location = new System.Drawing.Point(551, 135);
+            this.panelPoll.Location = new System.Drawing.Point(571, 135);
             this.panelPoll.Margin = new System.Windows.Forms.Padding(2);
             this.panelPoll.Name = "panelPoll";
             this.panelPoll.Size = new System.Drawing.Size(304, 271);
@@ -284,12 +284,13 @@
             this.buttonDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDone.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDone.ForeColor = System.Drawing.Color.SteelBlue;
-            this.buttonDone.Location = new System.Drawing.Point(724, 459);
+            this.buttonDone.Location = new System.Drawing.Point(744, 459);
             this.buttonDone.Name = "buttonDone";
             this.buttonDone.Size = new System.Drawing.Size(135, 50);
             this.buttonDone.TabIndex = 88;
             this.buttonDone.Text = "Done";
             this.buttonDone.UseVisualStyleBackColor = false;
+            this.buttonDone.Click += new System.EventHandler(this.buttonDone_Click);
             // 
             // panel3
             // 
@@ -302,17 +303,6 @@
             this.panel3.Size = new System.Drawing.Size(792, 67);
             this.panel3.TabIndex = 86;
             // 
-            // pictureBoxLogout
-            // 
-            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
-            this.pictureBoxLogout.Location = new System.Drawing.Point(729, 1);
-            this.pictureBoxLogout.Name = "pictureBoxLogout";
-            this.pictureBoxLogout.Size = new System.Drawing.Size(30, 35);
-            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogout.TabIndex = 25;
-            this.pictureBoxLogout.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -323,17 +313,6 @@
             this.label2.Size = new System.Drawing.Size(98, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Daily Poll";
-            // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
-            this.pictureBoxClose.Location = new System.Drawing.Point(760, 7);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(21, 22);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxClose.TabIndex = 24;
-            this.pictureBoxClose.TabStop = false;
             // 
             // panelProfile
             // 
@@ -357,17 +336,6 @@
             this.labelProfile.TabIndex = 1;
             this.labelProfile.Text = "My Account";
             // 
-            // pictureBoxProfile
-            // 
-            this.pictureBoxProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxProfile.Image = global::Software_Development.Properties.Resources.robot;
-            this.pictureBoxProfile.Location = new System.Drawing.Point(27, 14);
-            this.pictureBoxProfile.Name = "pictureBoxProfile";
-            this.pictureBoxProfile.Size = new System.Drawing.Size(39, 39);
-            this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxProfile.TabIndex = 0;
-            this.pictureBoxProfile.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
@@ -381,6 +349,92 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(174, 475);
             this.panel1.TabIndex = 84;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(23, 414);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(132, 45);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Edutalk";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.panel9.Controls.Add(this.labelPolls);
+            this.panel9.Location = new System.Drawing.Point(317, 218);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(164, 125);
+            this.panel9.TabIndex = 108;
+            // 
+            // labelPolls
+            // 
+            this.labelPolls.AutoSize = true;
+            this.labelPolls.Font = new System.Drawing.Font("Segoe UI", 47.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPolls.ForeColor = System.Drawing.Color.White;
+            this.labelPolls.Location = new System.Drawing.Point(26, 3);
+            this.labelPolls.Name = "labelPolls";
+            this.labelPolls.Size = new System.Drawing.Size(122, 99);
+            this.labelPolls.TabIndex = 6;
+            this.labelPolls.Text = "49";
+            this.labelPolls.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.panel11.Controls.Add(this.label13);
+            this.panel11.Location = new System.Drawing.Point(317, 175);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(164, 43);
+            this.panel11.TabIndex = 109;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(15, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(139, 25);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Polls Answered";
+            // 
+            // pictureBoxLogout
+            // 
+            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
+            this.pictureBoxLogout.Location = new System.Drawing.Point(729, 1);
+            this.pictureBoxLogout.Name = "pictureBoxLogout";
+            this.pictureBoxLogout.Size = new System.Drawing.Size(30, 35);
+            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogout.TabIndex = 25;
+            this.pictureBoxLogout.TabStop = false;
+            // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
+            this.pictureBoxClose.Location = new System.Drawing.Point(760, 7);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(21, 22);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClose.TabIndex = 24;
+            this.pictureBoxClose.TabStop = false;
+            // 
+            // pictureBoxProfile
+            // 
+            this.pictureBoxProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxProfile.Image = global::Software_Development.Properties.Resources.robot;
+            this.pictureBoxProfile.Location = new System.Drawing.Point(27, 14);
+            this.pictureBoxProfile.Name = "pictureBoxProfile";
+            this.pictureBoxProfile.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxProfile.TabIndex = 0;
+            this.pictureBoxProfile.TabStop = false;
             // 
             // buttonResources
             // 
@@ -442,18 +496,6 @@
             this.buttonForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonForum.UseVisualStyleBackColor = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(23, 414);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 45);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Edutalk";
-            // 
             // buttonCalendar
             // 
             this.buttonCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
@@ -494,47 +536,6 @@
             this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonHome.UseVisualStyleBackColor = false;
             // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
-            this.panel9.Controls.Add(this.labelPolls);
-            this.panel9.Location = new System.Drawing.Point(297, 218);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(164, 125);
-            this.panel9.TabIndex = 108;
-            // 
-            // labelPolls
-            // 
-            this.labelPolls.AutoSize = true;
-            this.labelPolls.Font = new System.Drawing.Font("Segoe UI", 47.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPolls.ForeColor = System.Drawing.Color.White;
-            this.labelPolls.Location = new System.Drawing.Point(26, 3);
-            this.labelPolls.Name = "labelPolls";
-            this.labelPolls.Size = new System.Drawing.Size(122, 99);
-            this.labelPolls.TabIndex = 6;
-            this.labelPolls.Text = "49";
-            this.labelPolls.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.panel11.Controls.Add(this.label13);
-            this.panel11.Location = new System.Drawing.Point(297, 175);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(164, 43);
-            this.panel11.TabIndex = 109;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(15, 10);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(139, 25);
-            this.label13.TabIndex = 5;
-            this.label13.Text = "Polls Answered";
-            // 
             // DailyPoll
             // 
             this.AcceptButton = this.buttonVote;
@@ -560,17 +561,17 @@
             this.panelPoll.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.panelProfile.ResumeLayout(false);
             this.panelProfile.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
             this.ResumeLayout(false);
 
         }

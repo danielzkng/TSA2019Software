@@ -132,5 +132,13 @@ namespace Software_Development
             message.ShowDialog();
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //create a new message page
+            MessagingPage message = new MessagingPage();
+            message.ShowDialog();
+            this.Close();
+        }
     }
 }

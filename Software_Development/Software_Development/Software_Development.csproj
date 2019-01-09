@@ -145,6 +145,9 @@
     <EmbeddedResource Include="ResourcesPage.resx">
       <DependentUpon>ResourcesPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThreadViewerPage.resx">
+      <DependentUpon>ThreadViewerPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -153,6 +156,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ThreadViewerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreadViewerPage.Designer.cs">
+      <DependentUpon>ThreadViewerPage.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
   </ItemGroup>
@@ -215,6 +224,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dashboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\roboticon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

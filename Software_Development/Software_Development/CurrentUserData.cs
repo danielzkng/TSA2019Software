@@ -24,8 +24,6 @@ namespace Software_Development
 
         public string Username { get; }
 
-        public List<string> TasksToDo { get; set; }
-
         //blank constructor
         public CurrentUserData()
         {
@@ -40,7 +38,6 @@ namespace Software_Development
             Phone = "";
             Grade = "";
             Username = "";
-            TasksToDo = new List<string>();
         }
 
         public CurrentUserData(string n, string e, string p, string g, string u)
@@ -56,7 +53,6 @@ namespace Software_Development
             PollsVoted = 0;
             UpvotesGiven = 0;
             Connections = 0;
-            TasksToDo = new List<string>();
         }
     }
 }

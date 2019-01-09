@@ -17,14 +17,6 @@ namespace Software_Development
         public CalendarPage()
         {
             InitializeComponent();
-            panelViewList.Visible = true;
-            panelAddNew.Visible = false;
-            //populate the assignment list
-            checkedListBoxAssignments.Items.Clear();
-            foreach(string s in GlobalData.CurrentUser.TasksToDo)
-            {
-                checkedListBoxAssignments.Items.Add(s);
-            }
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
@@ -113,6 +105,7 @@ namespace Software_Development
                 labelEventDescription.Text = "";
             }
         }
+<<<<<<< HEAD
 
         private void buttonAddAss_Click(object sender, EventArgs e)
         {
@@ -188,5 +181,7 @@ namespace Software_Development
             ResourcesPage resources = new ResourcesPage();
             resources.ShowDialog();
         }
+=======
+>>>>>>> parent of 14ed124... make the todo list functional
     }
 }

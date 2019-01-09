@@ -24,18 +24,16 @@ namespace Software_Development
         private void buttonHome_Click(object sender, EventArgs e)
         {
             //Highlight the button when clicked
-            buttonCalendar.BackColor = Color.FromArgb(52, 73, 94);
-            buttonHome.BackColor = Color.FromArgb(44, 62, 80);
+            //buttonCalendar.BackColor = Color.FromArgb(52, 73, 94);
+            //buttonHome.BackColor = Color.FromArgb(44, 62, 80);
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            //Highlight the button when clicked
-            buttonHome.BackColor = Color.FromArgb(52, 73, 94);
-            buttonCalendar.BackColor = Color.FromArgb(44, 62, 80);
             //create a new calendar form
             CalendarPage calendar = new CalendarPage();
             calendar.ShowDialog();
+            this.Close();
         }
 
         private void buttonForum_Click(object sender, EventArgs e)
@@ -43,6 +41,7 @@ namespace Software_Development
             //create a new forum page
             ForumPage forum = new ForumPage();
             forum.ShowDialog();
+            this.Close();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -61,6 +60,7 @@ namespace Software_Development
             //open the resources form
             ResourcesPage resources = new ResourcesPage();
             resources.ShowDialog();
+            this.Close();
         }
 
         private void DashboardPage_Load(object sender, EventArgs e)
@@ -99,8 +99,38 @@ namespace Software_Development
         private void panel2_Click(object sender, EventArgs e)
         {
             //bring up the profile screen
+            //ProfilePage p = new ProfilePage();
+            //p.ShowDialog();
+        }
+
+        private void labelProfile_Click(object sender, EventArgs e)
+        {
+            //bring up the profile screen
             ProfilePage p = new ProfilePage();
             p.ShowDialog();
+            this.Close();
+        }
+
+        private void pictureBoxProfile_Click(object sender, EventArgs e)
+        {
+            //bring up the profile screen
+            ProfilePage p = new ProfilePage();
+            p.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonHome_MouseHover(object sender, EventArgs e)
+        {
+            //Disable highlight
+            buttonHome.BackColor = Color.FromArgb(44, 62, 80);
+        }
+
+        private void buttonMessaging_Click(object sender, EventArgs e)
+        {
+            //create a new message page
+            MessagingPage message = new MessagingPage();
+            message.ShowDialog();
+            this.Close();
         }
     }
 }

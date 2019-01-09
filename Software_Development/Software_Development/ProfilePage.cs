@@ -67,5 +67,50 @@ namespace Software_Development
             //close form
             this.Close();
         }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            //create a new dashboard form
+            DashboardPage home = new DashboardPage();
+            home.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonCalendar_Click(object sender, EventArgs e)
+        {
+            //create a new calendar form
+            CalendarPage calendar = new CalendarPage();
+            calendar.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonForum_Click(object sender, EventArgs e)
+        {
+            //create a new forum page
+            ForumPage forum = new ForumPage();
+            forum.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonMessaging_Click(object sender, EventArgs e)
+        {
+            //create a new message page
+            MessagingPage message = new MessagingPage();
+            message.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonResources_Click(object sender, EventArgs e)
+        {
+            //open the resources form
+            ResourcesPage resources = new ResourcesPage();
+            resources.ShowDialog();
+            this.Close();
+        }
+
+        private void pictureBoxLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

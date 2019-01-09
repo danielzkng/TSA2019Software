@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace Software_Development
 {
-    public partial class ResourcesPage : Form
+    public partial class MessagingPage : Form
     {
-        public ResourcesPage()
+        public MessagingPage()
         {
             InitializeComponent();
+        }
+
+        private void labelProfile_Click(object sender, EventArgs e)
+        {
+            //bring up the profile screen
+            ProfilePage p = new ProfilePage();
+            p.ShowDialog();
+            this.Close();
+        }
+
+        private void pictureBoxProfile_Click(object sender, EventArgs e)
+        {
+            //bring up the profile screen
+            ProfilePage p = new ProfilePage();
+            p.ShowDialog();
+            this.Close();
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
@@ -41,27 +57,11 @@ namespace Software_Development
             this.Close();
         }
 
-        private void buttonMessaging_Click(object sender, EventArgs e)
+        private void buttonResources_Click(object sender, EventArgs e)
         {
-            //create a new message page
-            MessagingPage message = new MessagingPage();
-            message.ShowDialog();
-            this.Close();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
+            //open the resources form
+            ResourcesPage resources = new ResourcesPage();
+            resources.ShowDialog();
             this.Close();
         }
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Software_Development
 {
-    public partial class ResourcesPage : Form
+    public partial class ThreadViewerPage : Form
     {
-        public ResourcesPage()
+        public ThreadViewerPage()
         {
             InitializeComponent();
         }
@@ -33,19 +33,19 @@ namespace Software_Development
             this.Close();
         }
 
-        private void buttonForum_Click(object sender, EventArgs e)
-        {
-            //create a new forum page
-            ForumPage forum = new ForumPage();
-            forum.ShowDialog();
-            this.Close();
-        }
-
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
             //create a new message page
             MessagingPage message = new MessagingPage();
             message.ShowDialog();
+            this.Close();
+        }
+
+        private void buttonResources_Click(object sender, EventArgs e)
+        {
+            //open the resources form
+            ResourcesPage resources = new ResourcesPage();
+            resources.ShowDialog();
             this.Close();
         }
 

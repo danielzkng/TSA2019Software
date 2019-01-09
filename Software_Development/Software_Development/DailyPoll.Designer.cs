@@ -45,31 +45,41 @@
             this.labelHeader = new System.Windows.Forms.Label();
             this.panelPoll = new System.Windows.Forms.Panel();
             this.radioButtonInvis = new System.Windows.Forms.RadioButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> parent of 937737f... Creation of Blank Message Page
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.buttonResources = new System.Windows.Forms.Button();
             this.buttonMessaging = new System.Windows.Forms.Button();
             this.buttonForum = new System.Windows.Forms.Button();
             this.buttonCalendar = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelResults.SuspendLayout();
             this.panelPoll.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelQuestion
@@ -264,6 +274,16 @@
             this.radioButtonInvis.Text = "this doesn\'t exist btw";
             this.radioButtonInvis.UseVisualStyleBackColor = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Software_Development.Properties.Resources.robot;
+            this.pictureBox2.Location = new System.Drawing.Point(254, 156);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(269, 262);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 110;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -275,6 +295,17 @@
             this.panel3.Size = new System.Drawing.Size(792, 67);
             this.panel3.TabIndex = 115;
             // 
+            // pictureBoxLogout
+            // 
+            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
+            this.pictureBoxLogout.Location = new System.Drawing.Point(729, 1);
+            this.pictureBoxLogout.Name = "pictureBoxLogout";
+            this.pictureBoxLogout.Size = new System.Drawing.Size(30, 35);
+            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogout.TabIndex = 25;
+            this.pictureBoxLogout.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -285,6 +316,17 @@
             this.label2.Size = new System.Drawing.Size(98, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Daily Poll";
+            // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
+            this.pictureBoxClose.Location = new System.Drawing.Point(760, 7);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(21, 22);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClose.TabIndex = 24;
+            this.pictureBoxClose.TabStop = false;
             // 
             // panel2
             // 
@@ -307,6 +349,16 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "My Account";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Software_Development.Properties.Resources.robot;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
@@ -321,6 +373,7 @@
             this.panel1.Size = new System.Drawing.Size(174, 475);
             this.panel1.TabIndex = 113;
             // 
+<<<<<<< HEAD
             // label5
             // 
             this.label5.AutoSize = true;
@@ -392,6 +445,8 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+=======
+>>>>>>> parent of 937737f... Creation of Blank Message Page
             // buttonResources
             // 
             this.buttonResources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
@@ -411,7 +466,6 @@
             this.buttonResources.Text = "  Resources";
             this.buttonResources.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonResources.UseVisualStyleBackColor = false;
-            this.buttonResources.Click += new System.EventHandler(this.buttonResources_Click);
             // 
             // buttonMessaging
             // 
@@ -432,7 +486,6 @@
             this.buttonMessaging.Text = "  Messaging";
             this.buttonMessaging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonMessaging.UseVisualStyleBackColor = false;
-            this.buttonMessaging.Click += new System.EventHandler(this.buttonMessaging_Click);
             // 
             // buttonForum
             // 
@@ -453,7 +506,6 @@
             this.buttonForum.Text = "  Forum";
             this.buttonForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonForum.UseVisualStyleBackColor = false;
-            this.buttonForum.Click += new System.EventHandler(this.buttonForum_Click);
             // 
             // buttonCalendar
             // 
@@ -474,7 +526,6 @@
             this.buttonCalendar.Text = "  Calendar";
             this.buttonCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonCalendar.UseVisualStyleBackColor = false;
-            this.buttonCalendar.Click += new System.EventHandler(this.buttonCalendar_Click);
             // 
             // buttonHome
             // 
@@ -495,7 +546,55 @@
             this.buttonHome.Text = "  Home";
             this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonHome.UseVisualStyleBackColor = false;
-            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(23, 414);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(132, 45);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Edutalk";
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonCancel.FlatAppearance.BorderSize = 0;
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.Color.White;
+            this.buttonCancel.Location = new System.Drawing.Point(777, 460);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(125, 47);
+            this.buttonCancel.TabIndex = 121;
+            this.buttonCancel.Text = "Done";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Software_Development.Properties.Resources.home;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(179, 69);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(174, 66);
+            this.button1.TabIndex = 36;
+            this.button1.Text = "  My Account";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // DailyPoll
             // 
@@ -519,16 +618,16 @@
             this.panelResults.PerformLayout();
             this.panelPoll.ResumeLayout(false);
             this.panelPoll.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -86,12 +86,6 @@
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Message.cs" />
-    <Compile Include="MessagePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MessagePage.Designer.cs">
-      <DependentUpon>MessagePage.cs</DependentUpon>
-    </Compile>
     <Compile Include="PrivateThread.cs" />
     <Compile Include="ProfilePage.cs">
       <SubType>Form</SubType>
@@ -130,9 +124,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MessagePage.resx">
-      <DependentUpon>MessagePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>

@@ -55,6 +55,7 @@
             this.comboBoxFilters = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panelAddNew = new System.Windows.Forms.Panel();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonAddFinish = new System.Windows.Forms.Button();
@@ -66,6 +67,9 @@
             this.buttonForum = new System.Windows.Forms.Button();
             this.buttonCalendar = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
+=======
+            this.checkedListBoxAssignments = new System.Windows.Forms.CheckedListBox();
+>>>>>>> parent of 14ed124... make the todo list functional
 =======
             this.checkedListBoxAssignments = new System.Windows.Forms.CheckedListBox();
 >>>>>>> parent of 14ed124... make the todo list functional
@@ -229,6 +233,7 @@
             // panel5
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.panelViewList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.panelViewList.Controls.Add(this.buttonAddAss);
             this.panelViewList.Controls.Add(this.checkedListBoxAssignments);
@@ -238,6 +243,8 @@
             this.panelViewList.Size = new System.Drawing.Size(289, 198);
             this.panelViewList.TabIndex = 41;
 =======
+=======
+>>>>>>> parent of 14ed124... make the todo list functional
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.panel5.Controls.Add(this.buttonAddAss);
             this.panel5.Controls.Add(this.checkedListBoxAssignments);
@@ -247,6 +254,9 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(385, 244);
             this.panel5.TabIndex = 41;
+<<<<<<< HEAD
+>>>>>>> parent of 14ed124... make the todo list functional
+=======
 >>>>>>> parent of 14ed124... make the todo list functional
             // 
             // buttonAddAss
@@ -262,6 +272,7 @@
             this.buttonAddAss.TabIndex = 43;
             this.buttonAddAss.Text = "Add an Assignment";
             this.buttonAddAss.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.buttonAddAss.Click += new System.EventHandler(this.buttonAddAss_Click);
             // 
@@ -279,6 +290,8 @@
             this.checkedListBoxAssignments.Name = "checkedListBoxAssignments";
             this.checkedListBoxAssignments.Size = new System.Drawing.Size(257, 109);
             this.checkedListBoxAssignments.TabIndex = 50;
+=======
+>>>>>>> parent of 14ed124... make the todo list functional
 =======
 >>>>>>> parent of 14ed124... make the todo list functional
             // 
@@ -399,6 +412,7 @@
             this.label6.TabIndex = 49;
             this.label6.Text = "Filter By:";
             // 
+<<<<<<< HEAD
 <<<<<<< HEAD
             // panelAddNew
             // 
@@ -578,6 +592,8 @@
             this.buttonHome.UseVisualStyleBackColor = false;
             this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click_1);
 =======
+=======
+>>>>>>> parent of 14ed124... make the todo list functional
             // checkedListBoxAssignments
             // 
             this.checkedListBoxAssignments.CheckOnClick = true;
@@ -591,6 +607,9 @@
             this.checkedListBoxAssignments.Name = "checkedListBoxAssignments";
             this.checkedListBoxAssignments.Size = new System.Drawing.Size(341, 140);
             this.checkedListBoxAssignments.TabIndex = 50;
+<<<<<<< HEAD
+>>>>>>> parent of 14ed124... make the todo list functional
+=======
 >>>>>>> parent of 14ed124... make the todo list functional
             // 
             // CalendarPage
@@ -599,9 +618,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(964, 539);
             this.Controls.Add(this.panelViewList);
             this.Controls.Add(this.panelAddNew);
+=======
+            this.ClientSize = new System.Drawing.Size(1285, 663);
+>>>>>>> parent of 14ed124... make the todo list functional
 =======
             this.ClientSize = new System.Drawing.Size(1285, 663);
 >>>>>>> parent of 14ed124... make the todo list functional
@@ -614,6 +637,9 @@
 =======
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.panel5);
+<<<<<<< HEAD
+>>>>>>> parent of 14ed124... make the todo list functional
+=======
 >>>>>>> parent of 14ed124... make the todo list functional
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.monthCalendar1);
@@ -676,6 +702,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckedListBox checkedListBoxAssignments;
 <<<<<<< HEAD
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panelAddNew;
         private System.Windows.Forms.Button buttonAddFinish;
         private System.Windows.Forms.TextBox textBoxNewName;
@@ -687,6 +714,8 @@
         private System.Windows.Forms.Button buttonForum;
         private System.Windows.Forms.Button buttonCalendar;
         private System.Windows.Forms.Button buttonHome;
+=======
+>>>>>>> parent of 14ed124... make the todo list functional
 =======
 >>>>>>> parent of 14ed124... make the todo list functional
     }

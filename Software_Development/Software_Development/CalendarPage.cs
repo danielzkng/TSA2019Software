@@ -106,6 +106,7 @@ namespace Software_Development
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         private void buttonAddAss_Click(object sender, EventArgs e)
         {
@@ -181,6 +182,8 @@ namespace Software_Development
             ResourcesPage resources = new ResourcesPage();
             resources.ShowDialog();
         }
+=======
+>>>>>>> parent of 14ed124... make the todo list functional
 =======
 >>>>>>> parent of 14ed124... make the todo list functional
     }

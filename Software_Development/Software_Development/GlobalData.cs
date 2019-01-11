@@ -46,7 +46,6 @@ namespace Software_Development
             ReadInfo(Objty.Private);
             ReadInfo(Objty.Thread);
             ReadInfo(Objty.User);
-            MessageBox.Show("Abort!");
         }
 
         //this code is so bad and i never want to look at it again

@@ -22,9 +22,12 @@ namespace Software_Development
         public string Phone { get; set; }
         public string Grade { get; set; }
 
-        public string Username { get; }
+        public string Username { get; set; }
 
         public List<string> TasksToDo { get; set; }
+
+        public List<int> TeacherFriends { get; set; }
+        public List<int> StudentFriends { get; set; }
 
         //blank constructor
         public CurrentUserData()
@@ -43,13 +46,12 @@ namespace Software_Development
             TasksToDo = new List<string>();
         }
 
-        public CurrentUserData(string n, string e, string p, string g, string u)
+        public CurrentUserData(string n, string e, string p, string g)
         {
             Name = n;
             Email = e;
             Phone = p;
             Grade = g;
-            Username = u;
             ID = 0;
             hasVotedToday = false;
             PostCount = 0;
@@ -57,6 +59,7 @@ namespace Software_Development
             UpvotesGiven = 0;
             Connections = 0;
             TasksToDo = new List<string>();
+            Username = "";
         }
     }
 }

@@ -92,6 +92,12 @@
     <Compile Include="MessagingPage.Designer.cs">
       <DependentUpon>MessagingPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEvent.Designer.cs">
+      <DependentUpon>NewEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrivateThread.cs" />
     <Compile Include="ProfilePage.cs">
       <SubType>Form</SubType>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MessagingPage.resx">
       <DependentUpon>MessagingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEvent.resx">
+      <DependentUpon>NewEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfilePage.resx">
       <DependentUpon>ProfilePage.cs</DependentUpon>
@@ -245,6 +254,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\man2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

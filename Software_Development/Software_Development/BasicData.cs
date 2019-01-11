@@ -20,13 +20,13 @@ namespace Software_Development
         private void buttonOK_Click(object sender, EventArgs e)
         {
             //check if everything's there
-            if(textBoxName.Text == "" || textBoxEmail.Text == "" || maskedTextBoxPhone.Text == "" || comboBoxGrade.SelectedIndex == -1 || textBoxUsername.Text == "")
+            if(textBoxName.Text == "" || textBoxEmail.Text == "" || maskedTextBoxPhone.Text == "" || comboBoxGrade.SelectedIndex == -1)
             {
                 MessageBox.Show("You have left a required field empty!");
             }
             else
             {
-                GlobalData.CurrentUser = new CurrentUserData(textBoxName.Text, textBoxEmail.Text, maskedTextBoxPhone.Text, comboBoxGrade.Text, textBoxUsername.Text);
+                GlobalData.CurrentUser = new CurrentUserData(textBoxName.Text, textBoxEmail.Text, maskedTextBoxPhone.Text, comboBoxGrade.Text);
                 LoginPage login = new LoginPage();
                 login.ShowDialog();
                 this.Close();

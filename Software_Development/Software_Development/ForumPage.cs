@@ -28,7 +28,7 @@ namespace Software_Development
             {
                 totalPages++;
             }
-            labelnumpages.Text = "Of " + totalPages.ToString();
+            labelnumpages.Text = "of " + totalPages.ToString();
             displayPage(0);
         }
 

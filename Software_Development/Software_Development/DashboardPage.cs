@@ -63,11 +63,6 @@ namespace Software_Development
             this.Close();
         }
 
-        private void DashboardPage_Load(object sender, EventArgs e)
-        {
-            GlobalData.ReadAllInfo();
-        }
-
         private void buttonPoll_Click(object sender, EventArgs e)
         {
             //create and show a new daily poll form
@@ -80,6 +75,7 @@ namespace Software_Development
             //IGNORE this code for now - will be used later to implement logout functionality once more of the program is built
             //write user data to file
             GlobalData.ExportCurrentUser();
+            GlobalData.ExportAllInfo();
             if (!logout)
             {
                 
@@ -108,7 +104,6 @@ namespace Software_Development
             //bring up the profile screen
             ProfilePage p = new ProfilePage();
             p.ShowDialog();
-            this.Close();
         }
 
         private void pictureBoxProfile_Click(object sender, EventArgs e)
@@ -116,7 +111,6 @@ namespace Software_Development
             //bring up the profile screen
             ProfilePage p = new ProfilePage();
             p.ShowDialog();
-            this.Close();
         }
 
         private void buttonHome_MouseHover(object sender, EventArgs e)

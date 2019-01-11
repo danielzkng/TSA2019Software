@@ -28,9 +28,25 @@ namespace Software_Development
             textBoxEmail.Text = GlobalData.CurrentUser.Email;
             maskedTextBoxPhone.Text = GlobalData.CurrentUser.Phone;
             labelPostcount.Text = GlobalData.CurrentUser.PostCount.ToString();
+            if(GlobalData.CurrentUser.PostCount < 10)
+            {
+                labelPostcount.Text = " " + GlobalData.CurrentUser.PostCount.ToString();
+            }
             labelPolls.Text = GlobalData.CurrentUser.PollsVoted.ToString();
+            if (GlobalData.CurrentUser.PollsVoted < 10)
+            {
+                labelPolls.Text = " " + GlobalData.CurrentUser.PollsVoted.ToString();
+            }
             labelUpvotes.Text = GlobalData.CurrentUser.UpvotesGiven.ToString();
+            if (GlobalData.CurrentUser.UpvotesGiven < 10)
+            {
+                labelUpvotes.Text = " " + GlobalData.CurrentUser.UpvotesGiven.ToString();
+            }
             labelConnections.Text = GlobalData.CurrentUser.Connections.ToString();
+            if (GlobalData.CurrentUser.Connections < 10)
+            {
+                labelConnections.Text = " " + GlobalData.CurrentUser.Connections.ToString();
+            }
             labelHeader.Text = GlobalData.CurrentUser.Username;
             foreach(string s in comboBoxGrade.Items)
             {
@@ -43,7 +59,7 @@ namespace Software_Development
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            //close this w/o saving
+            //close this dialog w/o saving
             this.Close();
         }
 

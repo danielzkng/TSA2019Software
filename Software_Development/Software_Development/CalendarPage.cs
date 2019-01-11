@@ -49,6 +49,10 @@ namespace Software_Development
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             PopulateEventsBox();
+            if(listBoxEvents.SelectionMode != SelectionMode.None)
+                listBoxEvents.SelectedIndex = -1;
+            labelDescriptionHeader.Text = "No event selected.";
+            labelEventDescription.Text = "";
         }
 
         private void comboBoxFilters_SelectedIndexChanged(object sender, EventArgs e)
@@ -204,6 +208,13 @@ namespace Software_Development
             ResourcesPage resources = new ResourcesPage();
             resources.ShowDialog();
             this.Close();
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            NewEvent addNew = new NewEvent();
+            addNew.ShowDialog();
+            PopulateEventsBox();
         }
     }
 }

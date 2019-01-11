@@ -72,13 +72,6 @@ namespace Software_Development
 
                         success = true;
 
-                        //if this form is returned to after the client is shown, clear the text boxes
-                        textBoxUsername.Text = "";
-                        textBoxPassword.Text = "";
-                        labelPassword.Visible = true;
-                        labelUsername.Visible = true;
-                        textBoxUsername.Focus();
-
                         //generate the user ID by adding 1000000 to i
                         int UID = 1000000 + i;
 
@@ -91,16 +84,25 @@ namespace Software_Development
                             //read the current user data
                             GlobalData.CurrentUser = (CurrentUserData)serializer.Deserialize(f);
                             f.Close();
+                            GlobalData.ExportCurrentUser();
                         }
                         else
                         {
                             //get basic user data
                             BasicData basic = new BasicData();
                             basic.ShowDialog();
-                            GlobalData.CurrentUser.ID = UID;
+                            GlobalData.CurrentUser.Username = textBoxUsername.Text;
                             //export user data
                             GlobalData.ExportCurrentUser();
                         }
+                        GlobalData.ReadAllInfo();
+
+                        //if this form is returned to after the client is shown, clear the text boxes
+                        textBoxUsername.Text = "";
+                        textBoxPassword.Text = "";
+                        labelPassword.Visible = true;
+                        labelUsername.Visible = true;
+                        textBoxUsername.Focus();
 
                         //hide this form and show the main client window
                         this.Hide();

@@ -143,7 +143,7 @@ namespace Software_Development
 
         public override string ToString()
         {
-            return "Title: " + Subject + Environment.NewLine + GlobalData.GetMessage(FirstPost).ToString();
+            return "Title: " + Subject + Environment.NewLine + Environment.NewLine + GlobalData.GetMessage(FirstPost).ToString();
         }
     }
 }

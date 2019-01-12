@@ -91,7 +91,7 @@ namespace Software_Development
 
         public override string ToString()
         {
-            return "Content: " + Content + Environment.NewLine + "PID: " + PosterID + Environment.NewLine + "ID: " + ID + Environment.NewLine + "Timestamp: " + Timestamp.ToShortDateString() + " at " + Timestamp.ToShortTimeString();
+            return "Content: " + Content + Environment.NewLine + Environment.NewLine + "Time Posted: " + Timestamp.ToShortDateString() + " at " + Timestamp.ToShortTimeString();
         }
     }
 }

@@ -33,7 +33,6 @@ namespace Software_Development
             //create a new calendar form
             CalendarPage calendar = new CalendarPage();
             calendar.ShowDialog();
-            this.Close();
         }
 
         private void buttonForum_Click(object sender, EventArgs e)
@@ -41,7 +40,6 @@ namespace Software_Development
             //create a new forum page
             ForumPage forum = new ForumPage();
             forum.ShowDialog();
-            this.Close();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -60,7 +58,6 @@ namespace Software_Development
             //open the resources form
             ResourcesPage resources = new ResourcesPage();
             resources.ShowDialog();
-            this.Close();
         }
 
         private void buttonPoll_Click(object sender, EventArgs e)

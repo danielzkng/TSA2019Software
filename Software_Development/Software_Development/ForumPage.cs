@@ -34,17 +34,23 @@ namespace Software_Development
 
         private void panelThread1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(GlobalData.GetThread(t1).ToString());
+            ThreadViewerPage t = new ThreadViewerPage();
+            t.displayed = GlobalData.GetThread(t1);
+            t.ShowDialog();
         }
 
         private void panelThread2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(GlobalData.GetThread(t2).ToString());
+            ThreadViewerPage t = new ThreadViewerPage();
+            t.displayed = GlobalData.GetThread(t2);
+            t.ShowDialog();
         }
 
         private void panel6_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(GlobalData.GetThread(t3).ToString());
+            ThreadViewerPage t = new ThreadViewerPage();
+            t.displayed = GlobalData.GetThread(t3);
+            t.ShowDialog();
         }
 
         private void buttonNext_Click(object sender, EventArgs e)

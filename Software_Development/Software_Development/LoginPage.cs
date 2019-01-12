@@ -174,9 +174,18 @@ namespace Software_Development
         {
             //TODO make a registration screen and make this button actually do something, it's going to be used as a testing button for now
             //create a new register form
-            BasicData register = new BasicData();
+            /*BasicData register = new BasicData();
             register.ShowDialog();
-            this.Close();
+            this.Close();*/
+            FileStream logins = new FileStream("logins.db", FileMode.Create);
+
+            serializer.Serialize(logins, 3);
+            serializer.Serialize(logins, "exampleuser0");
+            serializer.Serialize(logins, "password");
+            serializer.Serialize(logins, "allanmdao");
+            serializer.Serialize(logins, "password");
+            serializer.Serialize(logins, "dannyspham");
+            serializer.Serialize(logins, "password");
         }
     }
 }

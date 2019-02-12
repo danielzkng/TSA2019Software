@@ -147,6 +147,8 @@ namespace Software_Development
             panelViewList.Visible = true;
         }
 
+        //TODO bugfix with hide/close
+
         private void CalendarPage_FormClosing(object sender, FormClosingEventArgs e)
         {
             List<string> newtasks = new List<string>();
@@ -181,6 +183,20 @@ namespace Software_Development
         private void buttonHome_Click_1(object sender, EventArgs e)
         {
             //create a new dashboard form
+
+            List<string> newtasks = new List<string>();
+            //get rid of the checked items on the master to do list
+            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
+            {
+                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
+                {
+                    //user is not done with this task, add it to the new list of tasks
+                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
+                }
+            }
+            GlobalData.CurrentUser.TasksToDo = newtasks;
+
+            this.Hide();
             DashboardPage home = new DashboardPage();
             home.ShowDialog();
             this.Close();
@@ -188,25 +204,69 @@ namespace Software_Development
 
         private void buttonForum_Click(object sender, EventArgs e)
         {
+            List<string> newtasks = new List<string>();
+            //get rid of the checked items on the master to do list
+            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
+            {
+                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
+                {
+                    //user is not done with this task, add it to the new list of tasks
+                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
+                }
+            }
+            GlobalData.CurrentUser.TasksToDo = newtasks;
+
+            this.Hide();
             //create a new forum page
             ForumPage forum = new ForumPage();
             forum.ShowDialog();
+
             this.Close();
+            
         }
 
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
+            List<string> newtasks = new List<string>();
+            //get rid of the checked items on the master to do list
+            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
+            {
+                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
+                {
+                    //user is not done with this task, add it to the new list of tasks
+                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
+                }
+            }
+            GlobalData.CurrentUser.TasksToDo = newtasks;
+
+            this.Hide();
             //create a new message page
             MessagingPage message = new MessagingPage();
             message.ShowDialog();
+
             this.Close();
+            
         }
 
         private void buttonResources_Click(object sender, EventArgs e)
         {
+            List<string> newtasks = new List<string>();
+            //get rid of the checked items on the master to do list
+            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
+            {
+                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
+                {
+                    //user is not done with this task, add it to the new list of tasks
+                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
+                }
+            }
+            GlobalData.CurrentUser.TasksToDo = newtasks;
+
+            this.Hide();
             //open the resources form
             ResourcesPage resources = new ResourcesPage();
             resources.ShowDialog();
+
             this.Close();
         }
 

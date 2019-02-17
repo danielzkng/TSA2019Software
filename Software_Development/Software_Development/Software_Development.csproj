@@ -267,5 +267,8 @@
   <ItemGroup>
     <None Include="Resources\Map0.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poll.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

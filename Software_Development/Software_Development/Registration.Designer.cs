@@ -30,42 +30,38 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.comboBoxGrade = new System.Windows.Forms.ComboBox();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.maskedTextBoxPhone = new System.Windows.Forms.MaskedTextBox();
             this.labelPhone = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
-            this.labelGrade = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxRepeatPassword = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
+            this.panel1.Controls.Add(this.textBoxRepeatPassword);
+            this.panel1.Controls.Add(this.textBoxUsername);
+            this.panel1.Controls.Add(this.textBoxPassword);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBoxName);
-            this.panel1.Controls.Add(this.comboBoxGrade);
-            this.panel1.Controls.Add(this.textBoxEmail);
-            this.panel1.Controls.Add(this.maskedTextBoxPhone);
             this.panel1.Controls.Add(this.labelPhone);
             this.panel1.Controls.Add(this.buttonOK);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.labelName);
-            this.panel1.Controls.Add(this.labelGrade);
             this.panel1.Location = new System.Drawing.Point(92, 72);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(468, 438);
@@ -79,80 +75,21 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(27, 54);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(177, 59);
+            this.label5.Size = new System.Drawing.Size(383, 59);
             this.label5.TabIndex = 18;
-            this.label5.Text = "Edutalk";
-            // 
-            // textBoxName
-            // 
-            this.textBoxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.textBoxName.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.ForeColor = System.Drawing.Color.White;
-            this.textBoxName.Location = new System.Drawing.Point(244, 133);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(189, 27);
-            this.textBoxName.TabIndex = 1;
-            // 
-            // comboBoxGrade
-            // 
-            this.comboBoxGrade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.comboBoxGrade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxGrade.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxGrade.ForeColor = System.Drawing.Color.White;
-            this.comboBoxGrade.FormattingEnabled = true;
-            this.comboBoxGrade.Items.AddRange(new object[] {
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "College Freshman",
-            "College Sophomore",
-            "College Junior",
-            "College Senior",
-            "Postgraduate"});
-            this.comboBoxGrade.Location = new System.Drawing.Point(244, 170);
-            this.comboBoxGrade.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBoxGrade.Name = "comboBoxGrade";
-            this.comboBoxGrade.Size = new System.Drawing.Size(189, 28);
-            this.comboBoxGrade.TabIndex = 2;
-            // 
-            // textBoxEmail
-            // 
-            this.textBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.ForeColor = System.Drawing.Color.White;
-            this.textBoxEmail.Location = new System.Drawing.Point(244, 208);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(189, 27);
-            this.textBoxEmail.TabIndex = 3;
-            // 
-            // maskedTextBoxPhone
-            // 
-            this.maskedTextBoxPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
-            this.maskedTextBoxPhone.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBoxPhone.ForeColor = System.Drawing.Color.White;
-            this.maskedTextBoxPhone.Location = new System.Drawing.Point(244, 245);
-            this.maskedTextBoxPhone.Mask = "(999) 000-0000";
-            this.maskedTextBoxPhone.Name = "maskedTextBoxPhone";
-            this.maskedTextBoxPhone.Size = new System.Drawing.Size(189, 27);
-            this.maskedTextBoxPhone.TabIndex = 4;
+            this.label5.Text = "Edutalk - Register";
             // 
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPhone.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPhone.ForeColor = System.Drawing.Color.White;
-            this.labelPhone.Location = new System.Drawing.Point(36, 249);
+            this.labelPhone.Location = new System.Drawing.Point(36, 182);
             this.labelPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(57, 21);
+            this.labelPhone.Size = new System.Drawing.Size(84, 23);
             this.labelPhone.TabIndex = 109;
-            this.labelPhone.Text = "Phone:";
+            this.labelPhone.Text = "Password:";
             // 
             // buttonOK
             // 
@@ -173,38 +110,26 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(36, 211);
+            this.label4.Location = new System.Drawing.Point(36, 229);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 21);
+            this.label4.Size = new System.Drawing.Size(142, 23);
             this.label4.TabIndex = 108;
-            this.label4.Text = "Email:";
+            this.label4.Text = "Repeat Password:";
             // 
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Font = new System.Drawing.Font("Segoe UI", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.White;
             this.labelName.Location = new System.Drawing.Point(36, 135);
             this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(55, 21);
+            this.labelName.Size = new System.Drawing.Size(91, 23);
             this.labelName.TabIndex = 102;
-            this.labelName.Text = "Name:";
-            // 
-            // labelGrade
-            // 
-            this.labelGrade.AutoSize = true;
-            this.labelGrade.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGrade.ForeColor = System.Drawing.Color.White;
-            this.labelGrade.Location = new System.Drawing.Point(36, 173);
-            this.labelGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelGrade.Name = "labelGrade";
-            this.labelGrade.Size = new System.Drawing.Size(55, 21);
-            this.labelGrade.TabIndex = 104;
-            this.labelGrade.Text = "Grade:";
+            this.labelName.Text = "Username:";
             // 
             // panel2
             // 
@@ -216,6 +141,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(333, 357);
             this.panel2.TabIndex = 123;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Software_Development.Properties.Resources.loginicon;
+            this.pictureBox2.Location = new System.Drawing.Point(85, 171);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(164, 156);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -264,16 +199,6 @@
             this.pictureBox3.TabIndex = 124;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Software_Development.Properties.Resources.loginicon;
-            this.pictureBox2.Location = new System.Drawing.Point(85, 171);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(164, 156);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Software_Development.Properties.Resources.loginimage;
@@ -283,6 +208,42 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 120;
             this.pictureBox1.TabStop = false;
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
+            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI Light", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.ForeColor = System.Drawing.Color.White;
+            this.textBoxPassword.Location = new System.Drawing.Point(244, 179);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '●';
+            this.textBoxPassword.Size = new System.Drawing.Size(189, 30);
+            this.textBoxPassword.TabIndex = 110;
+            // 
+            // textBoxUsername
+            // 
+            this.textBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
+            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI Light", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.ForeColor = System.Drawing.Color.White;
+            this.textBoxUsername.Location = new System.Drawing.Point(244, 133);
+            this.textBoxUsername.MaxLength = 40;
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(189, 30);
+            this.textBoxUsername.TabIndex = 111;
+            // 
+            // textBoxRepeatPassword
+            // 
+            this.textBoxRepeatPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
+            this.textBoxRepeatPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRepeatPassword.Font = new System.Drawing.Font("Segoe UI Light", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRepeatPassword.ForeColor = System.Drawing.Color.White;
+            this.textBoxRepeatPassword.Location = new System.Drawing.Point(244, 225);
+            this.textBoxRepeatPassword.Name = "textBoxRepeatPassword";
+            this.textBoxRepeatPassword.PasswordChar = '●';
+            this.textBoxRepeatPassword.Size = new System.Drawing.Size(189, 30);
+            this.textBoxRepeatPassword.TabIndex = 112;
             // 
             // Registration
             // 
@@ -302,8 +263,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -314,15 +275,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBoxName;
-        private System.Windows.Forms.ComboBox comboBoxGrade;
-        private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.MaskedTextBox maskedTextBoxPhone;
         private System.Windows.Forms.Label labelPhone;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label labelGrade;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -330,5 +286,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxRepeatPassword;
+        private System.Windows.Forms.TextBox textBoxUsername;
     }
 }

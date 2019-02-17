@@ -82,7 +82,7 @@
             this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEmail.ForeColor = System.Drawing.Color.White;
             this.textBoxEmail.Location = new System.Drawing.Point(244, 208);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(189, 27);
             this.textBoxEmail.TabIndex = 3;
@@ -120,7 +120,7 @@
             "College Senior",
             "Postgraduate"});
             this.comboBoxGrade.Location = new System.Drawing.Point(244, 170);
-            this.comboBoxGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxGrade.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxGrade.Name = "comboBoxGrade";
             this.comboBoxGrade.Size = new System.Drawing.Size(189, 28);
             this.comboBoxGrade.TabIndex = 2;
@@ -143,7 +143,7 @@
             this.textBoxName.Font = new System.Drawing.Font("Segoe UI", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxName.ForeColor = System.Drawing.Color.White;
             this.textBoxName.Location = new System.Drawing.Point(244, 133);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(189, 27);
             this.textBoxName.TabIndex = 1;
@@ -168,7 +168,7 @@
             this.buttonOK.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOK.ForeColor = System.Drawing.Color.White;
             this.buttonOK.Location = new System.Drawing.Point(296, 346);
-            this.buttonOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(2);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(149, 46);
             this.buttonOK.TabIndex = 6;
@@ -297,10 +297,13 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BasicData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome!";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BasicData_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.BasicData_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BasicData_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

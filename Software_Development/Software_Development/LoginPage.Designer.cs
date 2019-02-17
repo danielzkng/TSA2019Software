@@ -271,6 +271,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.login_FormClosing);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LoginPage_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LoginPage_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.LoginPage_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -87,5 +87,35 @@ namespace Software_Development
             AboutBox1 about = new AboutBox1();
             about.ShowDialog();
         }
+
+        //Set up variables to check if mouse is down and to retain previous mouse location
+        private bool mouseDown;
+        private Point lastLocation;
+
+        private void panelHeader_MouseDown(object sender, MouseEventArgs e)
+        {
+            //When mouse is being held down, retain the mouse's original location
+            mouseDown = true;
+            lastLocation = e.Location;
+        }
+
+        private void panelHeader_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Only when the mouse is being held down and the form is being moved
+            //Retain mouses position on form but move form's location to create a fluid dragging motion
+            if (mouseDown)
+            {
+                this.Location = new Point(
+                    (this.Location.X - lastLocation.X) + e.X, (this.Location.Y - lastLocation.Y) + e.Y);
+
+                this.Update();
+            }
+        }
+
+        private void panelHeader_MouseUp(object sender, MouseEventArgs e)
+        {
+            //When mouse is not being held down on form
+            mouseDown = false;
+        }
     }
 }

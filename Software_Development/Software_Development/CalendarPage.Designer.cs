@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendarPage));
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
@@ -66,7 +66,7 @@
             this.panelProfile = new System.Windows.Forms.Panel();
             this.labelProfile = new System.Windows.Forms.Label();
             this.pictureBoxProfile = new System.Windows.Forms.PictureBox();
-            this.panel3.SuspendLayout();
+            this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.panel1.SuspendLayout();
@@ -79,16 +79,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel3
+            // panelHeader
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.pictureBoxLogout);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.pictureBoxClose);
-            this.panel3.Location = new System.Drawing.Point(173, -2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(792, 67);
-            this.panel3.TabIndex = 38;
+            this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.pictureBoxLogout);
+            this.panelHeader.Controls.Add(this.label2);
+            this.panelHeader.Controls.Add(this.pictureBoxClose);
+            this.panelHeader.Location = new System.Drawing.Point(173, -2);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(792, 67);
+            this.panelHeader.TabIndex = 38;
+            this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
+            this.panelHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
+            this.panelHeader.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseUp);
             // 
             // pictureBoxLogout
             // 
@@ -105,11 +108,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(11, 18);
+            this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 30);
+            this.label2.Size = new System.Drawing.Size(109, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Calendar";
             // 
@@ -337,7 +340,7 @@
             "History Test",
             "Orchestra Rehearsal"});
             this.checkedListBoxAssignments.Location = new System.Drawing.Point(15, 41);
-            this.checkedListBoxAssignments.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBoxAssignments.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBoxAssignments.Name = "checkedListBoxAssignments";
             this.checkedListBoxAssignments.Size = new System.Drawing.Size(257, 72);
             this.checkedListBoxAssignments.TabIndex = 50;
@@ -390,7 +393,7 @@
             "Orchestra Concert",
             "Basketball Game"});
             this.listBoxEvents.Location = new System.Drawing.Point(11, 40);
-            this.listBoxEvents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxEvents.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxEvents.Name = "listBoxEvents";
             this.listBoxEvents.Size = new System.Drawing.Size(227, 57);
             this.listBoxEvents.TabIndex = 45;
@@ -451,7 +454,7 @@
             this.comboBoxFilters.Items.AddRange(new object[] {
             "All"});
             this.comboBoxFilters.Location = new System.Drawing.Point(280, 490);
-            this.comboBoxFilters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxFilters.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxFilters.Name = "comboBoxFilters";
             this.comboBoxFilters.Size = new System.Drawing.Size(148, 21);
             this.comboBoxFilters.TabIndex = 47;
@@ -514,7 +517,7 @@
             // textBoxNewName
             // 
             this.textBoxNewName.Location = new System.Drawing.Point(82, 54);
-            this.textBoxNewName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNewName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNewName.Name = "textBoxNewName";
             this.textBoxNewName.Size = new System.Drawing.Size(193, 20);
             this.textBoxNewName.TabIndex = 2;
@@ -591,7 +594,7 @@
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.monthCalendar1);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CalendarPage";
@@ -599,8 +602,8 @@
             this.Text = "Calendar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CalendarPage_FormClosing);
             this.Load += new System.EventHandler(this.CalendarPage_Load);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -625,7 +628,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.PictureBox pictureBoxLogout;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBoxClose;

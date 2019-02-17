@@ -41,6 +41,11 @@ namespace Software_Development
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //initialize a splash screen for use
+            SplashScreen splash = new SplashScreen();
+            //show the splash screen while the rest of the program loads
+            splash.ShowDialog();
+            //finally, run a login screen that is called from the class defined earlier
             Application.Run(FormsInProgram.loginInUse);
         }
     }

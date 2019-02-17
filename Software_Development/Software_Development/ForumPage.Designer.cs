@@ -31,10 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForumPage));
             this.buttonCreatePost = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonResources = new System.Windows.Forms.Button();
+            this.buttonMessaging = new System.Windows.Forms.Button();
+            this.buttonForum = new System.Windows.Forms.Button();
+            this.buttonCalendar = new System.Windows.Forms.Button();
+            this.buttonHome = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBoxNewmsg = new System.Windows.Forms.RichTextBox();
             this.textBoxNewtitle = new System.Windows.Forms.TextBox();
@@ -44,6 +52,7 @@
             this.labelPreviewT1 = new System.Windows.Forms.Label();
             this.labelTimestampT1 = new System.Windows.Forms.Label();
             this.labelViewsT1 = new System.Windows.Forms.Label();
+            this.pictureBoxThread1 = new System.Windows.Forms.PictureBox();
             this.labelRepliesT1 = new System.Windows.Forms.Label();
             this.labelTitleT1 = new System.Windows.Forms.Label();
             this.panelThread2 = new System.Windows.Forms.Panel();
@@ -51,6 +60,7 @@
             this.labelUpvotesT2 = new System.Windows.Forms.Label();
             this.labelPreviewT2 = new System.Windows.Forms.Label();
             this.labelTimestampT2 = new System.Windows.Forms.Label();
+            this.pictureBoxT2 = new System.Windows.Forms.PictureBox();
             this.labelViewsT2 = new System.Windows.Forms.Label();
             this.labelRepliesT2 = new System.Windows.Forms.Label();
             this.labelTitleT2 = new System.Windows.Forms.Label();
@@ -58,6 +68,7 @@
             this.labelUsernameT3 = new System.Windows.Forms.Label();
             this.labelUpvotesT3 = new System.Windows.Forms.Label();
             this.labelPreviewT3 = new System.Windows.Forms.Label();
+            this.pictureBoxT3 = new System.Windows.Forms.PictureBox();
             this.labelTimestampT3 = new System.Windows.Forms.Label();
             this.labelViewsT3 = new System.Windows.Forms.Label();
             this.labelRepliesT3 = new System.Windows.Forms.Label();
@@ -71,31 +82,20 @@
             this.buttonNext = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBoxT3 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxT2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxThread1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
-            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonResources = new System.Windows.Forms.Button();
-            this.buttonMessaging = new System.Windows.Forms.Button();
-            this.buttonForum = new System.Windows.Forms.Button();
-            this.buttonCalendar = new System.Windows.Forms.Button();
-            this.buttonHome = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panelThread1.SuspendLayout();
-            this.panelThread2.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThread1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panelThread1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThread1)).BeginInit();
+            this.panelThread2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT2)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT3)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonCreatePost
@@ -124,6 +124,18 @@
             this.panel3.Size = new System.Drawing.Size(792, 67);
             this.panel3.TabIndex = 61;
             // 
+            // pictureBoxLogout
+            // 
+            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
+            this.pictureBoxLogout.Location = new System.Drawing.Point(729, 1);
+            this.pictureBoxLogout.Name = "pictureBoxLogout";
+            this.pictureBoxLogout.Size = new System.Drawing.Size(30, 35);
+            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxLogout.TabIndex = 25;
+            this.pictureBoxLogout.TabStop = false;
+            this.pictureBoxLogout.Click += new System.EventHandler(this.pictureBoxLogout_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -134,6 +146,18 @@
             this.label2.Size = new System.Drawing.Size(72, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Forum";
+            // 
+            // pictureBoxClose
+            // 
+            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
+            this.pictureBoxClose.Location = new System.Drawing.Point(760, 7);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(21, 22);
+            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClose.TabIndex = 24;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.buttonHome_Click);
             // 
             // panel2
             // 
@@ -157,6 +181,17 @@
             this.label1.Text = "My Account";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Software_Development.Properties.Resources.robot;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
@@ -170,6 +205,110 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(174, 475);
             this.panel1.TabIndex = 59;
+            // 
+            // buttonResources
+            // 
+            this.buttonResources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.buttonResources.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.buttonResources.FlatAppearance.BorderSize = 0;
+            this.buttonResources.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonResources.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonResources.ForeColor = System.Drawing.Color.White;
+            this.buttonResources.Image = global::Software_Development.Properties.Resources.book;
+            this.buttonResources.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonResources.Location = new System.Drawing.Point(0, 288);
+            this.buttonResources.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonResources.Name = "buttonResources";
+            this.buttonResources.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
+            this.buttonResources.Size = new System.Drawing.Size(174, 72);
+            this.buttonResources.TabIndex = 35;
+            this.buttonResources.Text = "  Resources";
+            this.buttonResources.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonResources.UseVisualStyleBackColor = false;
+            this.buttonResources.Click += new System.EventHandler(this.buttonResources_Click);
+            // 
+            // buttonMessaging
+            // 
+            this.buttonMessaging.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.buttonMessaging.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.buttonMessaging.FlatAppearance.BorderSize = 0;
+            this.buttonMessaging.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMessaging.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMessaging.ForeColor = System.Drawing.Color.White;
+            this.buttonMessaging.Image = global::Software_Development.Properties.Resources.messages;
+            this.buttonMessaging.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonMessaging.Location = new System.Drawing.Point(0, 216);
+            this.buttonMessaging.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonMessaging.Name = "buttonMessaging";
+            this.buttonMessaging.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
+            this.buttonMessaging.Size = new System.Drawing.Size(174, 72);
+            this.buttonMessaging.TabIndex = 34;
+            this.buttonMessaging.Text = "  Messaging";
+            this.buttonMessaging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonMessaging.UseVisualStyleBackColor = false;
+            this.buttonMessaging.Click += new System.EventHandler(this.buttonMessaging_Click);
+            // 
+            // buttonForum
+            // 
+            this.buttonForum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.buttonForum.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.buttonForum.FlatAppearance.BorderSize = 0;
+            this.buttonForum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonForum.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonForum.ForeColor = System.Drawing.Color.White;
+            this.buttonForum.Image = global::Software_Development.Properties.Resources.forum;
+            this.buttonForum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonForum.Location = new System.Drawing.Point(0, 144);
+            this.buttonForum.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonForum.Name = "buttonForum";
+            this.buttonForum.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
+            this.buttonForum.Size = new System.Drawing.Size(174, 72);
+            this.buttonForum.TabIndex = 33;
+            this.buttonForum.Text = "  Forum";
+            this.buttonForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonForum.UseVisualStyleBackColor = false;
+            // 
+            // buttonCalendar
+            // 
+            this.buttonCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.buttonCalendar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.buttonCalendar.FlatAppearance.BorderSize = 0;
+            this.buttonCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCalendar.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalendar.ForeColor = System.Drawing.Color.White;
+            this.buttonCalendar.Image = global::Software_Development.Properties.Resources.calendar;
+            this.buttonCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCalendar.Location = new System.Drawing.Point(0, 72);
+            this.buttonCalendar.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonCalendar.Name = "buttonCalendar";
+            this.buttonCalendar.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
+            this.buttonCalendar.Size = new System.Drawing.Size(174, 72);
+            this.buttonCalendar.TabIndex = 32;
+            this.buttonCalendar.Text = "  Calendar";
+            this.buttonCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonCalendar.UseVisualStyleBackColor = false;
+            this.buttonCalendar.Click += new System.EventHandler(this.buttonCalendar_Click);
+            // 
+            // buttonHome
+            // 
+            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.buttonHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.buttonHome.FlatAppearance.BorderSize = 0;
+            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHome.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHome.ForeColor = System.Drawing.Color.White;
+            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
+            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonHome.Location = new System.Drawing.Point(0, 0);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.buttonHome.Name = "buttonHome";
+            this.buttonHome.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
+            this.buttonHome.Size = new System.Drawing.Size(174, 72);
+            this.buttonHome.TabIndex = 31;
+            this.buttonHome.Text = "  Home";
+            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonHome.UseVisualStyleBackColor = false;
+            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click_1);
             // 
             // label3
             // 
@@ -284,6 +423,17 @@
             this.labelViewsT1.Text = "43 Views";
             this.labelViewsT1.Click += new System.EventHandler(this.panelThread1_Click);
             // 
+            // pictureBoxThread1
+            // 
+            this.pictureBoxThread1.Image = global::Software_Development.Properties.Resources.robot;
+            this.pictureBoxThread1.Location = new System.Drawing.Point(19, 26);
+            this.pictureBoxThread1.Name = "pictureBoxThread1";
+            this.pictureBoxThread1.Size = new System.Drawing.Size(50, 49);
+            this.pictureBoxThread1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxThread1.TabIndex = 2;
+            this.pictureBoxThread1.TabStop = false;
+            this.pictureBoxThread1.Click += new System.EventHandler(this.panelThread1_Click);
+            // 
             // labelRepliesT1
             // 
             this.labelRepliesT1.AutoSize = true;
@@ -374,6 +524,17 @@
             this.labelTimestampT2.Text = "Added 10 hours ago\r\n\r\n";
             this.labelTimestampT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
+            // pictureBoxT2
+            // 
+            this.pictureBoxT2.Image = global::Software_Development.Properties.Resources.robot;
+            this.pictureBoxT2.Location = new System.Drawing.Point(19, 18);
+            this.pictureBoxT2.Name = "pictureBoxT2";
+            this.pictureBoxT2.Size = new System.Drawing.Size(50, 49);
+            this.pictureBoxT2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxT2.TabIndex = 2;
+            this.pictureBoxT2.TabStop = false;
+            this.pictureBoxT2.Click += new System.EventHandler(this.panelThread2_Click);
+            // 
             // labelViewsT2
             // 
             this.labelViewsT2.AutoSize = true;
@@ -463,6 +624,17 @@
     "sday for a staff meeting at 1.";
             this.labelPreviewT3.Click += new System.EventHandler(this.panel6_Click);
             // 
+            // pictureBoxT3
+            // 
+            this.pictureBoxT3.Image = global::Software_Development.Properties.Resources.man1;
+            this.pictureBoxT3.Location = new System.Drawing.Point(18, 20);
+            this.pictureBoxT3.Name = "pictureBoxT3";
+            this.pictureBoxT3.Size = new System.Drawing.Size(50, 49);
+            this.pictureBoxT3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxT3.TabIndex = 2;
+            this.pictureBoxT3.TabStop = false;
+            this.pictureBoxT3.Click += new System.EventHandler(this.panel6_Click);
+            // 
             // labelTimestampT3
             // 
             this.labelTimestampT3.AutoSize = true;
@@ -544,7 +716,7 @@
             this.labelnumpages.AutoSize = true;
             this.labelnumpages.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelnumpages.ForeColor = System.Drawing.Color.White;
-            this.labelnumpages.Location = new System.Drawing.Point(65, 115);
+            this.labelnumpages.Location = new System.Drawing.Point(76, 115);
             this.labelnumpages.Name = "labelnumpages";
             this.labelnumpages.Size = new System.Drawing.Size(24, 21);
             this.labelnumpages.TabIndex = 48;
@@ -556,8 +728,8 @@
             this.textBoxPage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPage.Font = new System.Drawing.Font("Segoe UI Semilight", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPage.ForeColor = System.Drawing.Color.White;
-            this.textBoxPage.Location = new System.Drawing.Point(43, 114);
-            this.textBoxPage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPage.Location = new System.Drawing.Point(52, 113);
+            this.textBoxPage.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPage.Name = "textBoxPage";
             this.textBoxPage.Size = new System.Drawing.Size(21, 28);
             this.textBoxPage.TabIndex = 46;
@@ -626,178 +798,6 @@
             this.label4.Text = "Click on a thread\r\nto learn more or \r\nto upvote!\r\n\r\nAnswer questions\r\nand help ot" +
     "her\r\nstudents.";
             // 
-            // pictureBoxT3
-            // 
-            this.pictureBoxT3.Image = global::Software_Development.Properties.Resources.man1;
-            this.pictureBoxT3.Location = new System.Drawing.Point(18, 20);
-            this.pictureBoxT3.Name = "pictureBoxT3";
-            this.pictureBoxT3.Size = new System.Drawing.Size(50, 49);
-            this.pictureBoxT3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxT3.TabIndex = 2;
-            this.pictureBoxT3.TabStop = false;
-            this.pictureBoxT3.Click += new System.EventHandler(this.panel6_Click);
-            // 
-            // pictureBoxT2
-            // 
-            this.pictureBoxT2.Image = global::Software_Development.Properties.Resources.robot;
-            this.pictureBoxT2.Location = new System.Drawing.Point(19, 18);
-            this.pictureBoxT2.Name = "pictureBoxT2";
-            this.pictureBoxT2.Size = new System.Drawing.Size(50, 49);
-            this.pictureBoxT2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxT2.TabIndex = 2;
-            this.pictureBoxT2.TabStop = false;
-            this.pictureBoxT2.Click += new System.EventHandler(this.panelThread2_Click);
-            // 
-            // pictureBoxThread1
-            // 
-            this.pictureBoxThread1.Image = global::Software_Development.Properties.Resources.robot;
-            this.pictureBoxThread1.Location = new System.Drawing.Point(19, 26);
-            this.pictureBoxThread1.Name = "pictureBoxThread1";
-            this.pictureBoxThread1.Size = new System.Drawing.Size(50, 49);
-            this.pictureBoxThread1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxThread1.TabIndex = 2;
-            this.pictureBoxThread1.TabStop = false;
-            this.pictureBoxThread1.Click += new System.EventHandler(this.panelThread1_Click);
-            // 
-            // pictureBoxLogout
-            // 
-            this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
-            this.pictureBoxLogout.Location = new System.Drawing.Point(729, 1);
-            this.pictureBoxLogout.Name = "pictureBoxLogout";
-            this.pictureBoxLogout.Size = new System.Drawing.Size(30, 35);
-            this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxLogout.TabIndex = 25;
-            this.pictureBoxLogout.TabStop = false;
-            this.pictureBoxLogout.Click += new System.EventHandler(this.pictureBoxLogout_Click);
-            // 
-            // pictureBoxClose
-            // 
-            this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
-            this.pictureBoxClose.Location = new System.Drawing.Point(760, 7);
-            this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(21, 22);
-            this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxClose.TabIndex = 24;
-            this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.buttonHome_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Software_Development.Properties.Resources.robot;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // buttonResources
-            // 
-            this.buttonResources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.buttonResources.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.buttonResources.FlatAppearance.BorderSize = 0;
-            this.buttonResources.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonResources.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonResources.ForeColor = System.Drawing.Color.White;
-            this.buttonResources.Image = global::Software_Development.Properties.Resources.book;
-            this.buttonResources.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonResources.Location = new System.Drawing.Point(0, 288);
-            this.buttonResources.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.buttonResources.Name = "buttonResources";
-            this.buttonResources.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonResources.Size = new System.Drawing.Size(174, 72);
-            this.buttonResources.TabIndex = 35;
-            this.buttonResources.Text = "  Resources";
-            this.buttonResources.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonResources.UseVisualStyleBackColor = false;
-            this.buttonResources.Click += new System.EventHandler(this.buttonResources_Click);
-            // 
-            // buttonMessaging
-            // 
-            this.buttonMessaging.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.buttonMessaging.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.buttonMessaging.FlatAppearance.BorderSize = 0;
-            this.buttonMessaging.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMessaging.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMessaging.ForeColor = System.Drawing.Color.White;
-            this.buttonMessaging.Image = global::Software_Development.Properties.Resources.messages;
-            this.buttonMessaging.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMessaging.Location = new System.Drawing.Point(0, 216);
-            this.buttonMessaging.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.buttonMessaging.Name = "buttonMessaging";
-            this.buttonMessaging.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonMessaging.Size = new System.Drawing.Size(174, 72);
-            this.buttonMessaging.TabIndex = 34;
-            this.buttonMessaging.Text = "  Messaging";
-            this.buttonMessaging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonMessaging.UseVisualStyleBackColor = false;
-            this.buttonMessaging.Click += new System.EventHandler(this.buttonMessaging_Click);
-            // 
-            // buttonForum
-            // 
-            this.buttonForum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.buttonForum.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.buttonForum.FlatAppearance.BorderSize = 0;
-            this.buttonForum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonForum.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonForum.ForeColor = System.Drawing.Color.White;
-            this.buttonForum.Image = global::Software_Development.Properties.Resources.forum;
-            this.buttonForum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonForum.Location = new System.Drawing.Point(0, 144);
-            this.buttonForum.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.buttonForum.Name = "buttonForum";
-            this.buttonForum.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonForum.Size = new System.Drawing.Size(174, 72);
-            this.buttonForum.TabIndex = 33;
-            this.buttonForum.Text = "  Forum";
-            this.buttonForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonForum.UseVisualStyleBackColor = false;
-            // 
-            // buttonCalendar
-            // 
-            this.buttonCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.buttonCalendar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.buttonCalendar.FlatAppearance.BorderSize = 0;
-            this.buttonCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCalendar.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCalendar.ForeColor = System.Drawing.Color.White;
-            this.buttonCalendar.Image = global::Software_Development.Properties.Resources.calendar;
-            this.buttonCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCalendar.Location = new System.Drawing.Point(0, 72);
-            this.buttonCalendar.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.buttonCalendar.Name = "buttonCalendar";
-            this.buttonCalendar.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonCalendar.Size = new System.Drawing.Size(174, 72);
-            this.buttonCalendar.TabIndex = 32;
-            this.buttonCalendar.Text = "  Calendar";
-            this.buttonCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonCalendar.UseVisualStyleBackColor = false;
-            this.buttonCalendar.Click += new System.EventHandler(this.buttonCalendar_Click);
-            // 
-            // buttonHome
-            // 
-            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.buttonHome.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.buttonHome.FlatAppearance.BorderSize = 0;
-            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHome.Font = new System.Drawing.Font("Segoe UI Semilight", 11.12727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.ForeColor = System.Drawing.Color.White;
-            this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
-            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.Location = new System.Drawing.Point(0, 0);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonHome.Size = new System.Drawing.Size(174, 72);
-            this.buttonHome.TabIndex = 31;
-            this.buttonHome.Text = "  Home";
-            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonHome.UseVisualStyleBackColor = false;
-            this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click_1);
-            // 
             // ForumPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -821,26 +821,26 @@
             this.Text = "Forum";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelThread1.ResumeLayout(false);
             this.panelThread1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThread1)).EndInit();
             this.panelThread2.ResumeLayout(false);
             this.panelThread2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT3)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThread1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -124,6 +124,12 @@
     <Compile Include="ResourcesPage.Designer.cs">
       <DependentUpon>ResourcesPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Thread.cs" />
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResourcesPage.resx">
       <DependentUpon>ResourcesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThreadViewerPage.resx">
       <DependentUpon>ThreadViewerPage.cs</DependentUpon>
@@ -269,6 +278,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\poll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edutalklogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyo-azuma-267549-unsplash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -103,6 +103,16 @@ namespace Software_Development.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap edutalklogo {
+            get {
+                object obj = ResourceManager.GetObject("edutalklogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forum {
             get {
                 object obj = ResourceManager.GetObject("forum", resourceCulture);
@@ -236,6 +246,16 @@ namespace Software_Development.Properties {
         internal static System.Drawing.Bitmap robot {
             get {
                 object obj = ResourceManager.GetObject("robot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap splashscreenschool {
+            get {
+                object obj = ResourceManager.GetObject("splashscreenschool", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

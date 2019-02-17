@@ -27,6 +27,7 @@ namespace Software_Development
             textBoxName.Text = GlobalData.CurrentUser.Name;
             textBoxEmail.Text = GlobalData.CurrentUser.Email;
             maskedTextBoxPhone.Text = GlobalData.CurrentUser.Phone;
+            textBoxUsername.Text = GlobalData.CurrentUser.Username;
             labelPostcount.Text = GlobalData.CurrentUser.PostCount.ToString();
             if(GlobalData.CurrentUser.PostCount < 10)
             {
@@ -70,6 +71,7 @@ namespace Software_Development
             GlobalData.CurrentUser.Email = textBoxEmail.Text;
             GlobalData.CurrentUser.Phone = maskedTextBoxPhone.Text;
             GlobalData.CurrentUser.Grade = comboBoxGrade.Text;
+            GlobalData.CurrentUser.Username = textBoxUsername.Text;
             //write to file
             GlobalData.ExportCurrentUser();
             //confirmation dialog box

@@ -71,6 +71,8 @@
             this.labelHeader = new System.Windows.Forms.Label();
             this.comboBoxGrade = new System.Windows.Forms.ComboBox();
             this.labelGrade = new System.Windows.Forms.Label();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.labeluname = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -95,7 +97,7 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBoxClose);
             this.panel3.Location = new System.Drawing.Point(231, -2);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1056, 82);
             this.panel3.TabIndex = 79;
@@ -105,7 +107,7 @@
             this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
             this.pictureBoxLogout.Location = new System.Drawing.Point(972, 1);
-            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogout.Name = "pictureBoxLogout";
             this.pictureBoxLogout.Size = new System.Drawing.Size(40, 43);
             this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +132,7 @@
             this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
             this.pictureBoxClose.Location = new System.Drawing.Point(1013, 9);
-            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(28, 27);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -148,7 +150,7 @@
             this.panel1.Controls.Add(this.buttonHome);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(-1, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 585);
             this.panel1.TabIndex = 77;
@@ -276,7 +278,7 @@
             this.maskedTextBoxPhone.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maskedTextBoxPhone.ForeColor = System.Drawing.Color.DimGray;
             this.maskedTextBoxPhone.Location = new System.Drawing.Point(421, 537);
-            this.maskedTextBoxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maskedTextBoxPhone.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxPhone.Mask = "(999) 000-0000";
             this.maskedTextBoxPhone.Name = "maskedTextBoxPhone";
             this.maskedTextBoxPhone.Size = new System.Drawing.Size(251, 25);
@@ -360,7 +362,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.SteelBlue;
             this.button2.Location = new System.Drawing.Point(507, 586);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 59);
             this.button2.TabIndex = 102;
@@ -373,7 +375,7 @@
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.panel7.Controls.Add(this.label6);
             this.panel7.Location = new System.Drawing.Point(773, 198);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(219, 53);
             this.panel7.TabIndex = 103;
@@ -395,7 +397,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel4.Controls.Add(this.labelPostcount);
             this.panel4.Location = new System.Drawing.Point(773, 251);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(219, 154);
             this.panel4.TabIndex = 76;
@@ -418,7 +420,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.panel5.Controls.Add(this.labelUpvotes);
             this.panel5.Location = new System.Drawing.Point(1024, 251);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(219, 154);
             this.panel5.TabIndex = 104;
@@ -441,7 +443,7 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.panel6.Controls.Add(this.label9);
             this.panel6.Location = new System.Drawing.Point(1024, 198);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(219, 53);
             this.panel6.TabIndex = 105;
@@ -463,7 +465,7 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
             this.panel8.Controls.Add(this.labelConnections);
             this.panel8.Location = new System.Drawing.Point(1024, 487);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(219, 154);
             this.panel8.TabIndex = 108;
@@ -486,7 +488,7 @@
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
             this.panel9.Controls.Add(this.labelPolls);
             this.panel9.Location = new System.Drawing.Point(773, 487);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(219, 154);
             this.panel9.TabIndex = 106;
@@ -509,7 +511,7 @@
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.panel10.Controls.Add(this.label12);
             this.panel10.Location = new System.Drawing.Point(1024, 434);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(219, 53);
             this.panel10.TabIndex = 109;
@@ -531,7 +533,7 @@
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
             this.panel11.Controls.Add(this.label13);
             this.panel11.Location = new System.Drawing.Point(773, 434);
-            this.panel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(219, 53);
             this.panel11.TabIndex = 107;
@@ -552,7 +554,7 @@
             // 
             this.pictureBox2.Image = global::Software_Development.Properties.Resources.robot;
             this.pictureBox2.Location = new System.Drawing.Point(304, 102);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(331, 303);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -565,7 +567,7 @@
             this.panelProfile.Controls.Add(this.labelProfile);
             this.panelProfile.Controls.Add(this.pictureBoxProfile);
             this.panelProfile.Location = new System.Drawing.Point(-1, -1);
-            this.panelProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelProfile.Margin = new System.Windows.Forms.Padding(4);
             this.panelProfile.Name = "panelProfile";
             this.panelProfile.Size = new System.Drawing.Size(232, 82);
             this.panelProfile.TabIndex = 29;
@@ -588,7 +590,7 @@
             this.pictureBoxProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxProfile.Image = global::Software_Development.Properties.Resources.robot;
             this.pictureBoxProfile.Location = new System.Drawing.Point(36, 17);
-            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
             this.pictureBoxProfile.Size = new System.Drawing.Size(52, 48);
             this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -644,11 +646,34 @@
             this.labelGrade.TabIndex = 84;
             this.labelGrade.Text = "Grade:";
             // 
+            // textBoxUsername
+            // 
+            this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxUsername.Location = new System.Drawing.Point(421, 407);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(251, 25);
+            this.textBoxUsername.TabIndex = 110;
+            // 
+            // labeluname
+            // 
+            this.labeluname.AutoSize = true;
+            this.labeluname.Font = new System.Drawing.Font("Segoe UI", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeluname.ForeColor = System.Drawing.Color.Black;
+            this.labeluname.Location = new System.Drawing.Point(273, 413);
+            this.labeluname.Name = "labeluname";
+            this.labeluname.Size = new System.Drawing.Size(74, 19);
+            this.labeluname.TabIndex = 111;
+            this.labeluname.Text = "Username:";
+            // 
             // ProfilePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1285, 663);
+            this.Controls.Add(this.labeluname);
+            this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel9);
@@ -673,7 +698,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelProfile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProfilePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile";
@@ -752,5 +777,7 @@
         private System.Windows.Forms.Label labelHeader;
         private System.Windows.Forms.ComboBox comboBoxGrade;
         private System.Windows.Forms.Label labelGrade;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.Label labeluname;
     }
 }

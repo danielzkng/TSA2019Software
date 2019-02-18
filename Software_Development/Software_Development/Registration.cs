@@ -17,9 +17,61 @@ namespace Software_Development
             InitializeComponent();
         }
 
+        public List<string> usernames
+        {
+            get; set;
+        }
+
+        public List<string> passwords
+        {
+            get; set;
+        }
+
         private void buttonOK_Click(object sender, EventArgs e)
         {
+            bool ok = true;
+            foreach(string s in usernames)
+            {
+                if(textBoxUsername.Text == s)
+                {
+                    ok = false;
+                }
+            }
 
+            if (ok)
+            {
+                if(textBoxPassword.Text == textBoxRepeatPassword.Text)
+                {
+                    //check for blanks
+                    if(textBoxPassword.Text == "" || textBoxUsername.Text == "")
+                    {
+                        MessageBox.Show("One or more required fields is empty! Please fill them all out.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        //we're done here
+                        LoginPage.newUsername = textBoxUsername.Text;
+                        LoginPage.newPassword = textBoxPassword.Text;
+                        //close this form
+                        this.Close();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Passwords do not match! Please check them and try again.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("That username is already taken! Please try another.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            //close this form, do nothing
+            this.Close();
         }
     }
 }

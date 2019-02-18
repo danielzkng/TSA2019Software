@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -17,6 +18,9 @@ namespace Software_Development
         //create a list of strings for usernames and for passwords
         private List<string> usernames = new List<string>();
         private List<string> passwords = new List<string>();
+
+        public static string newUsername = "";
+        public static string newPassword = "";
 
         //new formatter
         BinaryFormatter serializer = new BinaryFormatter();
@@ -66,10 +70,6 @@ namespace Software_Development
                     //check if username and password are both equal to the correct number
                     if(textBoxUsername.Text == usernames[i] && textBoxPassword.Text == passwords[i])
                     {
-                        //display a messagebox indicating a successful login and display the main client
-                        DashboardPage MainScreen = new DashboardPage();
-                        MainScreen.Show();
-
                         success = true;
 
                         //generate the user ID by adding 1000000 to i
@@ -106,7 +106,7 @@ namespace Software_Development
 
                         //hide this form and show the main client window
                         this.Hide();
-                        MainScreen.Show();
+                        FormsInProgram.dashboardInUse.Show();
                     }
                 }
                 //if login unsuccessful then display a messagebox saying that it wasn't
@@ -168,24 +168,36 @@ namespace Software_Development
                 serializer.Serialize(loginsOut, usernames[i]);
                 serializer.Serialize(loginsOut, passwords[i]);
             }
+            loginsOut.Close();
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            //TODO make a registration screen and make this button actually do something, it's going to be used as a testing button for now
-            //create a new register form
-            /*BasicData register = new BasicData();
-            register.ShowDialog();
-            this.Close();*/
-            FileStream logins = new FileStream("logins.db", FileMode.Create);
+            //create new registration form
+            Registration registerForm = new Registration();
+            registerForm.usernames = usernames;
+            registerForm.passwords = passwords;
+            registerForm.ShowDialog();
+            if(newUsername != "" && newPassword != "")
+            {
+                //add the new user to list
+                usernames.Add(newUsername);
+                passwords.Add(newPassword);
+                accounts++;
+                //file stream for write out
+                FileStream loginsOut = new FileStream("logins.db", FileMode.Create);
+                serializer.Serialize(loginsOut, accounts);
+                for (int i = 0; i < usernames.Count; i++)
+                {
+                    serializer.Serialize(loginsOut, usernames[i]);
+                    serializer.Serialize(loginsOut, passwords[i]);
+                }
+                loginsOut.Close();
+            }
 
-            serializer.Serialize(logins, 3);
-            serializer.Serialize(logins, "exampleuser0");
-            serializer.Serialize(logins, "password");
-            serializer.Serialize(logins, "allanmdao");
-            serializer.Serialize(logins, "password");
-            serializer.Serialize(logins, "dannyspham");
-            serializer.Serialize(logins, "password");
+            //reset username and password
+            newUsername = "";
+            newPassword = "";
         }
 
         //Set up variables to check if mouse is down and to retain previous mouse location

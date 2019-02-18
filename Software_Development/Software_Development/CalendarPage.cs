@@ -17,33 +17,11 @@ namespace Software_Development
         public CalendarPage()
         {
             InitializeComponent();
-            panelViewList.Visible = true;
-            panelAddNew.Visible = false;
-            //populate the assignment list
-            checkedListBoxAssignments.Items.Clear();
-            foreach(string s in GlobalData.CurrentUser.TasksToDo)
-            {
-                checkedListBoxAssignments.Items.Add(s);
-            }
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void CalendarPage_Load(object sender, EventArgs e)
-        {
-            labelEventDescription.Text = "";
-            //this is where the fun begins
-            //load the list of calendars into the combo box
-            comboBoxFilters.SelectedIndex = 0;
-            PopulateEventsBox();
-
-            foreach(Calendar c in GlobalData.CalendarsDB)
-            {
-                comboBoxFilters.Items.Add(c.Name);
-            }
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
@@ -147,15 +125,14 @@ namespace Software_Development
             panelViewList.Visible = true;
         }
 
-        //TODO bugfix with hide/close
-
-        private void CalendarPage_FormClosing(object sender, FormClosingEventArgs e)
+        //code to run when this form is hidden and/or closed
+        public void Hidden()
         {
             List<string> newtasks = new List<string>();
             //get rid of the checked items on the master to do list
-            for(int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
+            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
             {
-                if(checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
+                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
                 {
                     //user is not done with this task, add it to the new list of tasks
                     newtasks.Add((string)checkedListBoxAssignments.Items[i]);
@@ -305,6 +282,28 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+        }
+
+        private void CalendarPage_Shown(object sender, EventArgs e)
+        {
+            panelViewList.Visible = true;
+            panelAddNew.Visible = false;
+            //populate the assignment list
+            checkedListBoxAssignments.Items.Clear();
+            foreach (string s in GlobalData.CurrentUser.TasksToDo)
+            {
+                checkedListBoxAssignments.Items.Add(s);
+            }
+            labelEventDescription.Text = "";
+            //this is where the fun begins
+            //load the list of calendars into the combo box
+            comboBoxFilters.SelectedIndex = 0;
+            PopulateEventsBox();
+
+            foreach (Calendar c in GlobalData.CalendarsDB)
+            {
+                comboBoxFilters.Items.Add(c.Name);
+            }
         }
     }
 }

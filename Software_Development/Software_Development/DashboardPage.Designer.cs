@@ -74,7 +74,7 @@
             this.buttonPoll.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPoll.ForeColor = System.Drawing.Color.SteelBlue;
             this.buttonPoll.Location = new System.Drawing.Point(379, 583);
-            this.buttonPoll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPoll.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPoll.Name = "buttonPoll";
             this.buttonPoll.Size = new System.Drawing.Size(180, 62);
             this.buttonPoll.TabIndex = 31;
@@ -89,7 +89,7 @@
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.pictureBoxClose);
             this.panelHeader.Location = new System.Drawing.Point(231, -2);
-            this.panelHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(4);
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1056, 82);
             this.panelHeader.TabIndex = 29;
@@ -102,7 +102,7 @@
             this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
             this.pictureBoxLogout.Location = new System.Drawing.Point(972, 1);
-            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogout.Name = "pictureBoxLogout";
             this.pictureBoxLogout.Size = new System.Drawing.Size(40, 43);
             this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,7 +127,7 @@
             this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
             this.pictureBoxClose.Location = new System.Drawing.Point(1013, 9);
-            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(28, 27);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -141,7 +141,7 @@
             this.panelProfile.Controls.Add(this.labelProfile);
             this.panelProfile.Controls.Add(this.pictureBoxProfile);
             this.panelProfile.Location = new System.Drawing.Point(-1, -2);
-            this.panelProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelProfile.Margin = new System.Windows.Forms.Padding(4);
             this.panelProfile.Name = "panelProfile";
             this.panelProfile.Size = new System.Drawing.Size(232, 82);
             this.panelProfile.TabIndex = 28;
@@ -166,7 +166,7 @@
             this.pictureBoxProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxProfile.Image = global::Software_Development.Properties.Resources.robot;
             this.pictureBoxProfile.Location = new System.Drawing.Point(36, 17);
-            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
             this.pictureBoxProfile.Size = new System.Drawing.Size(52, 48);
             this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -184,7 +184,7 @@
             this.panel1.Controls.Add(this.buttonCalendar);
             this.panel1.Controls.Add(this.buttonHome);
             this.panel1.Location = new System.Drawing.Point(-1, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 585);
             this.panel1.TabIndex = 27;
@@ -314,7 +314,7 @@
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(553, 102);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(669, 315);
             this.panel4.TabIndex = 77;
@@ -353,7 +353,7 @@
             this.button1.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.SteelBlue;
             this.button1.Location = new System.Drawing.Point(663, 583);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 62);
             this.button1.TabIndex = 80;
@@ -369,7 +369,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.SteelBlue;
             this.button2.Location = new System.Drawing.Point(940, 583);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(180, 62);
             this.button2.TabIndex = 82;
@@ -381,7 +381,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(297, 102);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(261, 315);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -392,7 +392,7 @@
             // 
             this.pictureBox5.Image = global::Software_Development.Properties.Resources.messagesdashboard;
             this.pictureBox5.Location = new System.Drawing.Point(952, 431);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(149, 129);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -403,7 +403,7 @@
             // 
             this.pictureBox4.Image = global::Software_Development.Properties.Resources.forumdashboard;
             this.pictureBox4.Location = new System.Drawing.Point(675, 431);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(149, 129);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -414,7 +414,7 @@
             // 
             this.pictureBox2.Image = global::Software_Development.Properties.Resources.polldashboard;
             this.pictureBox2.Location = new System.Drawing.Point(393, 431);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(149, 129);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -439,11 +439,12 @@
             this.Controls.Add(this.panelProfile);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DashboardPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.dashboard_FormClosing);
+            this.Shown += new System.EventHandler(this.DashboardPage_Shown);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();

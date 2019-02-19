@@ -155,6 +155,12 @@ namespace Software_Development
         {
             // When mouse is not being held down on form
             mouseDown = false;
+            WindowManager.CurrentLocation = Location;
+        }
+
+        private void DashboardPage_Shown(object sender, EventArgs e)
+        {
+            Location = WindowManager.CurrentLocation;
         }
     }
 }

@@ -45,10 +45,12 @@ namespace Software_Development
                 passwords.Add((string)serializer.Deserialize(logins));
             }
             logins.Close();
+            WindowManager.CurrentLocation = new Point(277, 119);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(Location.ToString());
             //close the form using this.Close();
             this.Close();
         }
@@ -230,6 +232,12 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+            WindowManager.CurrentLocation = Location;
+        }
+
+        private void LoginPage_Shown(object sender, EventArgs e)
+        {
+            Location = WindowManager.CurrentLocation;
         }
     }
 }

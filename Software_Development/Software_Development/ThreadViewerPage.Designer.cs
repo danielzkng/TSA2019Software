@@ -79,9 +79,10 @@
             this.panelThread1.Controls.Add(this.labelRepliesT1);
             this.panelThread1.Controls.Add(this.labelTitleT1);
             this.panelThread1.Controls.Add(this.pictureBoxThread1);
-            this.panelThread1.Location = new System.Drawing.Point(212, 75);
+            this.panelThread1.Location = new System.Drawing.Point(283, 92);
+            this.panelThread1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelThread1.Name = "panelThread1";
-            this.panelThread1.Size = new System.Drawing.Size(720, 115);
+            this.panelThread1.Size = new System.Drawing.Size(960, 142);
             this.panelThread1.TabIndex = 83;
             this.panelThread1.Click += new System.EventHandler(this.panelThread1_Click);
             // 
@@ -90,9 +91,10 @@
             this.labelFullPost.AutoSize = true;
             this.labelFullPost.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFullPost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.labelFullPost.Location = new System.Drawing.Point(85, 60);
+            this.labelFullPost.Location = new System.Drawing.Point(113, 74);
+            this.labelFullPost.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFullPost.Name = "labelFullPost";
-            this.labelFullPost.Size = new System.Drawing.Size(101, 17);
+            this.labelFullPost.Size = new System.Drawing.Size(110, 19);
             this.labelFullPost.TabIndex = 13;
             this.labelFullPost.Text = "Click for full post";
             this.labelFullPost.Visible = false;
@@ -102,9 +104,10 @@
             this.labelUsernameT1.AutoSize = true;
             this.labelUsernameT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsernameT1.ForeColor = System.Drawing.Color.Gray;
-            this.labelUsernameT1.Location = new System.Drawing.Point(580, 60);
+            this.labelUsernameT1.Location = new System.Drawing.Point(773, 74);
+            this.labelUsernameT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUsernameT1.Name = "labelUsernameT1";
-            this.labelUsernameT1.Size = new System.Drawing.Size(69, 15);
+            this.labelUsernameT1.Size = new System.Drawing.Size(81, 19);
             this.labelUsernameT1.TabIndex = 12;
             this.labelUsernameT1.Text = "usernameT1";
             // 
@@ -113,9 +116,10 @@
             this.labelUpvotesT1.AutoSize = true;
             this.labelUpvotesT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUpvotesT1.ForeColor = System.Drawing.Color.ForestGreen;
-            this.labelUpvotesT1.Location = new System.Drawing.Point(9, 86);
+            this.labelUpvotesT1.Location = new System.Drawing.Point(12, 106);
+            this.labelUpvotesT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUpvotesT1.Name = "labelUpvotesT1";
-            this.labelUpvotesT1.Size = new System.Drawing.Size(71, 17);
+            this.labelUpvotesT1.Size = new System.Drawing.Size(76, 19);
             this.labelUpvotesT1.TabIndex = 11;
             this.labelUpvotesT1.Text = "55 Upvotes";
             // 
@@ -124,9 +128,10 @@
             this.labelPreviewT1.AutoSize = true;
             this.labelPreviewT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPreviewT1.ForeColor = System.Drawing.Color.Gray;
-            this.labelPreviewT1.Location = new System.Drawing.Point(85, 33);
+            this.labelPreviewT1.Location = new System.Drawing.Point(113, 41);
+            this.labelPreviewT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPreviewT1.Name = "labelPreviewT1";
-            this.labelPreviewT1.Size = new System.Drawing.Size(343, 17);
+            this.labelPreviewT1.Size = new System.Drawing.Size(370, 19);
             this.labelPreviewT1.TabIndex = 8;
             this.labelPreviewT1.Text = "After joining the computer science course I am looking for a";
             // 
@@ -135,9 +140,10 @@
             this.labelTimestampT1.AutoSize = true;
             this.labelTimestampT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTimestampT1.ForeColor = System.Drawing.Color.Gray;
-            this.labelTimestampT1.Location = new System.Drawing.Point(580, 88);
+            this.labelTimestampT1.Location = new System.Drawing.Point(773, 108);
+            this.labelTimestampT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTimestampT1.Name = "labelTimestampT1";
-            this.labelTimestampT1.Size = new System.Drawing.Size(114, 34);
+            this.labelTimestampT1.Size = new System.Drawing.Size(127, 38);
             this.labelTimestampT1.TabIndex = 7;
             this.labelTimestampT1.Text = "Added 4 hours ago\r\n\r\n";
             // 
@@ -146,9 +152,10 @@
             this.labelViewsT1.AutoSize = true;
             this.labelViewsT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelViewsT1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.labelViewsT1.Location = new System.Drawing.Point(167, 86);
+            this.labelViewsT1.Location = new System.Drawing.Point(223, 106);
+            this.labelViewsT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelViewsT1.Name = "labelViewsT1";
-            this.labelViewsT1.Size = new System.Drawing.Size(58, 17);
+            this.labelViewsT1.Size = new System.Drawing.Size(63, 19);
             this.labelViewsT1.TabIndex = 6;
             this.labelViewsT1.Text = "43 Views";
             // 
@@ -157,9 +164,10 @@
             this.labelRepliesT1.AutoSize = true;
             this.labelRepliesT1.Font = new System.Drawing.Font("Segoe UI Semilight", 7.854546F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRepliesT1.ForeColor = System.Drawing.Color.Red;
-            this.labelRepliesT1.Location = new System.Drawing.Point(85, 86);
+            this.labelRepliesT1.Location = new System.Drawing.Point(113, 106);
+            this.labelRepliesT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRepliesT1.Name = "labelRepliesT1";
-            this.labelRepliesT1.Size = new System.Drawing.Size(76, 17);
+            this.labelRepliesT1.Size = new System.Drawing.Size(84, 19);
             this.labelRepliesT1.TabIndex = 4;
             this.labelRepliesT1.Text = "5 Responses";
             // 
@@ -167,18 +175,20 @@
             // 
             this.labelTitleT1.AutoSize = true;
             this.labelTitleT1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.12727F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitleT1.Location = new System.Drawing.Point(84, 10);
+            this.labelTitleT1.Location = new System.Drawing.Point(112, 12);
+            this.labelTitleT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitleT1.Name = "labelTitleT1";
-            this.labelTitleT1.Size = new System.Drawing.Size(369, 23);
+            this.labelTitleT1.Size = new System.Drawing.Size(409, 25);
             this.labelTitleT1.TabIndex = 3;
             this.labelTitleT1.Text = "What clubs are available to learn how to code?";
             // 
             // pictureBoxThread1
             // 
             this.pictureBoxThread1.Image = global::Software_Development.Properties.Resources.robot;
-            this.pictureBoxThread1.Location = new System.Drawing.Point(12, 10);
+            this.pictureBoxThread1.Location = new System.Drawing.Point(16, 12);
+            this.pictureBoxThread1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxThread1.Name = "pictureBoxThread1";
-            this.pictureBoxThread1.Size = new System.Drawing.Size(66, 66);
+            this.pictureBoxThread1.Size = new System.Drawing.Size(88, 81);
             this.pictureBoxThread1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxThread1.TabIndex = 2;
             this.pictureBoxThread1.TabStop = false;
@@ -187,9 +197,10 @@
             // 
             this.richTextBoxNewmsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBoxNewmsg.Font = new System.Drawing.Font("Segoe UI Semilight", 11.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxNewmsg.Location = new System.Drawing.Point(212, 476);
+            this.richTextBoxNewmsg.Location = new System.Drawing.Point(283, 586);
+            this.richTextBoxNewmsg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBoxNewmsg.Name = "richTextBoxNewmsg";
-            this.richTextBoxNewmsg.Size = new System.Drawing.Size(547, 52);
+            this.richTextBoxNewmsg.Size = new System.Drawing.Size(728, 63);
             this.richTextBoxNewmsg.TabIndex = 81;
             this.richTextBoxNewmsg.Text = "Type your reply...";
             this.richTextBoxNewmsg.Click += new System.EventHandler(this.richTextBoxNewmsg_Click);
@@ -201,9 +212,10 @@
             this.buttonCreatePost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCreatePost.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreatePost.ForeColor = System.Drawing.Color.SteelBlue;
-            this.buttonCreatePost.Location = new System.Drawing.Point(768, 476);
+            this.buttonCreatePost.Location = new System.Drawing.Point(1024, 586);
+            this.buttonCreatePost.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonCreatePost.Name = "buttonCreatePost";
-            this.buttonCreatePost.Size = new System.Drawing.Size(164, 50);
+            this.buttonCreatePost.Size = new System.Drawing.Size(219, 62);
             this.buttonCreatePost.TabIndex = 80;
             this.buttonCreatePost.Text = "Post reply";
             this.buttonCreatePost.UseVisualStyleBackColor = false;
@@ -215,9 +227,10 @@
             this.panelHeader.Controls.Add(this.pictureBoxLogout);
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.pictureBoxClose);
-            this.panelHeader.Location = new System.Drawing.Point(173, -2);
+            this.panelHeader.Location = new System.Drawing.Point(231, -2);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(792, 67);
+            this.panelHeader.Size = new System.Drawing.Size(1056, 82);
             this.panelHeader.TabIndex = 79;
             this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseDown);
             this.panelHeader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelHeader_MouseMove);
@@ -227,9 +240,10 @@
             // 
             this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
-            this.pictureBoxLogout.Location = new System.Drawing.Point(729, 1);
+            this.pictureBoxLogout.Location = new System.Drawing.Point(972, 1);
+            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxLogout.Name = "pictureBoxLogout";
-            this.pictureBoxLogout.Size = new System.Drawing.Size(30, 35);
+            this.pictureBoxLogout.Size = new System.Drawing.Size(40, 43);
             this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogout.TabIndex = 25;
             this.pictureBoxLogout.TabStop = false;
@@ -240,9 +254,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(17, 14);
+            this.label2.Location = new System.Drawing.Point(23, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 32);
+            this.label2.Size = new System.Drawing.Size(93, 37);
             this.label2.TabIndex = 2;
             this.label2.Text = "Forum";
             // 
@@ -250,9 +265,10 @@
             // 
             this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
-            this.pictureBoxClose.Location = new System.Drawing.Point(760, 7);
+            this.pictureBoxClose.Location = new System.Drawing.Point(1013, 9);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxClose.Name = "pictureBoxClose";
-            this.pictureBoxClose.Size = new System.Drawing.Size(21, 22);
+            this.pictureBoxClose.Size = new System.Drawing.Size(28, 27);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxClose.TabIndex = 24;
             this.pictureBoxClose.TabStop = false;
@@ -264,8 +280,9 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(-1, -2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(174, 67);
+            this.panel2.Size = new System.Drawing.Size(232, 82);
             this.panel2.TabIndex = 78;
             // 
             // label1
@@ -273,9 +290,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(69, 25);
+            this.label1.Location = new System.Drawing.Point(92, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 19);
+            this.label1.Size = new System.Drawing.Size(92, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "My Account";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -283,9 +301,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Software_Development.Properties.Resources.robot;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(36, 18);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(52, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -300,9 +319,10 @@
             this.panel1.Controls.Add(this.buttonCalendar);
             this.panel1.Controls.Add(this.buttonHome);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(-1, 65);
+            this.panel1.Location = new System.Drawing.Point(-1, 80);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(174, 475);
+            this.panel1.Size = new System.Drawing.Size(232, 585);
             this.panel1.TabIndex = 77;
             // 
             // buttonResources
@@ -315,11 +335,11 @@
             this.buttonResources.ForeColor = System.Drawing.Color.White;
             this.buttonResources.Image = global::Software_Development.Properties.Resources.book;
             this.buttonResources.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonResources.Location = new System.Drawing.Point(0, 288);
-            this.buttonResources.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonResources.Location = new System.Drawing.Point(0, 354);
+            this.buttonResources.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.buttonResources.Name = "buttonResources";
-            this.buttonResources.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonResources.Size = new System.Drawing.Size(174, 72);
+            this.buttonResources.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
+            this.buttonResources.Size = new System.Drawing.Size(232, 89);
             this.buttonResources.TabIndex = 35;
             this.buttonResources.Text = "  Resources";
             this.buttonResources.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -336,11 +356,11 @@
             this.buttonMessaging.ForeColor = System.Drawing.Color.White;
             this.buttonMessaging.Image = global::Software_Development.Properties.Resources.messages;
             this.buttonMessaging.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMessaging.Location = new System.Drawing.Point(0, 216);
-            this.buttonMessaging.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonMessaging.Location = new System.Drawing.Point(0, 266);
+            this.buttonMessaging.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.buttonMessaging.Name = "buttonMessaging";
-            this.buttonMessaging.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonMessaging.Size = new System.Drawing.Size(174, 72);
+            this.buttonMessaging.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
+            this.buttonMessaging.Size = new System.Drawing.Size(232, 89);
             this.buttonMessaging.TabIndex = 34;
             this.buttonMessaging.Text = "  Messaging";
             this.buttonMessaging.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -357,11 +377,11 @@
             this.buttonForum.ForeColor = System.Drawing.Color.White;
             this.buttonForum.Image = global::Software_Development.Properties.Resources.forum;
             this.buttonForum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonForum.Location = new System.Drawing.Point(0, 144);
-            this.buttonForum.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonForum.Location = new System.Drawing.Point(0, 177);
+            this.buttonForum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.buttonForum.Name = "buttonForum";
-            this.buttonForum.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonForum.Size = new System.Drawing.Size(174, 72);
+            this.buttonForum.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
+            this.buttonForum.Size = new System.Drawing.Size(232, 89);
             this.buttonForum.TabIndex = 33;
             this.buttonForum.Text = "  Forum";
             this.buttonForum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -378,11 +398,11 @@
             this.buttonCalendar.ForeColor = System.Drawing.Color.White;
             this.buttonCalendar.Image = global::Software_Development.Properties.Resources.calendar;
             this.buttonCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCalendar.Location = new System.Drawing.Point(0, 72);
-            this.buttonCalendar.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.buttonCalendar.Location = new System.Drawing.Point(0, 89);
+            this.buttonCalendar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.buttonCalendar.Name = "buttonCalendar";
-            this.buttonCalendar.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonCalendar.Size = new System.Drawing.Size(174, 72);
+            this.buttonCalendar.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
+            this.buttonCalendar.Size = new System.Drawing.Size(232, 89);
             this.buttonCalendar.TabIndex = 32;
             this.buttonCalendar.Text = "  Calendar";
             this.buttonCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -400,10 +420,10 @@
             this.buttonHome.Image = ((System.Drawing.Image)(resources.GetObject("buttonHome.Image")));
             this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonHome.Location = new System.Drawing.Point(0, 0);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 0);
             this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Padding = new System.Windows.Forms.Padding(14, 0, 0, 0);
-            this.buttonHome.Size = new System.Drawing.Size(174, 72);
+            this.buttonHome.Padding = new System.Windows.Forms.Padding(19, 0, 0, 0);
+            this.buttonHome.Size = new System.Drawing.Size(232, 89);
             this.buttonHome.TabIndex = 31;
             this.buttonHome.Text = "  Home";
             this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -416,9 +436,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 20.29091F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(23, 414);
+            this.label3.Location = new System.Drawing.Point(31, 510);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 45);
+            this.label3.Size = new System.Drawing.Size(140, 46);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -427,11 +448,11 @@
             this.listBoxMessages.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxMessages.FormattingEnabled = true;
             this.listBoxMessages.IntegralHeight = false;
-            this.listBoxMessages.ItemHeight = 21;
-            this.listBoxMessages.Location = new System.Drawing.Point(212, 196);
-            this.listBoxMessages.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxMessages.ItemHeight = 23;
+            this.listBoxMessages.Location = new System.Drawing.Point(283, 241);
+            this.listBoxMessages.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxMessages.Name = "listBoxMessages";
-            this.listBoxMessages.Size = new System.Drawing.Size(721, 184);
+            this.listBoxMessages.Size = new System.Drawing.Size(960, 226);
             this.listBoxMessages.TabIndex = 88;
             this.listBoxMessages.SelectedIndexChanged += new System.EventHandler(this.listBoxMessages_SelectedIndexChanged);
             // 
@@ -440,18 +461,19 @@
             this.richTextBoxFullMsg.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.richTextBoxFullMsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBoxFullMsg.Font = new System.Drawing.Font("Segoe UI Semilight", 11.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxFullMsg.Location = new System.Drawing.Point(212, 384);
+            this.richTextBoxFullMsg.Location = new System.Drawing.Point(283, 473);
+            this.richTextBoxFullMsg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBoxFullMsg.Name = "richTextBoxFullMsg";
             this.richTextBoxFullMsg.ReadOnly = true;
-            this.richTextBoxFullMsg.Size = new System.Drawing.Size(721, 86);
+            this.richTextBoxFullMsg.Size = new System.Drawing.Size(960, 105);
             this.richTextBoxFullMsg.TabIndex = 89;
             this.richTextBoxFullMsg.Text = "";
             // 
             // ThreadViewerPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 539);
+            this.ClientSize = new System.Drawing.Size(1285, 663);
             this.Controls.Add(this.richTextBoxFullMsg);
             this.Controls.Add(this.listBoxMessages);
             this.Controls.Add(this.panelThread1);
@@ -461,10 +483,12 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ThreadViewerPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThreadViewerPage";
             this.Load += new System.EventHandler(this.ThreadViewerPage_Load);
+            this.Shown += new System.EventHandler(this.ThreadViewerPage_Shown);
             this.panelThread1.ResumeLayout(false);
             this.panelThread1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThread1)).EndInit();

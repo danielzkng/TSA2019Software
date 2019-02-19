@@ -130,6 +130,7 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+            WindowManager.CurrentLocation = Location;
         }
 
         private void MessagingPage_Shown(object sender, EventArgs e)
@@ -145,6 +146,8 @@ namespace Software_Development
             {
                 listBoxTeachers.Items.Add(GlobalData.GetUser(i).Username);
             }
+
+            Location = WindowManager.CurrentLocation;
         }
     }
 }

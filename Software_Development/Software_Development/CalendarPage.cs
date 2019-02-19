@@ -206,6 +206,7 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+            WindowManager.CurrentLocation = Location;
         }
 
         private void CalendarPage_Shown(object sender, EventArgs e)
@@ -228,6 +229,8 @@ namespace Software_Development
             {
                 comboBoxFilters.Items.Add(c.Name);
             }
+
+            Location = WindowManager.CurrentLocation;
         }
 
         private void panelProfile_Click(object sender, EventArgs e)

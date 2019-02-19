@@ -149,6 +149,7 @@ namespace Software_Development
         {
             // When mouse is not being held down on form
             mouseDown = false;
+            WindowManager.CurrentLocation = Location;
         }
 
         private void ForumPage_Shown(object sender, EventArgs e)
@@ -162,6 +163,8 @@ namespace Software_Development
             }
             labelnumpages.Text = "of " + totalPages.ToString();
             displayPage(currentPage);
+
+            Location = WindowManager.CurrentLocation;
         }
 
         private void buttonHome_Click(object sender, EventArgs e)

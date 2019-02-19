@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -66,6 +67,12 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+            WindowManager.CurrentLocation = Location;
+        }
+
+        private void BasicData_Shown(object sender, EventArgs e)
+        {
+            Location = WindowManager.CurrentLocation;
         }
     }
 }

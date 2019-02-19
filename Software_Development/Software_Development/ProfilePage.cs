@@ -110,6 +110,7 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+            WindowManager.CurrentLocation = Location;
         }
 
         private void ProfilePage_Shown(object sender, EventArgs e)
@@ -151,6 +152,8 @@ namespace Software_Development
                     comboBoxGrade.SelectedIndex = comboBoxGrade.Items.IndexOf(s);
                 }
             }
+
+            Location = WindowManager.CurrentLocation;
         }
     }
 }

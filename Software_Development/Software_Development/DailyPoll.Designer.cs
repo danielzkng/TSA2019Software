@@ -589,6 +589,7 @@
             this.Name = "DailyPoll";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Daily Poll";
+            this.Shown += new System.EventHandler(this.DailyPoll_Shown);
             this.panelResults.ResumeLayout(false);
             this.panelResults.PerformLayout();
             this.panelPoll.ResumeLayout(false);

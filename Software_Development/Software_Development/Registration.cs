@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -72,6 +73,11 @@ namespace Software_Development
         {
             //close this form, do nothing
             this.Close();
+        }
+
+        private void Registration_Shown(object sender, EventArgs e)
+        {
+            Location = WindowManager.CurrentLocation;
         }
     }
 }

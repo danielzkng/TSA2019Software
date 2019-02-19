@@ -99,6 +99,7 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+            WindowManager.CurrentLocation = Location;
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
@@ -145,6 +146,11 @@ namespace Software_Development
         {
             this.Close();
             WindowManager.resourcesInUse.Show();
+        }
+
+        private void DailyPoll_Shown(object sender, EventArgs e)
+        {
+            Location = WindowManager.CurrentLocation;
         }
     }
 }

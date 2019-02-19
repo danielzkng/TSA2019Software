@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -141,110 +142,33 @@ namespace Software_Development
             GlobalData.CurrentUser.TasksToDo = newtasks;
         }
 
-        private void pictureBoxProfile_Click(object sender, EventArgs e)
-        {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
-        }
-
-        private void labelProfile_Click(object sender, EventArgs e)
-        {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
-        }
-
         private void buttonHome_Click_1(object sender, EventArgs e)
         {
-            //create a new dashboard form
-
-            List<string> newtasks = new List<string>();
-            //get rid of the checked items on the master to do list
-            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
-            {
-                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
-                {
-                    //user is not done with this task, add it to the new list of tasks
-                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
-                }
-            }
-            GlobalData.CurrentUser.TasksToDo = newtasks;
-
+            Hidden();
+            
             this.Hide();
-            DashboardPage home = new DashboardPage();
-            home.ShowDialog();
-            this.Close();
+            WindowManager.dashboardInUse.Show();
         }
 
         private void buttonForum_Click(object sender, EventArgs e)
         {
-            List<string> newtasks = new List<string>();
-            //get rid of the checked items on the master to do list
-            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
-            {
-                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
-                {
-                    //user is not done with this task, add it to the new list of tasks
-                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
-                }
-            }
-            GlobalData.CurrentUser.TasksToDo = newtasks;
-
+            Hidden();
+            WindowManager.forumInUse.Show();
             this.Hide();
-            //create a new forum page
-            ForumPage forum = new ForumPage();
-            forum.ShowDialog();
-
-            this.Close();
-            
         }
 
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
-            List<string> newtasks = new List<string>();
-            //get rid of the checked items on the master to do list
-            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
-            {
-                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
-                {
-                    //user is not done with this task, add it to the new list of tasks
-                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
-                }
-            }
-            GlobalData.CurrentUser.TasksToDo = newtasks;
-
+            Hidden();
+            WindowManager.messagingInUse.Show();
             this.Hide();
-            //create a new message page
-            MessagingPage message = new MessagingPage();
-            message.ShowDialog();
-
-            this.Close();
-            
         }
 
         private void buttonResources_Click(object sender, EventArgs e)
         {
-            List<string> newtasks = new List<string>();
-            //get rid of the checked items on the master to do list
-            for (int i = 0; i < checkedListBoxAssignments.Items.Count; i++)
-            {
-                if (checkedListBoxAssignments.GetItemCheckState(i) == CheckState.Unchecked)
-                {
-                    //user is not done with this task, add it to the new list of tasks
-                    newtasks.Add((string)checkedListBoxAssignments.Items[i]);
-                }
-            }
-            GlobalData.CurrentUser.TasksToDo = newtasks;
-
+            Hidden();
+            WindowManager.resourcesInUse.Show();
             this.Hide();
-            //open the resources form
-            ResourcesPage resources = new ResourcesPage();
-            resources.ShowDialog();
-
-            this.Close();
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -304,6 +228,25 @@ namespace Software_Development
             {
                 comboBoxFilters.Items.Add(c.Name);
             }
+        }
+
+        private void panelProfile_Click(object sender, EventArgs e)
+        {
+            Hidden();
+            WindowManager.profileInUse.Show();
+            this.Hide();
+        }
+
+        private void pictureBoxLogout_Click(object sender, EventArgs e)
+        {
+            Hidden();
+            WindowManager.logout();
+        }
+
+        private void pictureBoxClose_Click(object sender, EventArgs e)
+        {
+            Hidden();
+            WindowManager.exitApp();
         }
     }
 }

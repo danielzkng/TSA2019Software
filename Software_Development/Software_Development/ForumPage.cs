@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -21,36 +22,30 @@ namespace Software_Development
         public ForumPage()
         {
             InitializeComponent();
-            //find the number of pages of threads
-            numThreads = GlobalData.ThreadsDB.Count();
-            totalPages = numThreads / 3;
-            if(numThreads % 3 != 0)
-            {
-                totalPages++;
-            }
-            labelnumpages.Text = "of " + totalPages.ToString();
-            displayPage(0);
         }
 
         private void panelThread1_Click(object sender, EventArgs e)
         {
             ThreadViewerPage t = new ThreadViewerPage();
             t.displayed = GlobalData.GetThread(t1);
-            t.ShowDialog();
+            t.Show();
+            this.Hide();
         }
 
         private void panelThread2_Click(object sender, EventArgs e)
         {
             ThreadViewerPage t = new ThreadViewerPage();
             t.displayed = GlobalData.GetThread(t2);
-            t.ShowDialog();
+            t.Show();
+            this.Hide();
         }
 
         private void panel6_Click(object sender, EventArgs e)
         {
             ThreadViewerPage t = new ThreadViewerPage();
             t.displayed = GlobalData.GetThread(t3);
-            t.ShowDialog();
+            t.Show();
+            this.Hide();
         }
 
         private void buttonNext_Click(object sender, EventArgs e)
@@ -87,55 +82,43 @@ namespace Software_Development
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
+            WindowManager.profileInUse.Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
+            WindowManager.profileInUse.Show();
+            this.Hide();
         }
 
         private void buttonHome_Click_1(object sender, EventArgs e)
         {
-            //create a new dashboard form
-            DashboardPage home = new DashboardPage();
-            home.ShowDialog();
-            this.Close();
+            WindowManager.dashboardInUse.Show();
+            this.Hide();
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            //create a new calendar form
-            CalendarPage calendar = new CalendarPage();
-            calendar.ShowDialog();
-            this.Close();
+            WindowManager.calInUse.Show();
+            this.Hide();
         }
 
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
-            //create a new message page
-            MessagingPage message = new MessagingPage();
-            message.ShowDialog();
-            this.Close();
+            WindowManager.messagingInUse.Show();
+            this.Hide();
         }
 
         private void buttonResources_Click(object sender, EventArgs e)
         {
-            //open the resources form
-            ResourcesPage resources = new ResourcesPage();
-            resources.ShowDialog();
-            this.Close();
+            WindowManager.resourcesInUse.Show();
+            this.Hide();
         }
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            WindowManager.logout();
         }
 
         //Set up variables to check if mouse is down and to retain previous mouse location
@@ -168,9 +151,23 @@ namespace Software_Development
             mouseDown = false;
         }
 
+        private void ForumPage_Shown(object sender, EventArgs e)
+        {
+            //find the number of pages of threads
+            numThreads = GlobalData.ThreadsDB.Count();
+            totalPages = numThreads / 3;
+            if (numThreads % 3 != 0)
+            {
+                totalPages++;
+            }
+            labelnumpages.Text = "of " + totalPages.ToString();
+            displayPage(currentPage);
+        }
+
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            this.Close();
+            WindowManager.dashboardInUse.Show();
+            this.Hide();
         }
 
         /// <summary>

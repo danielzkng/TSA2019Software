@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -17,51 +18,11 @@ namespace Software_Development
             InitializeComponent();
         }
 
-        private void ProfilePage_Load(object sender, EventArgs e)
-        {
-            if(GlobalData.CurrentUser.Connections == 0)
-            {
-                Random rng = new Random();
-                GlobalData.CurrentUser.Connections = rng.Next(20) + 10;
-            }
-            textBoxName.Text = GlobalData.CurrentUser.Name;
-            textBoxEmail.Text = GlobalData.CurrentUser.Email;
-            maskedTextBoxPhone.Text = GlobalData.CurrentUser.Phone;
-            textBoxUsername.Text = GlobalData.CurrentUser.Username;
-            labelPostcount.Text = GlobalData.CurrentUser.PostCount.ToString();
-            if(GlobalData.CurrentUser.PostCount < 10)
-            {
-                labelPostcount.Text = " " + GlobalData.CurrentUser.PostCount.ToString();
-            }
-            labelPolls.Text = GlobalData.CurrentUser.PollsVoted.ToString();
-            if (GlobalData.CurrentUser.PollsVoted < 10)
-            {
-                labelPolls.Text = " " + GlobalData.CurrentUser.PollsVoted.ToString();
-            }
-            labelUpvotes.Text = GlobalData.CurrentUser.UpvotesGiven.ToString();
-            if (GlobalData.CurrentUser.UpvotesGiven < 10)
-            {
-                labelUpvotes.Text = " " + GlobalData.CurrentUser.UpvotesGiven.ToString();
-            }
-            labelConnections.Text = GlobalData.CurrentUser.Connections.ToString();
-            if (GlobalData.CurrentUser.Connections < 10)
-            {
-                labelConnections.Text = " " + GlobalData.CurrentUser.Connections.ToString();
-            }
-            labelHeader.Text = GlobalData.CurrentUser.Username;
-            foreach(string s in comboBoxGrade.Items)
-            {
-                if(s == GlobalData.CurrentUser.Grade)
-                {
-                    comboBoxGrade.SelectedIndex = comboBoxGrade.Items.IndexOf(s);
-                }
-            }
-        }
-
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            //close this dialog w/o saving
-            this.Close();
+            //return to dashboard, don't save
+            WindowManager.dashboardInUse.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -76,59 +37,49 @@ namespace Software_Development
             GlobalData.ExportCurrentUser();
             //confirmation dialog box
             MessageBox.Show("Changes saved!");
-            //close form
-            this.Close();
+            //return to dashboard
+            WindowManager.dashboardInUse.Show();
+            this.Hide();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
         {
-            //close form
-            this.Close();
+            WindowManager.exitApp();
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            //create a new dashboard form
-            DashboardPage home = new DashboardPage();
-            home.ShowDialog();
-            this.Close();
+            WindowManager.dashboardInUse.Show();
+            this.Hide();
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            //create a new calendar form
-            CalendarPage calendar = new CalendarPage();
-            calendar.ShowDialog();
-            this.Close();
+            WindowManager.calInUse.Show();
+            this.Hide();
         }
 
         private void buttonForum_Click(object sender, EventArgs e)
         {
-            //create a new forum page
-            ForumPage forum = new ForumPage();
-            forum.ShowDialog();
-            this.Close();
+            WindowManager.forumInUse.Show();
+            this.Hide();
         }
 
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
-            //create a new message page
-            MessagingPage message = new MessagingPage();
-            message.ShowDialog();
-            this.Close();
+            WindowManager.messagingInUse.Show();
+            this.Hide();
         }
 
         private void buttonResources_Click(object sender, EventArgs e)
         {
-            //open the resources form
-            ResourcesPage resources = new ResourcesPage();
-            resources.ShowDialog();
-            this.Close();
+            WindowManager.resourcesInUse.Show();
+            this.Hide();
         }
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            WindowManager.logout();
         }
 
         //Set up variables to check if mouse is down and to retain previous mouse location
@@ -159,6 +110,47 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+        }
+
+        private void ProfilePage_Shown(object sender, EventArgs e)
+        {
+            if (GlobalData.CurrentUser.Connections == 0)
+            {
+                Random rng = new Random();
+                GlobalData.CurrentUser.Connections = rng.Next(20) + 10;
+            }
+            textBoxName.Text = GlobalData.CurrentUser.Name;
+            textBoxEmail.Text = GlobalData.CurrentUser.Email;
+            maskedTextBoxPhone.Text = GlobalData.CurrentUser.Phone;
+            textBoxUsername.Text = GlobalData.CurrentUser.Username;
+            labelPostcount.Text = GlobalData.CurrentUser.PostCount.ToString();
+            if (GlobalData.CurrentUser.PostCount < 10)
+            {
+                labelPostcount.Text = " " + GlobalData.CurrentUser.PostCount.ToString();
+            }
+            labelPolls.Text = GlobalData.CurrentUser.PollsVoted.ToString();
+            if (GlobalData.CurrentUser.PollsVoted < 10)
+            {
+                labelPolls.Text = " " + GlobalData.CurrentUser.PollsVoted.ToString();
+            }
+            labelUpvotes.Text = GlobalData.CurrentUser.UpvotesGiven.ToString();
+            if (GlobalData.CurrentUser.UpvotesGiven < 10)
+            {
+                labelUpvotes.Text = " " + GlobalData.CurrentUser.UpvotesGiven.ToString();
+            }
+            labelConnections.Text = GlobalData.CurrentUser.Connections.ToString();
+            if (GlobalData.CurrentUser.Connections < 10)
+            {
+                labelConnections.Text = " " + GlobalData.CurrentUser.Connections.ToString();
+            }
+            labelHeader.Text = GlobalData.CurrentUser.Username;
+            foreach (string s in comboBoxGrade.Items)
+            {
+                if (s == GlobalData.CurrentUser.Grade)
+                {
+                    comboBoxGrade.SelectedIndex = comboBoxGrade.Items.IndexOf(s);
+                }
+            }
         }
     }
 }

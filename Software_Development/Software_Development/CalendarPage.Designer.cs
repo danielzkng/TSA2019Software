@@ -86,7 +86,7 @@
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.pictureBoxClose);
             this.panelHeader.Location = new System.Drawing.Point(231, -2);
-            this.panelHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(4);
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1056, 82);
             this.panelHeader.TabIndex = 38;
@@ -99,13 +99,13 @@
             this.pictureBoxLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxLogout.Image = global::Software_Development.Properties.Resources.logout;
             this.pictureBoxLogout.Location = new System.Drawing.Point(972, 1);
-            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxLogout.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxLogout.Name = "pictureBoxLogout";
             this.pictureBoxLogout.Size = new System.Drawing.Size(40, 43);
             this.pictureBoxLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxLogout.TabIndex = 25;
             this.pictureBoxLogout.TabStop = false;
-            this.pictureBoxLogout.Click += new System.EventHandler(this.buttonHome_Click);
+            this.pictureBoxLogout.Click += new System.EventHandler(this.pictureBoxLogout_Click);
             // 
             // label2
             // 
@@ -124,13 +124,13 @@
             this.pictureBoxClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxClose.Image = global::Software_Development.Properties.Resources.xicon;
             this.pictureBoxClose.Location = new System.Drawing.Point(1013, 9);
-            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxClose.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(28, 27);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxClose.TabIndex = 24;
             this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.buttonHome_Click);
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // panel1
             // 
@@ -142,7 +142,7 @@
             this.panel1.Controls.Add(this.buttonForum);
             this.panel1.Controls.Add(this.buttonHome);
             this.panel1.Location = new System.Drawing.Point(-1, 80);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 585);
             this.panel1.TabIndex = 36;
@@ -280,7 +280,7 @@
             this.panel4.Controls.Add(this.labelSchedDescrip);
             this.panel4.Controls.Add(this.labelPersonalSched);
             this.panel4.Location = new System.Drawing.Point(260, 102);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(592, 229);
             this.panel4.TabIndex = 40;
@@ -317,7 +317,7 @@
             this.panelViewList.Controls.Add(this.checkedListBoxAssignments);
             this.panelViewList.Controls.Add(this.label4);
             this.panelViewList.Location = new System.Drawing.Point(872, 101);
-            this.panelViewList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelViewList.Margin = new System.Windows.Forms.Padding(4);
             this.panelViewList.Name = "panelViewList";
             this.panelViewList.Size = new System.Drawing.Size(385, 230);
             this.panelViewList.TabIndex = 41;
@@ -330,7 +330,7 @@
             this.buttonAddAss.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddAss.ForeColor = System.Drawing.Color.SteelBlue;
             this.buttonAddAss.Location = new System.Drawing.Point(27, 167);
-            this.buttonAddAss.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAddAss.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddAss.Name = "buttonAddAss";
             this.buttonAddAss.Size = new System.Drawing.Size(341, 38);
             this.buttonAddAss.TabIndex = 43;
@@ -377,7 +377,7 @@
             this.buttonAdd.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.Color.SteelBlue;
             this.buttonAdd.Location = new System.Drawing.Point(616, 567);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(341, 62);
             this.buttonAdd.TabIndex = 13;
@@ -391,7 +391,7 @@
             this.panel6.Controls.Add(this.listBoxEvents);
             this.panel6.Controls.Add(this.labelEventsFor);
             this.panel6.Location = new System.Drawing.Point(616, 346);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(341, 197);
             this.panel6.TabIndex = 42;
@@ -434,7 +434,7 @@
             this.panel7.Controls.Add(this.labelEventDescription);
             this.panel7.Controls.Add(this.labelDescriptionHeader);
             this.panel7.Location = new System.Drawing.Point(977, 346);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(281, 281);
             this.panel7.TabIndex = 46;
@@ -498,7 +498,7 @@
             this.panelAddNew.Controls.Add(this.label7);
             this.panelAddNew.Controls.Add(this.label5);
             this.panelAddNew.Location = new System.Drawing.Point(873, 102);
-            this.panelAddNew.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelAddNew.Margin = new System.Windows.Forms.Padding(4);
             this.panelAddNew.Name = "panelAddNew";
             this.panelAddNew.Size = new System.Drawing.Size(385, 229);
             this.panelAddNew.TabIndex = 51;
@@ -511,7 +511,7 @@
             this.buttonCancel.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.SteelBlue;
             this.buttonCancel.Location = new System.Drawing.Point(25, 121);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(341, 38);
             this.buttonCancel.TabIndex = 52;
@@ -527,7 +527,7 @@
             this.buttonAddFinish.Font = new System.Drawing.Font("Segoe UI Light", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAddFinish.ForeColor = System.Drawing.Color.SteelBlue;
             this.buttonAddFinish.Location = new System.Drawing.Point(25, 171);
-            this.buttonAddFinish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAddFinish.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddFinish.Name = "buttonAddFinish";
             this.buttonAddFinish.Size = new System.Drawing.Size(341, 38);
             this.buttonAddFinish.TabIndex = 51;
@@ -573,10 +573,11 @@
             this.panelProfile.Controls.Add(this.labelProfile);
             this.panelProfile.Controls.Add(this.pictureBoxProfile);
             this.panelProfile.Location = new System.Drawing.Point(-1, -2);
-            this.panelProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelProfile.Margin = new System.Windows.Forms.Padding(4);
             this.panelProfile.Name = "panelProfile";
             this.panelProfile.Size = new System.Drawing.Size(232, 82);
             this.panelProfile.TabIndex = 58;
+            this.panelProfile.Click += new System.EventHandler(this.panelProfile_Click);
             // 
             // labelProfile
             // 
@@ -590,19 +591,20 @@
             this.labelProfile.Size = new System.Drawing.Size(92, 21);
             this.labelProfile.TabIndex = 1;
             this.labelProfile.Text = "My Account";
-            this.labelProfile.Click += new System.EventHandler(this.labelProfile_Click);
+            this.labelProfile.Click += new System.EventHandler(this.panelProfile_Click);
             // 
             // pictureBoxProfile
             // 
             this.pictureBoxProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxProfile.Image = global::Software_Development.Properties.Resources.robot;
             this.pictureBoxProfile.Location = new System.Drawing.Point(36, 17);
-            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
             this.pictureBoxProfile.Size = new System.Drawing.Size(52, 48);
             this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxProfile.TabIndex = 0;
             this.pictureBoxProfile.TabStop = false;
+            this.pictureBoxProfile.Click += new System.EventHandler(this.panelProfile_Click);
             // 
             // CalendarPage
             // 
@@ -623,7 +625,7 @@
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CalendarPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";

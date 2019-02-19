@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -19,75 +20,48 @@ namespace Software_Development
 
         private void labelProfile_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
+            WindowManager.profileInUse.Show();
+            this.Hide();
         }
 
         private void pictureBoxProfile_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
+            WindowManager.profileInUse.Show();
+            this.Hide();
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            //create a new dashboard form
-            DashboardPage home = new DashboardPage();
-            home.ShowDialog();
-            this.Close();
+            WindowManager.dashboardInUse.Show();
+            this.Hide();
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            //create a new calendar form
-            CalendarPage calendar = new CalendarPage();
-            calendar.ShowDialog();
-            this.Close();
+            WindowManager.calInUse.Show();
+            this.Hide();
         }
 
         private void buttonForum_Click(object sender, EventArgs e)
         {
-            //create a new forum page
-            ForumPage forum = new ForumPage();
-            forum.ShowDialog();
-            this.Close();
+            WindowManager.forumInUse.Show();
+            this.Hide();
         }
 
         private void buttonResources_Click(object sender, EventArgs e)
         {
-            //open the resources form
-            ResourcesPage resources = new ResourcesPage();
-            resources.ShowDialog();
-            this.Close();
+            WindowManager.resourcesInUse.Show();
+            this.Hide();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            WindowManager.exitApp();
         }
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void MessagingPage_Load(object sender, EventArgs e)
-        {
-            //populate the students list box
-            foreach(int i in GlobalData.CurrentUser.StudentFriends)
-            {
-                listBoxUsers.Items.Add(GlobalData.GetUser(i).Username);
-            }
-
-            //populate the teachers list box
-            foreach(int i in GlobalData.CurrentUser.TeacherFriends)
-            {
-                listBoxTeachers.Items.Add(GlobalData.GetUser(i).Username);
-            }
+            WindowManager.logout();
         }
 
         private void listBoxUsers_SelectedIndexChanged(object sender, EventArgs e)
@@ -156,6 +130,21 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+        }
+
+        private void MessagingPage_Shown(object sender, EventArgs e)
+        {
+            //populate the students list box
+            foreach (int i in GlobalData.CurrentUser.StudentFriends)
+            {
+                listBoxUsers.Items.Add(GlobalData.GetUser(i).Username);
+            }
+
+            //populate the teachers list box
+            foreach (int i in GlobalData.CurrentUser.TeacherFriends)
+            {
+                listBoxTeachers.Items.Add(GlobalData.GetUser(i).Username);
+            }
         }
     }
 }

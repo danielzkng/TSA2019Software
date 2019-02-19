@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -20,60 +21,48 @@ namespace Software_Development
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            //create a new dashboard form
-            DashboardPage home = new DashboardPage();
-            home.ShowDialog();
-            this.Close();
+            WindowManager.dashboardInUse.Show();
+            this.Hide();
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            //create a new calendar form
-            CalendarPage calendar = new CalendarPage();
-            calendar.ShowDialog();
-            this.Close();
+            WindowManager.calInUse.Show();
+            this.Hide();
         }
 
         private void buttonForum_Click(object sender, EventArgs e)
         {
-            //create a new forum page
-            ForumPage forum = new ForumPage();
-            forum.ShowDialog();
-            this.Close();
+            WindowManager.forumInUse.Show();
+            this.Hide();
         }
 
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
-            //create a new message page
-            MessagingPage message = new MessagingPage();
-            message.ShowDialog();
-            this.Close();
+            WindowManager.messagingInUse.Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
+            WindowManager.profileInUse.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
-            this.Close();
+            WindowManager.profileInUse.Show();
+            this.Hide();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            WindowManager.exitApp();
         }
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            WindowManager.logout();
         }
 
         private void button2_Click(object sender, EventArgs e)

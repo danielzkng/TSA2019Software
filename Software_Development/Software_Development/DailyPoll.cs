@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -18,7 +19,7 @@ namespace Software_Development
         {
             InitializeComponent();
             Graphicize();
-            radioButtonChicken.Checked = false;
+            buttonClose.Text = "Back";
         }
 
         private void buttonVote_Click(object sender, EventArgs e)
@@ -61,14 +62,13 @@ namespace Software_Development
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
+            WindowManager.dashboardInUse.Show();
         }
 
         private void buttonDone_Click(object sender, EventArgs e)
         {
-            //create a new dashboard form
-            DashboardPage home = new DashboardPage();
-            home.ShowDialog();
             this.Close();
+            WindowManager.dashboardInUse.Show();
         }
 
         //Set up variables to check if mouse is down and to retain previous mouse location
@@ -99,6 +99,52 @@ namespace Software_Development
         {
             //When mouse is not being held down on form
             mouseDown = false;
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            WindowManager.dashboardInUse.Show();
+        }
+
+        private void buttonCalendar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            WindowManager.calInUse.Show();
+        }
+
+        private void panelProfile_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            WindowManager.profileInUse.Show();
+        }
+
+        private void pictureBoxLogout_Click(object sender, EventArgs e)
+        {
+            WindowManager.logout();
+        }
+
+        private void pictureBoxClose_Click(object sender, EventArgs e)
+        {
+            WindowManager.exitApp();
+        }
+
+        private void buttonForum_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            WindowManager.forumInUse.Show();
+        }
+
+        private void buttonMessaging_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            WindowManager.messagingInUse.Show();
+        }
+
+        private void buttonResources_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            WindowManager.resourcesInUse.Show();
         }
     }
 }

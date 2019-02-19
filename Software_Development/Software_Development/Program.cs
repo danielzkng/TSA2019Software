@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Drawing;
 
 namespace Software_Development
 {
@@ -14,7 +15,7 @@ namespace Software_Development
         ///this allows the program to be closed from certain forms, such as the main screen,
         ///as well as a return to the login screen from other forms, such as the new account screen
         ///</summary>
-        public class FormsInProgram
+        public class WindowManager
         {
             //property of FormsInProgram to access the form itself (which is private)
             public static LoginPage loginInUse
@@ -112,15 +113,33 @@ namespace Software_Development
             //private form -- this is the form itself, not just a public way to access it
             private static ResourcesPage resources;
 
+            //property of FormsInProgram to access the form itself (which is private)
+            public static ProfilePage profileInUse
+            {
+                get
+                {
+                    //if no such form created yet, create the form (this only executes once, when loginInUse is called from Program.cs)
+                    if (profile == null)
+                    {
+                        profile = new ProfilePage();
+                    }
+                    return profile;
+                }
+            }
+            //private form -- this is the form itself, not just a public way to access it
+            private static ProfilePage profile;
+
             public static void logout()
             {
-                dashboardInUse.Close();
+                loginInUse.Show();
+
+                dashboardInUse.Hide();
                 calInUse.Close();
                 forumInUse.Close();
                 messagingInUse.Close();
                 resourcesInUse.Close();
+                GlobalData.CurrentUser = null;
 
-                loginInUse.Show();
             }
 
             public static void exitApp()
@@ -133,15 +152,17 @@ namespace Software_Development
                 loginInUse.Close();
             }
 
-            public static void showDash()
+            public static void initializeForms()
             {
-
+                dashboardInUse.Hide();
+                calInUse.Hide();
+                forumInUse.Hide();
+                messagingInUse.Hide();
+                resourcesInUse.Hide();
+                profileInUse.Hide();
             }
 
-            public static void showCal()
-            {
-
-            }
+            public static Point CurrentLocation { get; set; }
         }
 
         /// <summary>
@@ -157,7 +178,7 @@ namespace Software_Development
             //show the splash screen while the rest of the program loads
             splash.ShowDialog();
             //finally, run a login screen that is called from the class defined earlier
-            Application.Run(FormsInProgram.loginInUse);
+            Application.Run(WindowManager.loginInUse);
         }
     }
 }

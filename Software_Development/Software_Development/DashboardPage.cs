@@ -30,16 +30,14 @@ namespace Software_Development
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            //create a new calendar form
-            CalendarPage calendar = new CalendarPage();
-            calendar.ShowDialog();
+            this.Hide();
+            WindowManager.calInUse.Show();
         }
 
         private void buttonForum_Click(object sender, EventArgs e)
         {
-            //create a new forum page
-            ForumPage forum = new ForumPage();
-            forum.ShowDialog();
+            this.Hide();
+            WindowManager.forumInUse.Show();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -49,23 +47,26 @@ namespace Software_Development
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            logout = true;
-            this.Close();
+            WindowManager.logout();
         }
 
         private void buttonResources_Click(object sender, EventArgs e)
         {
-            //open the resources form
-            ResourcesPage resources = new ResourcesPage();
-            resources.ShowDialog();
+            this.Hide();
+            WindowManager.resourcesInUse.Show();
         }
 
         private void buttonPoll_Click(object sender, EventArgs e)
         {
             //create and show a new daily poll form
             DailyPoll poll = new DailyPoll();
-            poll.ShowDialog();
+            Hide();
+            ShowInTaskbar = false;
+            poll.Show();
+            ShowInTaskbar = true;
         }
+
+        //todo FIO
 
         private void dashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -78,14 +79,14 @@ namespace Software_Development
                 
                 //this is a standard issue exit
                 //the login screen also needs to be closed for a full exit
-                FormsInProgram.loginInUse.Close();
+                WindowManager.loginInUse.Close();
             }
             else
             {
                 //clear current user's data
                 GlobalData.CurrentUser = null;
                 //this is a logout, we need to show the login screen again
-                FormsInProgram.loginInUse.Show();
+                WindowManager.loginInUse.Show();
             }
         }
 
@@ -98,16 +99,14 @@ namespace Software_Development
 
         private void labelProfile_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
+            this.Hide();
+            WindowManager.profileInUse.Show();
         }
 
         private void pictureBoxProfile_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
+            this.Hide();
+            WindowManager.profileInUse.Show();
         }
 
         private void buttonHome_MouseHover(object sender, EventArgs e)
@@ -118,18 +117,14 @@ namespace Software_Development
 
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
-            //create a new message page
-            MessagingPage message = new MessagingPage();
-            message.ShowDialog();
-            this.Close();
+            this.Hide();
+            WindowManager.messagingInUse.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //create a new message page
-            MessagingPage message = new MessagingPage();
-            message.ShowDialog();
-            this.Close();
+            this.Hide();
+            WindowManager.messagingInUse.Show();
         }
 
         //Set up variables to check if mouse is down and to retain previous mouse location

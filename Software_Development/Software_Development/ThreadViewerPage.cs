@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_Development.Program;
 
 namespace Software_Development
 {
@@ -24,60 +25,52 @@ namespace Software_Development
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            //create a new dashboard form
-            DashboardPage home = new DashboardPage();
-            home.ShowDialog();
+            WindowManager.dashboardInUse.Show();
             this.Close();
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            //create a new calendar form
-            CalendarPage calendar = new CalendarPage();
-            calendar.ShowDialog();
+            WindowManager.calInUse.Show();
             this.Close();
         }
 
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
-            //create a new message page
-            MessagingPage message = new MessagingPage();
-            message.ShowDialog();
+            WindowManager.messagingInUse.Show();
             this.Close();
         }
 
         private void buttonResources_Click(object sender, EventArgs e)
         {
-            //open the resources form
-            ResourcesPage resources = new ResourcesPage();
-            resources.ShowDialog();
+            WindowManager.resourcesInUse.Show();
             this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
+            WindowManager.profileInUse.Show();
             this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //bring up the profile screen
-            ProfilePage p = new ProfilePage();
-            p.ShowDialog();
+            WindowManager.profileInUse.Show();
             this.Close();
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
         {
+            WindowManager.exitApp();
             this.Close();
+            Dispose();
         }
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
+            WindowManager.logout();
             this.Close();
+            Dispose();
         }
 
         private void buttonCreatePost_Click(object sender, EventArgs e)

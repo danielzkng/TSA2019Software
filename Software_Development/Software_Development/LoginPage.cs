@@ -72,6 +72,8 @@ namespace Software_Development
                     {
                         success = true;
 
+                        WindowManager.initializeForms();
+
                         //generate the user ID by adding 1000000 to i
                         int UID = 1000000 + i;
 
@@ -106,7 +108,7 @@ namespace Software_Development
 
                         //hide this form and show the main client window
                         this.Hide();
-                        FormsInProgram.dashboardInUse.Show();
+                        WindowManager.dashboardInUse.Show();
                     }
                 }
                 //if login unsuccessful then display a messagebox saying that it wasn't

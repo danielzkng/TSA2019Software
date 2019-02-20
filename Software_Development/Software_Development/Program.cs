@@ -200,12 +200,25 @@ namespace Software_Development
                 notifier.Visible = true;
 
                 notifier.DoubleClick += new System.EventHandler(notifier_DoubleClick);
+                notifier.BalloonTipClicked += new System.EventHandler(notifier_BalloonClick);
             }
 
             private static void exitMenuItem_Click(object Sender, EventArgs e)
             {
                 // Close the form, which closes the application.
                 exitApp();
+            }
+
+            private static void notifier_BalloonClick(object Sender, EventArgs e)
+            {
+                dashboardInUse.Show();
+                calInUse.Hide();
+                forumInUse.Hide();
+                messagingInUse.Hide();
+                resourcesInUse.Hide();
+                profileInUse.Hide();
+                loginInUse.Hide();
+                dashboardInUse.Activate();
             }
 
             private static void notifier_DoubleClick(object Sender, EventArgs e)

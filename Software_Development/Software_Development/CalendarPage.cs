@@ -22,7 +22,8 @@ namespace Software_Development
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            this.Close();
+            WindowManager.dashboardInUse.Show();
+            this.Hide();
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)

@@ -50,9 +50,8 @@ namespace Software_Development
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Location.ToString());
-            //close the form using this.Close();
-            this.Close();
+            //close the form using window manager methods
+            WindowManager.exitApp();
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)

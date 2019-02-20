@@ -33,14 +33,14 @@ namespace Software_Development
         private int downvotes = 0;
         public string Subject { get; set; }
         public string Containing { get; set; }
-        public List<string> Keywords { get; }
+        public List<string> Keywords { get; set; }
         public List<int> Replies { get; set; }
         public int FirstPost { get; }
         public int ID { get; set; }
         public int Views { get; set; }
 
         //list of keywords
-        private List<string> keywords;
+        //private List<string> keywords;
 
         //constructor with all info filled in
         public Thread(string s, string c, int f, int i)
@@ -99,7 +99,7 @@ namespace Software_Development
         //boolean method to check if a particular keyword is used
         public bool keywordUsed(string s)
         {
-            foreach (string k in keywords)
+            foreach (string k in Keywords)
             {
                 //keyword is correct, return true
                 if (k == s) return true;

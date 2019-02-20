@@ -8,17 +8,43 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Software_Development.Program;
+using Windows.UI.Notifications;
+using Windows.Data;
 
 namespace Software_Development
 {
     public partial class DashboardPage : Form
     {
-        //instance variables
-        bool logout = false; //boolean variable for declaring whether or not a form-close is a logout or not
+        public NotifyIcon notifier;
+        private ContextMenu sysTrayMenu;
+        private MenuItem exitMenuItem;
+        private IContainer menuComponents;
 
         public DashboardPage()
         {
             InitializeComponent();
+            menuComponents = new Container();
+            this.sysTrayMenu = new System.Windows.Forms.ContextMenu();
+            this.exitMenuItem = new System.Windows.Forms.MenuItem();
+
+            // Initialize contextMenu1
+            this.sysTrayMenu.MenuItems.AddRange(
+                        new System.Windows.Forms.MenuItem[] { this.exitMenuItem });
+
+            // Initialize menuItem1
+            this.exitMenuItem.Index = 0;
+            this.exitMenuItem.Text = "E&xit";
+            this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
+
+            this.notifier = new System.Windows.Forms.NotifyIcon(this.menuComponents);
+
+            notifier.Icon = new Icon("..\\..\\Resources\\robot.ico");
+            notifier.ContextMenu = sysTrayMenu;
+            notifier.Text = "EduTalk";
+            notifier.Visible = true;
+
+            notifier.DoubleClick += new System.EventHandler(this.notifier_DoubleClick);
+
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
@@ -42,7 +68,7 @@ namespace Software_Development
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            WindowManager.exitApp();
         }
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
@@ -66,6 +92,24 @@ namespace Software_Development
             ShowInTaskbar = true;
         }
 
+        private void exitMenuItem_Click(object Sender, EventArgs e)
+        {
+            // Close the form, which closes the application.
+            WindowManager.exitApp();
+        }
+
+        private void notifier_DoubleClick(object Sender, EventArgs e)
+        {
+            // Show the form when the user double clicks on the notify icon.
+
+            // Set the WindowState to normal if the form is minimized.
+            if (this.WindowState == FormWindowState.Minimized)
+                this.WindowState = FormWindowState.Normal;
+
+            // Activate the form.
+            this.Activate();
+        }
+
         //todo FIO
 
         private void dashboard_FormClosing(object sender, FormClosingEventArgs e)
@@ -74,20 +118,10 @@ namespace Software_Development
             //write user data to file
             GlobalData.ExportCurrentUser();
             GlobalData.ExportAllInfo();
-            if (!logout)
-            {
-                
-                //this is a standard issue exit
-                //the login screen also needs to be closed for a full exit
-                WindowManager.loginInUse.Close();
-            }
-            else
-            {
-                //clear current user's data
-                GlobalData.CurrentUser = null;
-                //this is a logout, we need to show the login screen again
-                WindowManager.loginInUse.Show();
-            }
+            //clear current user's data
+            GlobalData.CurrentUser = null;
+
+            notifier.Dispose();
         }
 
         private void panel2_Click(object sender, EventArgs e)
@@ -161,6 +195,53 @@ namespace Software_Development
         private void DashboardPage_Shown(object sender, EventArgs e)
         {
             Location = WindowManager.CurrentLocation;
+
+            notifier.ShowBalloonTip(30000, "Edutalk • Surprise", "Abort!", ToolTipIcon.Warning);
+
+            /*var toastContent = new ToastContent()
+            {
+                Visual = new ToastVisual()
+                {
+                    BindingGeneric = new ToastBindingGeneric()
+                    {
+                        Children =
+                        {
+                            new AdaptiveText()
+                            {
+                                Text = "Edutalk • New Friend Request"
+                            },
+                            new AdaptiveText()
+                            {
+                                Text = "Allan Dao wants to be friends with you!"
+                            }
+                        }
+                    }
+                },
+                Actions = new ToastActionsCustom()
+                {
+                    Buttons =
+                    {
+                        new ToastButton("Accept", "action=acceptFriendRequest&userId=49183")
+                        {
+                            ActivationType = ToastActivationType.Background
+                        },
+                        new ToastButton("Decline", "action=declineFriendRequest&userId=49183")
+                        {
+                            ActivationType = ToastActivationType.Background
+                        }
+                    }
+                },
+                Launch = "action=viewFriendRequest&userId=49183"
+            };
+
+            // Create the toast notification
+            Windows.Data.Xml.Dom.XmlDocument notif = new Windows.Data.Xml.Dom.XmlDocument();
+            notif.LoadXml(toastContent.GetContent());
+            var toastNotif = new ToastNotification(notif);
+
+            // And send the notification
+            //todo debug this with appID apparently
+            ToastNotificationManager.CreateToastNotifier("Edutalk.Edutalk").Show(toastNotif);*/
         }
     }
 }

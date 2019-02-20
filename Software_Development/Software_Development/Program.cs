@@ -5,11 +5,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace Software_Development
 {
     static class Program
     {
+        [DllImport("shell32.dll", SetLastError = true)]
+        static extern void SetCurrentProcessExplicitAppUserModelID(
+        [MarshalAs(UnmanagedType.LPWStr)] string AppID);
+
+        private static string AppID = "Edutalk.Edutalk"; // use the same ID in all 5 apps
+
         ///<summary>
         ///this class offers a way for every form to show or close the login screen, which all the other forms are based off of
         ///this allows the program to be closed from certain forms, such as the main screen,
@@ -171,6 +178,7 @@ namespace Software_Development
         [STAThread]
         static void Main()
         {
+            SetCurrentProcessExplicitAppUserModelID(AppID);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //initialize a splash screen for use

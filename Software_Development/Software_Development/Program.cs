@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using System.ComponentModel;
 
 namespace Software_Development
 {
@@ -15,7 +16,7 @@ namespace Software_Development
         static extern void SetCurrentProcessExplicitAppUserModelID(
         [MarshalAs(UnmanagedType.LPWStr)] string AppID);
 
-        private static string AppID = "Edutalk.Edutalk"; // use the same ID in all 5 apps
+        private static string AppID = "Edutalk.Edutalk";
 
         ///<summary>
         ///this class offers a way for every form to show or close the login screen, which all the other forms are based off of
@@ -136,6 +137,11 @@ namespace Software_Development
             //private form -- this is the form itself, not just a public way to access it
             private static ProfilePage profile;
 
+            public static NotifyIcon notifier;
+            private static ContextMenu sysTrayMenu;
+            private static MenuItem exitMenuItem;
+            private static IContainer menuComponents;
+
             public static void logout()
             {
                 loginInUse.Show();
@@ -146,7 +152,7 @@ namespace Software_Development
                 messagingInUse.Close();
                 resourcesInUse.Close();
                 GlobalData.CurrentUser = null;
-
+                notifier.Dispose();
             }
 
             public static void exitApp()
@@ -157,6 +163,7 @@ namespace Software_Development
                 messagingInUse.Close();
                 resourcesInUse.Close();
                 loginInUse.Close();
+                notifier.Dispose();
             }
 
             public static void initializeForms()
@@ -167,6 +174,50 @@ namespace Software_Development
                 messagingInUse.Hide();
                 resourcesInUse.Hide();
                 profileInUse.Hide();
+                initializeNotifier();
+            }
+
+            public static void initializeNotifier()
+            {
+                menuComponents = new Container();
+                sysTrayMenu = new System.Windows.Forms.ContextMenu();
+                exitMenuItem = new System.Windows.Forms.MenuItem();
+
+                // Initialize contextMenu
+                sysTrayMenu.MenuItems.AddRange(
+                            new System.Windows.Forms.MenuItem[] { exitMenuItem });
+
+                // Initialize menuItem1
+                exitMenuItem.Index = 0;
+                exitMenuItem.Text = "E&xit";
+                exitMenuItem.Click += new System.EventHandler(exitMenuItem_Click);
+
+                notifier = new System.Windows.Forms.NotifyIcon(menuComponents);
+
+                notifier.Icon = new Icon("..\\..\\Resources\\robot.ico");
+                notifier.ContextMenu = sysTrayMenu;
+                notifier.Text = "EduTalk";
+                notifier.Visible = true;
+
+                notifier.DoubleClick += new System.EventHandler(notifier_DoubleClick);
+            }
+
+            private static void exitMenuItem_Click(object Sender, EventArgs e)
+            {
+                // Close the form, which closes the application.
+                exitApp();
+            }
+
+            private static void notifier_DoubleClick(object Sender, EventArgs e)
+            {
+                // Show the form when the user double clicks on the notify icon.
+
+                // Set the WindowState to normal if the form is minimized.
+                if (dashboardInUse.WindowState == FormWindowState.Minimized)
+                    dashboardInUse.WindowState = FormWindowState.Normal;
+
+                // Activate the form.
+                dashboardInUse.Activate();
             }
 
             public static Point CurrentLocation { get; set; }

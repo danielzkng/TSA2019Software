@@ -216,9 +216,12 @@ namespace Software_Development
 
         public static void ExportCurrentUser()
         {
-            FileStream f = new FileStream("Profiles\\profile" + CurrentUser.ID.ToString() + ".bin", FileMode.Create);
-            serializer.Serialize(f, CurrentUser);
-            f.Close();
+            if (CurrentUser != null)
+            {
+                FileStream f = new FileStream("Profiles\\profile" + CurrentUser.ID.ToString() + ".bin", FileMode.Create);
+                serializer.Serialize(f, CurrentUser);
+                f.Close();
+            }
         }
 
         //HEY DANIEL DON'T BOTHER LOOKING PAST HERE, THESE METHODS ALL WORK AND ARE REAL BASIC

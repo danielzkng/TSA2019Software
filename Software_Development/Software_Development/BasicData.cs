@@ -28,8 +28,7 @@ namespace Software_Development
             else
             {
                 GlobalData.CurrentUser = new CurrentUserData(textBoxName.Text, textBoxEmail.Text, maskedTextBoxPhone.Text, comboBoxGrade.Text);
-                LoginPage login = new LoginPage();
-                login.ShowDialog();
+                WindowManager.dashboardInUse.Show();
                 this.Close();
             }
         }

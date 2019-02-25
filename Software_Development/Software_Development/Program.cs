@@ -144,6 +144,8 @@ namespace Software_Development
 
             public static void logout()
             {
+                GlobalData.ExportCurrentUser();
+
                 loginInUse.Show();
 
                 dashboardInUse.Hide();
@@ -163,7 +165,7 @@ namespace Software_Development
                 messagingInUse.Close();
                 resourcesInUse.Close();
                 loginInUse.Close();
-                notifier.Dispose();
+                if(notifier != null) notifier.Dispose();
             }
 
             public static void initializeForms()

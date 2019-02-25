@@ -95,6 +95,7 @@ namespace Software_Development
                             BasicData basic = new BasicData();
                             basic.ShowDialog();
                             GlobalData.CurrentUser.Username = textBoxUsername.Text;
+                            GlobalData.CurrentUser.ID = UID;
                             //export user data
                             GlobalData.ExportCurrentUser();
                         }

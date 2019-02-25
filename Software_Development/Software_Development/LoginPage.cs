@@ -171,6 +171,7 @@ namespace Software_Development
                 serializer.Serialize(loginsOut, usernames[i]);
                 serializer.Serialize(loginsOut, passwords[i]);
             }
+            Location = WindowManager.CurrentLocation;
             loginsOut.Close();
         }
 
@@ -237,6 +238,7 @@ namespace Software_Development
         private void LoginPage_Shown(object sender, EventArgs e)
         {
             Location = WindowManager.CurrentLocation;
+            this.CenterToScreen();
         }
     }
 }

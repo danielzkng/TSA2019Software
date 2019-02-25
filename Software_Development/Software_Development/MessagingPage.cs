@@ -149,5 +149,11 @@ namespace Software_Development
 
             Location = WindowManager.CurrentLocation;
         }
+
+        private void buttonReport_Click(object sender, EventArgs e)
+        {
+            ReportPage reportScreen = new ReportPage();
+            reportScreen.Show();
+        }
     }
 }

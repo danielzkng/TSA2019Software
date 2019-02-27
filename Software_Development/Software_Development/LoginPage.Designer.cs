@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -59,7 +60,7 @@
             this.label6.ForeColor = System.Drawing.Color.SteelBlue;
             this.label6.Location = new System.Drawing.Point(90, 540);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 19);
+            this.label6.Size = new System.Drawing.Size(159, 17);
             this.label6.TabIndex = 20;
             this.label6.Text = "Copyright © 2019 Edutalk";
             // 
@@ -71,7 +72,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(40, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 59);
+            this.label3.Size = new System.Drawing.Size(156, 51);
             this.label3.TabIndex = 18;
             this.label3.Text = "Edutalk";
             // 
@@ -84,7 +85,7 @@
             this.textBoxPassword.Location = new System.Drawing.Point(48, 235);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '●';
-            this.textBoxPassword.Size = new System.Drawing.Size(376, 30);
+            this.textBoxPassword.Size = new System.Drawing.Size(376, 27);
             this.textBoxPassword.TabIndex = 16;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
@@ -111,7 +112,7 @@
             this.label2.ForeColor = System.Drawing.Color.LightGray;
             this.label2.Location = new System.Drawing.Point(45, 131);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 30);
+            this.label2.Size = new System.Drawing.Size(147, 25);
             this.label2.TabIndex = 14;
             this.label2.Text = "Let\'s get started.";
             // 
@@ -124,7 +125,7 @@
             this.textBoxUsername.Location = new System.Drawing.Point(48, 191);
             this.textBoxUsername.MaxLength = 40;
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(376, 30);
+            this.textBoxUsername.Size = new System.Drawing.Size(376, 27);
             this.textBoxUsername.TabIndex = 15;
             this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
             // 
@@ -168,7 +169,7 @@
             this.labelUsername.Location = new System.Drawing.Point(56, 193);
             this.labelUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(83, 23);
+            this.labelUsername.Size = new System.Drawing.Size(73, 20);
             this.labelUsername.TabIndex = 20;
             this.labelUsername.Text = "Username";
             this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
@@ -182,7 +183,7 @@
             this.labelPassword.Location = new System.Drawing.Point(56, 237);
             this.labelPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(78, 23);
+            this.labelPassword.Size = new System.Drawing.Size(66, 20);
             this.labelPassword.TabIndex = 19;
             this.labelPassword.Text = "Password";
             this.labelPassword.Click += new System.EventHandler(this.labelPassword_Click);
@@ -215,7 +216,7 @@
             this.label4.ForeColor = System.Drawing.Color.DimGray;
             this.label4.Location = new System.Drawing.Point(57, 96);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(215, 60);
+            this.label4.Size = new System.Drawing.Size(187, 50);
             this.label4.TabIndex = 19;
             this.label4.Text = "Log in to see what\'s \r\nnew with your school!";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -228,7 +229,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(53, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 45);
+            this.label1.Size = new System.Drawing.Size(212, 38);
             this.label1.TabIndex = 19;
             this.label1.Text = "Welcome back!";
             // 
@@ -267,6 +268,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login2";

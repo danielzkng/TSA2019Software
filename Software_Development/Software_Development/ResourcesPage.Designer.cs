@@ -104,7 +104,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(47, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 25);
+            this.label6.Size = new System.Drawing.Size(106, 21);
             this.label6.TabIndex = 1;
             this.label6.Text = "Staff Directory";
             // 
@@ -141,7 +141,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 32);
+            this.label2.Size = new System.Drawing.Size(106, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Resources";
             // 
@@ -174,7 +174,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(69, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 19);
+            this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "My Account";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -316,7 +316,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 45);
+            this.label3.Size = new System.Drawing.Size(116, 38);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -334,7 +334,7 @@
             this.listBoxTeachers.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxTeachers.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxTeachers.FormattingEnabled = true;
-            this.listBoxTeachers.ItemHeight = 20;
+            this.listBoxTeachers.ItemHeight = 17;
             this.listBoxTeachers.Items.AddRange(new object[] {
             "Mrs. Adams",
             "Ms. Black",
@@ -347,9 +347,9 @@
             "Ms. Schneider",
             "Mrs. Williamson"});
             this.listBoxTeachers.Location = new System.Drawing.Point(10, 7);
-            this.listBoxTeachers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxTeachers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxTeachers.Name = "listBoxTeachers";
-            this.listBoxTeachers.Size = new System.Drawing.Size(196, 264);
+            this.listBoxTeachers.Size = new System.Drawing.Size(196, 259);
             this.listBoxTeachers.TabIndex = 0;
             // 
             // panel8
@@ -366,7 +366,7 @@
             this.listBoxResources.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxResources.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxResources.FormattingEnabled = true;
-            this.listBoxResources.ItemHeight = 20;
+            this.listBoxResources.ItemHeight = 17;
             this.listBoxResources.Items.AddRange(new object[] {
             "Google Classroom",
             "Google Drive",
@@ -375,9 +375,9 @@
             "Online Grades",
             "Quizlet"});
             this.listBoxResources.Location = new System.Drawing.Point(12, 7);
-            this.listBoxResources.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxResources.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxResources.Name = "listBoxResources";
-            this.listBoxResources.Size = new System.Drawing.Size(196, 264);
+            this.listBoxResources.Size = new System.Drawing.Size(196, 259);
             this.listBoxResources.TabIndex = 1;
             // 
             // panel9
@@ -396,7 +396,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(62, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 25);
+            this.label7.Size = new System.Drawing.Size(79, 21);
             this.label7.TabIndex = 1;
             this.label7.Text = "Resources";
             // 
@@ -417,7 +417,7 @@
             this.labelInfo.Location = new System.Drawing.Point(14, 187);
             this.labelInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(190, 105);
+            this.labelInfo.Size = new System.Drawing.Size(168, 95);
             this.labelInfo.TabIndex = 1;
             this.labelInfo.Text = "123 Happy Street\r\nCity, WA\r\n12345-6789\r\nTelephone: (555)-555-5555\r\nEmail: admin@s" +
     "chool.org";
@@ -427,7 +427,7 @@
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = global::Software_Development.Properties.Resources.Map0;
             this.pictureBox2.Location = new System.Drawing.Point(17, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(184, 163);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -450,7 +450,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(32, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(167, 25);
+            this.label4.Size = new System.Drawing.Size(140, 21);
             this.label4.TabIndex = 1;
             this.label4.Text = "School Information";
             // 
@@ -502,6 +502,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ResourcesPage";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

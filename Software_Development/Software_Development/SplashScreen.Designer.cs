@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
             this.labelNames = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,7 +47,7 @@
             this.labelNames.Location = new System.Drawing.Point(416, 299);
             this.labelNames.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNames.Name = "labelNames";
-            this.labelNames.Size = new System.Drawing.Size(155, 30);
+            this.labelNames.Size = new System.Drawing.Size(131, 25);
             this.labelNames.TabIndex = 9;
             this.labelNames.Text = "Team #1234-1";
             // 
@@ -58,7 +59,7 @@
             this.label1.Location = new System.Drawing.Point(373, 255);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 30);
+            this.label1.Size = new System.Drawing.Size(215, 25);
             this.label1.TabIndex = 10;
             this.label1.Text = "Loading up your school...";
             // 
@@ -99,6 +100,7 @@
             this.Controls.Add(this.labelNames);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";

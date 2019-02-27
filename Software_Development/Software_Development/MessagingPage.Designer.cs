@@ -106,7 +106,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 32);
+            this.label2.Size = new System.Drawing.Size(113, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Messaging";
             // 
@@ -248,7 +248,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 45);
+            this.label3.Size = new System.Drawing.Size(116, 38);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -270,7 +270,7 @@
             this.labelProfile.ForeColor = System.Drawing.Color.White;
             this.labelProfile.Location = new System.Drawing.Point(69, 24);
             this.labelProfile.Name = "labelProfile";
-            this.labelProfile.Size = new System.Drawing.Size(83, 19);
+            this.labelProfile.Size = new System.Drawing.Size(76, 17);
             this.labelProfile.TabIndex = 1;
             this.labelProfile.Text = "My Account";
             this.labelProfile.Click += new System.EventHandler(this.labelProfile_Click);
@@ -312,7 +312,7 @@
             this.label1.Location = new System.Drawing.Point(445, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 23);
+            this.label1.Size = new System.Drawing.Size(76, 20);
             this.label1.TabIndex = 132;
             this.label1.Text = "Messages:";
             // 
@@ -324,7 +324,7 @@
             this.label5.Location = new System.Drawing.Point(206, 92);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 23);
+            this.label5.Size = new System.Drawing.Size(102, 20);
             this.label5.TabIndex = 131;
             this.label5.Text = "User Contacts:";
             // 
@@ -336,7 +336,7 @@
             this.labelMsg.Location = new System.Drawing.Point(343, 388);
             this.labelMsg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMsg.Name = "labelMsg";
-            this.labelMsg.Size = new System.Drawing.Size(118, 23);
+            this.labelMsg.Size = new System.Drawing.Size(103, 20);
             this.labelMsg.TabIndex = 129;
             this.labelMsg.Text = "New Message:";
             // 
@@ -348,7 +348,7 @@
             this.textBoxMessage.Location = new System.Drawing.Point(347, 422);
             this.textBoxMessage.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxMessage.Name = "textBoxMessage";
-            this.textBoxMessage.Size = new System.Drawing.Size(581, 26);
+            this.textBoxMessage.Size = new System.Drawing.Size(581, 24);
             this.textBoxMessage.TabIndex = 128;
             this.textBoxMessage.TextChanged += new System.EventHandler(this.textBoxMessage_TextChanged);
             // 
@@ -357,12 +357,12 @@
             this.listBoxChat.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxChat.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxChat.FormattingEnabled = true;
-            this.listBoxChat.ItemHeight = 19;
+            this.listBoxChat.ItemHeight = 15;
             this.listBoxChat.Location = new System.Drawing.Point(449, 124);
             this.listBoxChat.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxChat.Name = "listBoxChat";
             this.listBoxChat.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.listBoxChat.Size = new System.Drawing.Size(479, 232);
+            this.listBoxChat.Size = new System.Drawing.Size(479, 229);
             this.listBoxChat.TabIndex = 127;
             // 
             // listBoxUsers
@@ -370,11 +370,11 @@
             this.listBoxUsers.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxUsers.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxUsers.FormattingEnabled = true;
-            this.listBoxUsers.ItemHeight = 19;
+            this.listBoxUsers.ItemHeight = 15;
             this.listBoxUsers.Location = new System.Drawing.Point(208, 124);
             this.listBoxUsers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxUsers.Name = "listBoxUsers";
-            this.listBoxUsers.Size = new System.Drawing.Size(214, 80);
+            this.listBoxUsers.Size = new System.Drawing.Size(214, 79);
             this.listBoxUsers.TabIndex = 126;
             this.listBoxUsers.SelectedIndexChanged += new System.EventHandler(this.listBoxUsers_SelectedIndexChanged);
             // 
@@ -383,11 +383,11 @@
             this.listBoxTeachers.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxTeachers.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxTeachers.FormattingEnabled = true;
-            this.listBoxTeachers.ItemHeight = 19;
+            this.listBoxTeachers.ItemHeight = 15;
             this.listBoxTeachers.Location = new System.Drawing.Point(210, 276);
             this.listBoxTeachers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxTeachers.Name = "listBoxTeachers";
-            this.listBoxTeachers.Size = new System.Drawing.Size(214, 80);
+            this.listBoxTeachers.Size = new System.Drawing.Size(214, 79);
             this.listBoxTeachers.TabIndex = 134;
             this.listBoxTeachers.SelectedIndexChanged += new System.EventHandler(this.listBoxTeachers_SelectedIndexChanged);
             // 
@@ -399,7 +399,7 @@
             this.label4.Location = new System.Drawing.Point(207, 241);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 23);
+            this.label4.Size = new System.Drawing.Size(123, 20);
             this.label4.TabIndex = 135;
             this.label4.Text = "Teacher Contacts:";
             // 
@@ -440,6 +440,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelProfile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MessagingPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessagingPage";

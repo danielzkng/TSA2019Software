@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewEvent));
             this.monthCalendarDate = new System.Windows.Forms.MonthCalendar();
             this.labelDate = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
@@ -55,7 +56,7 @@
             this.labelDate.Location = new System.Drawing.Point(25, 16);
             this.labelDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(40, 19);
+            this.labelDate.Size = new System.Drawing.Size(38, 17);
             this.labelDate.TabIndex = 1;
             this.labelDate.Text = "Date:";
             // 
@@ -66,7 +67,7 @@
             this.labelName.Location = new System.Drawing.Point(25, 239);
             this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(48, 19);
+            this.labelName.Size = new System.Drawing.Size(45, 17);
             this.labelName.TabIndex = 2;
             this.labelName.Text = "Name:";
             // 
@@ -76,7 +77,7 @@
             this.textBoxName.Location = new System.Drawing.Point(150, 237);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(180, 23);
+            this.textBoxName.Size = new System.Drawing.Size(180, 21);
             this.textBoxName.TabIndex = 3;
             // 
             // labelInCal
@@ -86,7 +87,7 @@
             this.labelInCal.Location = new System.Drawing.Point(25, 303);
             this.labelInCal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelInCal.Name = "labelInCal";
-            this.labelInCal.Size = new System.Drawing.Size(105, 19);
+            this.labelInCal.Size = new System.Drawing.Size(97, 17);
             this.labelInCal.TabIndex = 4;
             this.labelInCal.Text = "Event Category:";
             // 
@@ -98,7 +99,7 @@
             this.comboBox1.Location = new System.Drawing.Point(150, 303);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 23);
+            this.comboBox1.Size = new System.Drawing.Size(180, 20);
             this.comboBox1.TabIndex = 5;
             // 
             // buttonSubmit
@@ -139,7 +140,7 @@
             this.textBoxDescription.Location = new System.Drawing.Point(150, 270);
             this.textBoxDescription.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.Size = new System.Drawing.Size(180, 23);
+            this.textBoxDescription.Size = new System.Drawing.Size(180, 21);
             this.textBoxDescription.TabIndex = 9;
             // 
             // labelDescrip
@@ -149,7 +150,7 @@
             this.labelDescrip.Location = new System.Drawing.Point(25, 271);
             this.labelDescrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDescrip.Name = "labelDescrip";
-            this.labelDescrip.Size = new System.Drawing.Size(80, 19);
+            this.labelDescrip.Size = new System.Drawing.Size(73, 17);
             this.labelDescrip.TabIndex = 8;
             this.labelDescrip.Text = "Description:";
             // 
@@ -170,6 +171,7 @@
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.monthCalendarDate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewEvent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

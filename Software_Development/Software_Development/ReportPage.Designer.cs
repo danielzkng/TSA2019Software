@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportPage));
             this.richTextBoxMessage = new System.Windows.Forms.RichTextBox();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -84,7 +85,7 @@
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
             this.label1.Location = new System.Drawing.Point(83, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 38);
+            this.label1.Size = new System.Drawing.Size(296, 35);
             this.label1.TabIndex = 9;
             this.label1.Text = "Submit a Report or Ticket";
             // 
@@ -95,7 +96,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(97, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(302, 76);
+            this.label2.Size = new System.Drawing.Size(288, 68);
             this.label2.TabIndex = 10;
             this.label2.Text = "If you see something that needs to be \r\nreported, please send it to us here. A St" +
     "udyLink \r\nreviewer and/or school adminstrator will take a\r\n look at your report " +
@@ -113,6 +114,7 @@
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.richTextBoxMessage);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReportPage";
             this.Text = "Report or Ticket System";
             this.ResumeLayout(false);

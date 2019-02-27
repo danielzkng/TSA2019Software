@@ -114,7 +114,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 32);
+            this.label2.Size = new System.Drawing.Size(114, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Dashboard";
             // 
@@ -149,7 +149,7 @@
             this.labelProfile.ForeColor = System.Drawing.Color.White;
             this.labelProfile.Location = new System.Drawing.Point(69, 24);
             this.labelProfile.Name = "labelProfile";
-            this.labelProfile.Size = new System.Drawing.Size(83, 19);
+            this.labelProfile.Size = new System.Drawing.Size(76, 17);
             this.labelProfile.TabIndex = 1;
             this.labelProfile.Text = "My Account";
             this.labelProfile.Click += new System.EventHandler(this.labelProfile_Click);
@@ -251,7 +251,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 45);
+            this.label3.Size = new System.Drawing.Size(116, 38);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -315,7 +315,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(28, 83);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(354, 105);
+            this.label5.Size = new System.Drawing.Size(319, 95);
             this.label5.TabIndex = 27;
             this.label5.Text = "Hey Hawks, hope everyone is having a great week!\r\nImportant News:\r\n- Orchestra Co" +
     "ncert coming up\r\n- Spring sports - Athletic Meeting for Parents\r\n- Volunteer for" +
@@ -328,7 +328,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(25, 33);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(257, 47);
+            this.label4.Size = new System.Drawing.Size(221, 41);
             this.label4.TabIndex = 26;
             this.label4.Text = "School Update:";
             // 
@@ -420,6 +420,7 @@
             this.Controls.Add(this.panelProfile);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashboardPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";

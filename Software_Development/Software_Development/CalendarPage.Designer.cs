@@ -112,7 +112,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 32);
+            this.label2.Size = new System.Drawing.Size(95, 30);
             this.label2.TabIndex = 2;
             this.label2.Text = "Calendar";
             // 
@@ -171,7 +171,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 45);
+            this.label3.Size = new System.Drawing.Size(116, 38);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -284,7 +284,7 @@
             this.labelSchedDescrip.ForeColor = System.Drawing.Color.White;
             this.labelSchedDescrip.Location = new System.Drawing.Point(9, 54);
             this.labelSchedDescrip.Name = "labelSchedDescrip";
-            this.labelSchedDescrip.Size = new System.Drawing.Size(184, 84);
+            this.labelSchedDescrip.Size = new System.Drawing.Size(165, 76);
             this.labelSchedDescrip.TabIndex = 2;
             this.labelSchedDescrip.Text = "- School 7:40AM - 2:00PM\r\n- Club Meeting 2:30PM\r\n- Dinner 6:00PM\r\n- Soccer Practi" +
     "ce 8:00PM\r\n";
@@ -296,7 +296,7 @@
             this.labelPersonalSched.ForeColor = System.Drawing.Color.White;
             this.labelPersonalSched.Location = new System.Drawing.Point(129, 11);
             this.labelPersonalSched.Name = "labelPersonalSched";
-            this.labelPersonalSched.Size = new System.Drawing.Size(198, 25);
+            this.labelPersonalSched.Size = new System.Drawing.Size(163, 21);
             this.labelPersonalSched.TabIndex = 1;
             this.labelPersonalSched.Text = "My Schedule for Today";
             // 
@@ -340,9 +340,9 @@
             "History Test",
             "Orchestra Rehearsal"});
             this.checkedListBoxAssignments.Location = new System.Drawing.Point(15, 41);
-            this.checkedListBoxAssignments.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkedListBoxAssignments.Margin = new System.Windows.Forms.Padding(2);
             this.checkedListBoxAssignments.Name = "checkedListBoxAssignments";
-            this.checkedListBoxAssignments.Size = new System.Drawing.Size(257, 54);
+            this.checkedListBoxAssignments.Size = new System.Drawing.Size(257, 48);
             this.checkedListBoxAssignments.TabIndex = 50;
             // 
             // label4
@@ -352,7 +352,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(48, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(205, 25);
+            this.label4.Size = new System.Drawing.Size(173, 21);
             this.label4.TabIndex = 0;
             this.label4.Text = "Upcoming Assignments";
             // 
@@ -388,14 +388,14 @@
             this.listBoxEvents.Font = new System.Drawing.Font("Segoe UI Semilight", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxEvents.ForeColor = System.Drawing.Color.White;
             this.listBoxEvents.FormattingEnabled = true;
-            this.listBoxEvents.ItemHeight = 19;
+            this.listBoxEvents.ItemHeight = 15;
             this.listBoxEvents.Items.AddRange(new object[] {
             "Orchestra Concert",
             "Basketball Game"});
             this.listBoxEvents.Location = new System.Drawing.Point(11, 40);
-            this.listBoxEvents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxEvents.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxEvents.Name = "listBoxEvents";
-            this.listBoxEvents.Size = new System.Drawing.Size(227, 38);
+            this.listBoxEvents.Size = new System.Drawing.Size(227, 30);
             this.listBoxEvents.TabIndex = 45;
             this.listBoxEvents.SelectedIndexChanged += new System.EventHandler(this.listBoxEvents_SelectedIndexChanged);
             // 
@@ -407,7 +407,7 @@
             this.labelEventsFor.Location = new System.Drawing.Point(48, 13);
             this.labelEventsFor.MaximumSize = new System.Drawing.Size(250, 25);
             this.labelEventsFor.Name = "labelEventsFor";
-            this.labelEventsFor.Size = new System.Drawing.Size(154, 25);
+            this.labelEventsFor.Size = new System.Drawing.Size(127, 21);
             this.labelEventsFor.TabIndex = 0;
             this.labelEventsFor.Text = "Events for <day>";
             this.labelEventsFor.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -430,7 +430,7 @@
             this.labelEventDescription.Location = new System.Drawing.Point(9, 48);
             this.labelEventDescription.MaximumSize = new System.Drawing.Size(180, 300);
             this.labelEventDescription.Name = "labelEventDescription";
-            this.labelEventDescription.Size = new System.Drawing.Size(40, 21);
+            this.labelEventDescription.Size = new System.Drawing.Size(34, 19);
             this.labelEventDescription.TabIndex = 2;
             this.labelEventDescription.Text = "filler";
             // 
@@ -441,7 +441,7 @@
             this.labelDescriptionHeader.ForeColor = System.Drawing.Color.White;
             this.labelDescriptionHeader.Location = new System.Drawing.Point(26, 13);
             this.labelDescriptionHeader.Name = "labelDescriptionHeader";
-            this.labelDescriptionHeader.Size = new System.Drawing.Size(164, 25);
+            this.labelDescriptionHeader.Size = new System.Drawing.Size(136, 21);
             this.labelDescriptionHeader.TabIndex = 1;
             this.labelDescriptionHeader.Text = "No event selected.";
             this.labelDescriptionHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -454,9 +454,9 @@
             this.comboBoxFilters.Items.AddRange(new object[] {
             "All"});
             this.comboBoxFilters.Location = new System.Drawing.Point(280, 490);
-            this.comboBoxFilters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxFilters.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxFilters.Name = "comboBoxFilters";
-            this.comboBoxFilters.Size = new System.Drawing.Size(148, 21);
+            this.comboBoxFilters.Size = new System.Drawing.Size(148, 20);
             this.comboBoxFilters.TabIndex = 47;
             this.comboBoxFilters.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilters_SelectedIndexChanged);
             // 
@@ -467,7 +467,7 @@
             this.label6.Location = new System.Drawing.Point(220, 492);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 17);
+            this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 49;
             this.label6.Text = "Filter By:";
             // 
@@ -517,7 +517,7 @@
             // textBoxNewName
             // 
             this.textBoxNewName.Location = new System.Drawing.Point(82, 54);
-            this.textBoxNewName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNewName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNewName.Name = "textBoxNewName";
             this.textBoxNewName.Size = new System.Drawing.Size(193, 20);
             this.textBoxNewName.TabIndex = 2;
@@ -529,7 +529,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(15, 49);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 25);
+            this.label7.Size = new System.Drawing.Size(55, 21);
             this.label7.TabIndex = 1;
             this.label7.Text = "Name:";
             // 
@@ -540,7 +540,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(47, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(205, 25);
+            this.label5.Size = new System.Drawing.Size(173, 21);
             this.label5.TabIndex = 0;
             this.label5.Text = "Upcoming Assignments";
             // 
@@ -563,7 +563,7 @@
             this.labelProfile.ForeColor = System.Drawing.Color.White;
             this.labelProfile.Location = new System.Drawing.Point(69, 24);
             this.labelProfile.Name = "labelProfile";
-            this.labelProfile.Size = new System.Drawing.Size(83, 19);
+            this.labelProfile.Size = new System.Drawing.Size(76, 17);
             this.labelProfile.TabIndex = 1;
             this.labelProfile.Text = "My Account";
             this.labelProfile.Click += new System.EventHandler(this.panelProfile_Click);
@@ -599,6 +599,7 @@
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CalendarPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";

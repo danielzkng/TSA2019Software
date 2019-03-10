@@ -112,5 +112,39 @@ namespace Software_Development
         {
             Location = WindowManager.CurrentLocation;
         }
+
+        private void listBoxResources_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(listBoxResources.SelectedIndex == 0)
+            {
+                ProcessStartInfo sInfo = new ProcessStartInfo("http://classroom.google.com/");
+                Process.Start(sInfo);
+            }
+            else if(listBoxResources.SelectedIndex == 1)
+            {
+                ProcessStartInfo sInfo = new ProcessStartInfo("http://drive.google.com/");
+                Process.Start(sInfo);
+            }
+            else if(listBoxResources.SelectedIndex == 2)
+            {
+                ProcessStartInfo sInfo = new ProcessStartInfo("http://edmodo.com/");
+                Process.Start(sInfo);
+            }
+            else if (listBoxResources.SelectedIndex == 3)
+            {
+                ProcessStartInfo sInfo = new ProcessStartInfo("https://www.remind.com/");
+                Process.Start(sInfo);
+            }
+            else if (listBoxResources.SelectedIndex == 4)
+            {
+                ProcessStartInfo sInfo = new ProcessStartInfo("http://grades.nsd.org/");
+                Process.Start(sInfo);
+            }
+            else if (listBoxResources.SelectedIndex == 5)
+            {
+                ProcessStartInfo sInfo = new ProcessStartInfo("http://quizlet.com/");
+                Process.Start(sInfo);
+            }
+        }
     }
 }

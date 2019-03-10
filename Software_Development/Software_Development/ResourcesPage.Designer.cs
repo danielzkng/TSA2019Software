@@ -379,10 +379,11 @@
             this.listBoxResources.Name = "listBoxResources";
             this.listBoxResources.Size = new System.Drawing.Size(196, 259);
             this.listBoxResources.TabIndex = 1;
+            this.listBoxResources.SelectedIndexChanged += new System.EventHandler(this.listBoxResources_SelectedIndexChanged);
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
+            this.panel9.BackColor = System.Drawing.Color.LimeGreen;
             this.panel9.Controls.Add(this.label7);
             this.panel9.Location = new System.Drawing.Point(460, 89);
             this.panel9.Name = "panel9";

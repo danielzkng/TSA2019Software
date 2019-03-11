@@ -230,8 +230,6 @@ namespace Software_Development
             {
                 comboBoxFilters.Items.Add(c.Name);
             }
-
-            Location = WindowManager.CurrentLocation;
         }
 
         private void panelProfile_Click(object sender, EventArgs e)
@@ -261,6 +259,11 @@ namespace Software_Development
         private void CalendarPage_LocationChanged(object sender, EventArgs e)
         {
             WindowManager.CurrentLocation = this.Location;
+        }
+
+        private void CalendarPage_Load(object sender, EventArgs e)
+        {
+            Location = WindowManager.CurrentLocation;
         }
     }
 }

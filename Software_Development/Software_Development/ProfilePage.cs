@@ -155,5 +155,10 @@ namespace Software_Development
 
             Location = WindowManager.CurrentLocation;
         }
+
+        private void pictureBoxMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

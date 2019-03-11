@@ -73,6 +73,7 @@
             this.labelGrade = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.labeluname = new System.Windows.Forms.Label();
+            this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -88,11 +89,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.pictureBoxMinimize);
             this.panelHeader.Controls.Add(this.pictureBoxLogout);
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.pictureBoxClose);
@@ -123,7 +126,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 30);
+            this.label2.Size = new System.Drawing.Size(124, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "My Profile";
             // 
@@ -266,7 +269,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 38);
+            this.label3.Size = new System.Drawing.Size(132, 45);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -277,7 +280,7 @@
             this.maskedTextBoxPhone.Location = new System.Drawing.Point(316, 437);
             this.maskedTextBoxPhone.Mask = "(999) 000-0000";
             this.maskedTextBoxPhone.Name = "maskedTextBoxPhone";
-            this.maskedTextBoxPhone.Size = new System.Drawing.Size(189, 21);
+            this.maskedTextBoxPhone.Size = new System.Drawing.Size(189, 23);
             this.maskedTextBoxPhone.TabIndex = 93;
             // 
             // labelPhone
@@ -288,7 +291,7 @@
             this.labelPhone.Location = new System.Drawing.Point(205, 439);
             this.labelPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(43, 13);
+            this.labelPhone.Size = new System.Drawing.Size(47, 17);
             this.labelPhone.TabIndex = 101;
             this.labelPhone.Text = "Phone:";
             // 
@@ -299,7 +302,7 @@
             this.textBoxEmail.Location = new System.Drawing.Point(316, 409);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(189, 21);
+            this.textBoxEmail.Size = new System.Drawing.Size(189, 23);
             this.textBoxEmail.TabIndex = 91;
             // 
             // label4
@@ -310,7 +313,7 @@
             this.label4.Location = new System.Drawing.Point(205, 412);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.Size = new System.Drawing.Size(42, 17);
             this.label4.TabIndex = 100;
             this.label4.Text = "Email:";
             // 
@@ -338,7 +341,7 @@
             this.textBoxName.Location = new System.Drawing.Point(316, 353);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(189, 21);
+            this.textBoxName.Size = new System.Drawing.Size(189, 23);
             this.textBoxName.TabIndex = 81;
             // 
             // labelName
@@ -349,7 +352,7 @@
             this.labelName.Location = new System.Drawing.Point(205, 357);
             this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(39, 13);
+            this.labelName.Size = new System.Drawing.Size(46, 17);
             this.labelName.TabIndex = 80;
             this.labelName.Text = "Name:";
             // 
@@ -384,7 +387,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(27, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 21);
+            this.label6.Size = new System.Drawing.Size(114, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "Forum Posts";
             // 
@@ -404,7 +407,7 @@
             this.labelPostcount.ForeColor = System.Drawing.Color.White;
             this.labelPostcount.Location = new System.Drawing.Point(23, 3);
             this.labelPostcount.Name = "labelPostcount";
-            this.labelPostcount.Size = new System.Drawing.Size(107, 86);
+            this.labelPostcount.Size = new System.Drawing.Size(122, 99);
             this.labelPostcount.TabIndex = 6;
             this.labelPostcount.Text = "32";
             this.labelPostcount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -425,7 +428,7 @@
             this.labelUpvotes.ForeColor = System.Drawing.Color.White;
             this.labelUpvotes.Location = new System.Drawing.Point(20, 3);
             this.labelUpvotes.Name = "labelUpvotes";
-            this.labelUpvotes.Size = new System.Drawing.Size(107, 86);
+            this.labelUpvotes.Size = new System.Drawing.Size(122, 99);
             this.labelUpvotes.TabIndex = 6;
             this.labelUpvotes.Text = "10";
             this.labelUpvotes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -446,7 +449,7 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(17, 9);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 21);
+            this.label9.Size = new System.Drawing.Size(133, 25);
             this.label9.TabIndex = 5;
             this.label9.Text = "Upvotes Given";
             // 
@@ -466,7 +469,7 @@
             this.labelConnections.ForeColor = System.Drawing.Color.White;
             this.labelConnections.Location = new System.Drawing.Point(26, 3);
             this.labelConnections.Name = "labelConnections";
-            this.labelConnections.Size = new System.Drawing.Size(107, 86);
+            this.labelConnections.Size = new System.Drawing.Size(122, 99);
             this.labelConnections.TabIndex = 6;
             this.labelConnections.Text = "80";
             this.labelConnections.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -487,7 +490,7 @@
             this.labelPolls.ForeColor = System.Drawing.Color.White;
             this.labelPolls.Location = new System.Drawing.Point(26, 3);
             this.labelPolls.Name = "labelPolls";
-            this.labelPolls.Size = new System.Drawing.Size(107, 86);
+            this.labelPolls.Size = new System.Drawing.Size(122, 99);
             this.labelPolls.TabIndex = 6;
             this.labelPolls.Text = "49";
             this.labelPolls.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -508,7 +511,7 @@
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(24, 10);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 21);
+            this.label12.Size = new System.Drawing.Size(117, 25);
             this.label12.TabIndex = 5;
             this.label12.Text = "Connections";
             // 
@@ -528,7 +531,7 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(15, 10);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 21);
+            this.label13.Size = new System.Drawing.Size(139, 25);
             this.label13.TabIndex = 5;
             this.label13.Text = "Polls Answered";
             // 
@@ -560,7 +563,7 @@
             this.labelProfile.ForeColor = System.Drawing.Color.White;
             this.labelProfile.Location = new System.Drawing.Point(69, 24);
             this.labelProfile.Name = "labelProfile";
-            this.labelProfile.Size = new System.Drawing.Size(76, 17);
+            this.labelProfile.Size = new System.Drawing.Size(83, 19);
             this.labelProfile.TabIndex = 1;
             this.labelProfile.Text = "My Account";
             // 
@@ -608,7 +611,7 @@
             this.comboBoxGrade.Location = new System.Drawing.Point(316, 381);
             this.comboBoxGrade.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxGrade.Name = "comboBoxGrade";
-            this.comboBoxGrade.Size = new System.Drawing.Size(189, 20);
+            this.comboBoxGrade.Size = new System.Drawing.Size(189, 23);
             this.comboBoxGrade.TabIndex = 99;
             // 
             // labelGrade
@@ -619,7 +622,7 @@
             this.labelGrade.Location = new System.Drawing.Point(205, 385);
             this.labelGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelGrade.Name = "labelGrade";
-            this.labelGrade.Size = new System.Drawing.Size(41, 13);
+            this.labelGrade.Size = new System.Drawing.Size(47, 17);
             this.labelGrade.TabIndex = 84;
             this.labelGrade.Text = "Grade:";
             // 
@@ -630,7 +633,7 @@
             this.textBoxUsername.Location = new System.Drawing.Point(316, 325);
             this.textBoxUsername.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(189, 21);
+            this.textBoxUsername.Size = new System.Drawing.Size(189, 23);
             this.textBoxUsername.TabIndex = 110;
             // 
             // labeluname
@@ -641,9 +644,21 @@
             this.labeluname.Location = new System.Drawing.Point(205, 327);
             this.labeluname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labeluname.Name = "labeluname";
-            this.labeluname.Size = new System.Drawing.Size(61, 13);
+            this.labeluname.Size = new System.Drawing.Size(70, 17);
             this.labeluname.TabIndex = 111;
             this.labeluname.Text = "Username:";
+            // 
+            // pictureBoxMinimize
+            // 
+            this.pictureBoxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxMinimize.Image = global::Software_Development.Properties.Resources.substract;
+            this.pictureBoxMinimize.Location = new System.Drawing.Point(708, 15);
+            this.pictureBoxMinimize.Name = "pictureBoxMinimize";
+            this.pictureBoxMinimize.Size = new System.Drawing.Size(19, 21);
+            this.pictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMinimize.TabIndex = 29;
+            this.pictureBoxMinimize.TabStop = false;
+            this.pictureBoxMinimize.Click += new System.EventHandler(this.pictureBoxMinimize_Click);
             // 
             // ProfilePage
             // 
@@ -707,6 +722,7 @@
             this.panelProfile.ResumeLayout(false);
             this.panelProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -757,5 +773,6 @@
         private System.Windows.Forms.Label labelGrade;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Label labeluname;
+        private System.Windows.Forms.PictureBox pictureBoxMinimize;
     }
 }

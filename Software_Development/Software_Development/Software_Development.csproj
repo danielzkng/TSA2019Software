@@ -327,6 +327,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="edutalk_logo_RFf_icon.ico" />
+    <None Include="Resources\substract.png" />
     <None Include="Resources\icons8-user-account-filled-100.png" />
     <None Include="Resources\icons8-speech-bubble-100.png" />
     <None Include="Resources\icons8-poll-filled-100.png" />

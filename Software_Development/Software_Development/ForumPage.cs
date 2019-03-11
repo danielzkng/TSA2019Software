@@ -172,6 +172,16 @@ namespace Software_Development
             //this.Location = WindowManager.CurrentLocation;
         }
 
+        private void pictureBoxClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBoxMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
         private void buttonHome_Click(object sender, EventArgs e)
         {
             WindowManager.dashboardInUse.Show();

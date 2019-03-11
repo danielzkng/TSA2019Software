@@ -54,6 +54,7 @@
             this.listBoxTeachers = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.buttonReport = new System.Windows.Forms.Button();
+            this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
@@ -61,6 +62,7 @@
             this.panel1.SuspendLayout();
             this.panelProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -76,6 +78,7 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.pictureBoxMinimize);
             this.panelHeader.Controls.Add(this.pictureBoxLogout);
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.pictureBoxClose);
@@ -374,7 +377,7 @@
             this.listBoxUsers.Location = new System.Drawing.Point(208, 124);
             this.listBoxUsers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxUsers.Name = "listBoxUsers";
-            this.listBoxUsers.Size = new System.Drawing.Size(214, 61);
+            this.listBoxUsers.Size = new System.Drawing.Size(214, 99);
             this.listBoxUsers.TabIndex = 126;
             this.listBoxUsers.SelectedIndexChanged += new System.EventHandler(this.listBoxUsers_SelectedIndexChanged);
             // 
@@ -419,6 +422,18 @@
             this.buttonReport.UseVisualStyleBackColor = false;
             this.buttonReport.Click += new System.EventHandler(this.buttonReport_Click);
             // 
+            // pictureBoxMinimize
+            // 
+            this.pictureBoxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxMinimize.Image = global::Software_Development.Properties.Resources.substract;
+            this.pictureBoxMinimize.Location = new System.Drawing.Point(708, 15);
+            this.pictureBoxMinimize.Name = "pictureBoxMinimize";
+            this.pictureBoxMinimize.Size = new System.Drawing.Size(19, 21);
+            this.pictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMinimize.TabIndex = 28;
+            this.pictureBoxMinimize.TabStop = false;
+            this.pictureBoxMinimize.Click += new System.EventHandler(this.pictureBoxMinimize_Click);
+            // 
             // MessagingPage
             // 
             this.AcceptButton = this.buttonSend;
@@ -456,6 +471,7 @@
             this.panelProfile.ResumeLayout(false);
             this.panelProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,5 +503,6 @@
         private System.Windows.Forms.ListBox listBoxTeachers;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonReport;
+        private System.Windows.Forms.PictureBox pictureBoxMinimize;
     }
 }

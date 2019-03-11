@@ -165,5 +165,10 @@ namespace Software_Development
         {
             //this.CenterToScreen();
         }
+
+        private void pictureBoxMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

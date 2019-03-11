@@ -59,6 +59,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
@@ -72,6 +73,7 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonLogin
@@ -111,6 +113,7 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.pictureBoxMinimize);
             this.panelHeader.Controls.Add(this.pictureBoxLogout);
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.pictureBoxClose);
@@ -346,10 +349,10 @@
             "Mrs. Fast",
             "Ms. Schneider",
             "Mrs. Williamson"});
-            this.listBoxTeachers.Location = new System.Drawing.Point(10, 7);
+            this.listBoxTeachers.Location = new System.Drawing.Point(10, 9);
             this.listBoxTeachers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxTeachers.Name = "listBoxTeachers";
-            this.listBoxTeachers.Size = new System.Drawing.Size(196, 244);
+            this.listBoxTeachers.Size = new System.Drawing.Size(196, 284);
             this.listBoxTeachers.TabIndex = 0;
             // 
             // panel8
@@ -374,10 +377,10 @@
             "Remind",
             "Online Grades",
             "Quizlet"});
-            this.listBoxResources.Location = new System.Drawing.Point(12, 7);
+            this.listBoxResources.Location = new System.Drawing.Point(12, 9);
             this.listBoxResources.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxResources.Name = "listBoxResources";
-            this.listBoxResources.Size = new System.Drawing.Size(196, 244);
+            this.listBoxResources.Size = new System.Drawing.Size(196, 284);
             this.listBoxResources.TabIndex = 1;
             this.listBoxResources.SelectedIndexChanged += new System.EventHandler(this.listBoxResources_SelectedIndexChanged);
             // 
@@ -485,6 +488,18 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // pictureBoxMinimize
+            // 
+            this.pictureBoxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxMinimize.Image = global::Software_Development.Properties.Resources.substract;
+            this.pictureBoxMinimize.Location = new System.Drawing.Point(708, 15);
+            this.pictureBoxMinimize.Name = "pictureBoxMinimize";
+            this.pictureBoxMinimize.Size = new System.Drawing.Size(19, 21);
+            this.pictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMinimize.TabIndex = 30;
+            this.pictureBoxMinimize.TabStop = false;
+            this.pictureBoxMinimize.Click += new System.EventHandler(this.pictureBoxMinimize_Click);
+            // 
             // ResourcesPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -530,6 +545,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -565,5 +581,6 @@
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label labelInfo;
+        private System.Windows.Forms.PictureBox pictureBoxMinimize;
     }
 }

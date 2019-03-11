@@ -187,5 +187,10 @@ namespace Software_Development
             ReportPage reportScreen = new ReportPage();
             reportScreen.Show();
         }
+
+        private void pictureBoxMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

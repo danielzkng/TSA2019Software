@@ -58,6 +58,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.listBoxMessages = new System.Windows.Forms.ListBox();
             this.richTextBoxFullMsg = new System.Windows.Forms.RichTextBox();
+            this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.panelThread1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxThread1)).BeginInit();
             this.panelHeader.SuspendLayout();
@@ -66,6 +67,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             this.SuspendLayout();
             // 
             // panelThread1
@@ -230,6 +232,7 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.pictureBoxMinimize);
             this.panelHeader.Controls.Add(this.pictureBoxLogout);
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.pictureBoxClose);
@@ -465,6 +468,18 @@
             this.richTextBoxFullMsg.TabIndex = 89;
             this.richTextBoxFullMsg.Text = "";
             // 
+            // pictureBoxMinimize
+            // 
+            this.pictureBoxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxMinimize.Image = global::Software_Development.Properties.Resources.substract;
+            this.pictureBoxMinimize.Location = new System.Drawing.Point(708, 15);
+            this.pictureBoxMinimize.Name = "pictureBoxMinimize";
+            this.pictureBoxMinimize.Size = new System.Drawing.Size(19, 21);
+            this.pictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMinimize.TabIndex = 27;
+            this.pictureBoxMinimize.TabStop = false;
+            this.pictureBoxMinimize.Click += new System.EventHandler(this.pictureBoxMinimize_Click);
+            // 
             // ThreadViewerPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,6 +512,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -531,5 +547,6 @@
         private System.Windows.Forms.Label labelFullPost;
         private System.Windows.Forms.RichTextBox richTextBoxFullMsg;
         private System.Windows.Forms.Button buttonReport;
+        private System.Windows.Forms.PictureBox pictureBoxMinimize;
     }
 }

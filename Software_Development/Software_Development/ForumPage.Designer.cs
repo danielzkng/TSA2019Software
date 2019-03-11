@@ -82,6 +82,7 @@
             this.buttonNext = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -96,6 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxT3)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonCreatePost
@@ -116,6 +118,7 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.White;
+            this.panelHeader.Controls.Add(this.pictureBoxMinimize);
             this.panelHeader.Controls.Add(this.pictureBoxLogout);
             this.panelHeader.Controls.Add(this.label2);
             this.panelHeader.Controls.Add(this.pictureBoxClose);
@@ -160,7 +163,7 @@
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxClose.TabIndex = 24;
             this.pictureBoxClose.TabStop = false;
-            this.pictureBoxClose.Click += new System.EventHandler(this.buttonHome_Click);
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // panel2
             // 
@@ -801,6 +804,18 @@
             this.label4.Text = "Click on a thread\r\nto learn more or \r\nto upvote!\r\n\r\nAnswer questions\r\nand help ot" +
     "her\r\nstudents.";
             // 
+            // pictureBoxMinimize
+            // 
+            this.pictureBoxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxMinimize.Image = global::Software_Development.Properties.Resources.substract;
+            this.pictureBoxMinimize.Location = new System.Drawing.Point(708, 15);
+            this.pictureBoxMinimize.Name = "pictureBoxMinimize";
+            this.pictureBoxMinimize.Size = new System.Drawing.Size(19, 21);
+            this.pictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMinimize.TabIndex = 27;
+            this.pictureBoxMinimize.TabStop = false;
+            this.pictureBoxMinimize.Click += new System.EventHandler(this.pictureBoxMinimize_Click);
+            // 
             // ForumPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -847,6 +862,7 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -907,5 +923,6 @@
         private System.Windows.Forms.Button buttonCalendar;
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBoxMinimize;
     }
 }

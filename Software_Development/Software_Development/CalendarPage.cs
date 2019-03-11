@@ -252,5 +252,15 @@ namespace Software_Development
             Hidden();
             WindowManager.exitApp();
         }
+
+        private void CalendarPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //WindowManager.CurrentLocation = this.Location;
+        }
+
+        private void CalendarPage_LocationChanged(object sender, EventArgs e)
+        {
+            WindowManager.CurrentLocation = this.Location;
+        }
     }
 }

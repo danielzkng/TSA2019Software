@@ -147,13 +147,23 @@ namespace Software_Development
                 listBoxTeachers.Items.Add(GlobalData.GetUser(i).Username);
             }
 
-            Location = WindowManager.CurrentLocation;
+            this.Location = WindowManager.CurrentLocation;
         }
 
         private void buttonReport_Click(object sender, EventArgs e)
         {
             ReportPage reportScreen = new ReportPage();
             reportScreen.Show();
+        }
+
+        private void pictureBoxClose_Click_1(object sender, EventArgs e)
+        {
+            WindowManager.exitApp();
+        }
+
+        private void MessagingPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //this.Location = WindowManager.CurrentLocation;
         }
     }
 }

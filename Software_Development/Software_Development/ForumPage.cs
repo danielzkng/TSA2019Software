@@ -167,6 +167,11 @@ namespace Software_Development
             Location = WindowManager.CurrentLocation;
         }
 
+        private void ForumPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //this.Location = WindowManager.CurrentLocation;
+        }
+
         private void buttonHome_Click(object sender, EventArgs e)
         {
             WindowManager.dashboardInUse.Show();

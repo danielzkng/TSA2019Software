@@ -15,7 +15,6 @@ namespace Software_Development
 {
     public partial class DashboardPage : Form
     {
-
         public DashboardPage()
         {
             InitializeComponent();
@@ -76,6 +75,9 @@ namespace Software_Development
             GlobalData.ExportAllInfo();
             //clear current user's data
             GlobalData.CurrentUser = null;
+            GlobalData.firstLoad = false;
+            WindowManager.CurrentLocation = this.Location;
+
         }
 
         private void panel2_Click(object sender, EventArgs e)
@@ -148,9 +150,20 @@ namespace Software_Development
 
         private void DashboardPage_Shown(object sender, EventArgs e)
         {
-            Location = WindowManager.CurrentLocation;
-
+            if (GlobalData.firstLoad == true)
+            {
+                this.CenterToScreen();
+            }
+            else
+            {
+                this.Location = WindowManager.CurrentLocation;
+            }
             WindowManager.notifier.ShowBalloonTip(30000, "Edutalk • Surprise", "Abort!", ToolTipIcon.Warning);
+        }
+
+        private void DashboardPage_Load(object sender, EventArgs e)
+        {
+            //this.CenterToScreen();
         }
     }
 }

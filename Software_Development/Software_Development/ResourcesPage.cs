@@ -110,7 +110,7 @@ namespace Software_Development
 
         private void ResourcesPage_Shown(object sender, EventArgs e)
         {
-            Location = WindowManager.CurrentLocation;
+            this.Location = WindowManager.CurrentLocation;
         }
 
         private void listBoxResources_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,6 +145,11 @@ namespace Software_Development
                 ProcessStartInfo sInfo = new ProcessStartInfo("http://quizlet.com/");
                 Process.Start(sInfo);
             }
+        }
+
+        private void ResourcesPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //this.Location = WindowManager.CurrentLocation;
         }
     }
 }

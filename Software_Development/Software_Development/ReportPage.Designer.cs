@@ -83,9 +83,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18.32727F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(83, 12);
+            this.label1.Location = new System.Drawing.Point(81, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 35);
+            this.label1.Size = new System.Drawing.Size(331, 38);
             this.label1.TabIndex = 9;
             this.label1.Text = "Submit a Report or Ticket";
             // 
@@ -94,9 +94,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(97, 61);
+            this.label2.Location = new System.Drawing.Point(92, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(288, 68);
+            this.label2.Size = new System.Drawing.Size(302, 76);
             this.label2.TabIndex = 10;
             this.label2.Text = "If you see something that needs to be \r\nreported, please send it to us here. A St" +
     "udyLink \r\nreviewer and/or school adminstrator will take a\r\n look at your report " +

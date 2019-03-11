@@ -16,6 +16,8 @@ namespace Software_Development
     /// </summary>
     public class GlobalData
     {
+        public static bool firstLoad = true;
+
         public static List<Message> PostDB { get; set; }
         public static List<User> UsersDB { get; set; }
         public static List<CalEvent> EventsDB { get; set; }

@@ -146,7 +146,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 30);
+            this.label2.Size = new System.Drawing.Size(84, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Forum";
             // 
@@ -179,7 +179,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(69, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(83, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "My Account";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -321,7 +321,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 38);
+            this.label3.Size = new System.Drawing.Size(132, 45);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -344,7 +344,7 @@
             this.textBoxNewtitle.ForeColor = System.Drawing.Color.Black;
             this.textBoxNewtitle.Location = new System.Drawing.Point(212, 441);
             this.textBoxNewtitle.Name = "textBoxNewtitle";
-            this.textBoxNewtitle.Size = new System.Drawing.Size(547, 27);
+            this.textBoxNewtitle.Size = new System.Drawing.Size(547, 30);
             this.textBoxNewtitle.TabIndex = 71;
             this.textBoxNewtitle.Text = "Title";
             // 
@@ -372,7 +372,7 @@
             this.labelUsernameT1.ForeColor = System.Drawing.Color.Gray;
             this.labelUsernameT1.Location = new System.Drawing.Point(430, 60);
             this.labelUsernameT1.Name = "labelUsernameT1";
-            this.labelUsernameT1.Size = new System.Drawing.Size(62, 13);
+            this.labelUsernameT1.Size = new System.Drawing.Size(69, 15);
             this.labelUsernameT1.TabIndex = 12;
             this.labelUsernameT1.Text = "usernameT1";
             // 
@@ -383,7 +383,7 @@
             this.labelUpvotesT1.ForeColor = System.Drawing.Color.ForestGreen;
             this.labelUpvotesT1.Location = new System.Drawing.Point(9, 86);
             this.labelUpvotesT1.Name = "labelUpvotesT1";
-            this.labelUpvotesT1.Size = new System.Drawing.Size(65, 13);
+            this.labelUpvotesT1.Size = new System.Drawing.Size(76, 17);
             this.labelUpvotesT1.TabIndex = 11;
             this.labelUpvotesT1.Text = "55 Upvotes";
             this.labelUpvotesT1.Click += new System.EventHandler(this.panelThread1_Click);
@@ -396,7 +396,7 @@
             this.labelPreviewT1.Location = new System.Drawing.Point(85, 44);
             this.labelPreviewT1.MaximumSize = new System.Drawing.Size(349, 42);
             this.labelPreviewT1.Name = "labelPreviewT1";
-            this.labelPreviewT1.Size = new System.Drawing.Size(285, 26);
+            this.labelPreviewT1.Size = new System.Drawing.Size(343, 34);
             this.labelPreviewT1.TabIndex = 8;
             this.labelPreviewT1.Text = "After joining the computer science course I am looking for a\r\nplace to learn how " +
     "to code in Java. Any reccomendations?";
@@ -409,7 +409,7 @@
             this.labelTimestampT1.ForeColor = System.Drawing.Color.Gray;
             this.labelTimestampT1.Location = new System.Drawing.Point(430, 90);
             this.labelTimestampT1.Name = "labelTimestampT1";
-            this.labelTimestampT1.Size = new System.Drawing.Size(97, 26);
+            this.labelTimestampT1.Size = new System.Drawing.Size(114, 34);
             this.labelTimestampT1.TabIndex = 7;
             this.labelTimestampT1.Text = "Added 4 hours ago\r\n\r\n";
             this.labelTimestampT1.Click += new System.EventHandler(this.panelThread1_Click);
@@ -421,7 +421,7 @@
             this.labelViewsT1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.labelViewsT1.Location = new System.Drawing.Point(172, 86);
             this.labelViewsT1.Name = "labelViewsT1";
-            this.labelViewsT1.Size = new System.Drawing.Size(51, 13);
+            this.labelViewsT1.Size = new System.Drawing.Size(60, 17);
             this.labelViewsT1.TabIndex = 6;
             this.labelViewsT1.Text = "43 Views";
             this.labelViewsT1.Click += new System.EventHandler(this.panelThread1_Click);
@@ -444,7 +444,7 @@
             this.labelRepliesT1.ForeColor = System.Drawing.Color.Red;
             this.labelRepliesT1.Location = new System.Drawing.Point(97, 86);
             this.labelRepliesT1.Name = "labelRepliesT1";
-            this.labelRepliesT1.Size = new System.Drawing.Size(53, 13);
+            this.labelRepliesT1.Size = new System.Drawing.Size(61, 17);
             this.labelRepliesT1.TabIndex = 4;
             this.labelRepliesT1.Text = "5 Replies";
             this.labelRepliesT1.Click += new System.EventHandler(this.panelThread1_Click);
@@ -456,7 +456,7 @@
             this.labelTitleT1.Location = new System.Drawing.Point(84, 10);
             this.labelTitleT1.MaximumSize = new System.Drawing.Size(369, 46);
             this.labelTitleT1.Name = "labelTitleT1";
-            this.labelTitleT1.Size = new System.Drawing.Size(327, 20);
+            this.labelTitleT1.Size = new System.Drawing.Size(369, 23);
             this.labelTitleT1.TabIndex = 3;
             this.labelTitleT1.Text = "What clubs are available to learn how to code?";
             this.labelTitleT1.Click += new System.EventHandler(this.panelThread1_Click);
@@ -485,7 +485,7 @@
             this.labelUsernameT2.ForeColor = System.Drawing.Color.Gray;
             this.labelUsernameT2.Location = new System.Drawing.Point(430, 60);
             this.labelUsernameT2.Name = "labelUsernameT2";
-            this.labelUsernameT2.Size = new System.Drawing.Size(63, 13);
+            this.labelUsernameT2.Size = new System.Drawing.Size(70, 15);
             this.labelUsernameT2.TabIndex = 13;
             this.labelUsernameT2.Text = "usernameT2";
             // 
@@ -496,7 +496,7 @@
             this.labelUpvotesT2.ForeColor = System.Drawing.Color.ForestGreen;
             this.labelUpvotesT2.Location = new System.Drawing.Point(9, 86);
             this.labelUpvotesT2.Name = "labelUpvotesT2";
-            this.labelUpvotesT2.Size = new System.Drawing.Size(65, 13);
+            this.labelUpvotesT2.Size = new System.Drawing.Size(76, 17);
             this.labelUpvotesT2.TabIndex = 10;
             this.labelUpvotesT2.Text = "55 Upvotes";
             this.labelUpvotesT2.Click += new System.EventHandler(this.panelThread2_Click);
@@ -509,7 +509,7 @@
             this.labelPreviewT2.Location = new System.Drawing.Point(85, 35);
             this.labelPreviewT2.MaximumSize = new System.Drawing.Size(349, 42);
             this.labelPreviewT2.Name = "labelPreviewT2";
-            this.labelPreviewT2.Size = new System.Drawing.Size(309, 26);
+            this.labelPreviewT2.Size = new System.Drawing.Size(347, 42);
             this.labelPreviewT2.TabIndex = 8;
             this.labelPreviewT2.Text = "Come to Room 112 today to learn how to make model airplanes \r\nand join the glider" +
     " competition! You can pick up club passes and...\r\n";
@@ -522,14 +522,14 @@
             this.labelTimestampT2.ForeColor = System.Drawing.Color.Gray;
             this.labelTimestampT2.Location = new System.Drawing.Point(430, 90);
             this.labelTimestampT2.Name = "labelTimestampT2";
-            this.labelTimestampT2.Size = new System.Drawing.Size(101, 26);
+            this.labelTimestampT2.Size = new System.Drawing.Size(119, 34);
             this.labelTimestampT2.TabIndex = 7;
             this.labelTimestampT2.Text = "Added 10 hours ago\r\n\r\n";
             this.labelTimestampT2.Click += new System.EventHandler(this.panelThread2_Click);
             // 
             // pictureBoxT2
             // 
-            this.pictureBoxT2.Image = global::Software_Development.Properties.Resources.robot;
+            this.pictureBoxT2.Image = global::Software_Development.Properties.Resources.man1;
             this.pictureBoxT2.Location = new System.Drawing.Point(19, 18);
             this.pictureBoxT2.Name = "pictureBoxT2";
             this.pictureBoxT2.Size = new System.Drawing.Size(50, 49);
@@ -545,7 +545,7 @@
             this.labelViewsT2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.labelViewsT2.Location = new System.Drawing.Point(173, 86);
             this.labelViewsT2.Name = "labelViewsT2";
-            this.labelViewsT2.Size = new System.Drawing.Size(57, 13);
+            this.labelViewsT2.Size = new System.Drawing.Size(67, 17);
             this.labelViewsT2.TabIndex = 6;
             this.labelViewsT2.Text = "352 Views";
             this.labelViewsT2.Click += new System.EventHandler(this.panelThread2_Click);
@@ -557,7 +557,7 @@
             this.labelRepliesT2.ForeColor = System.Drawing.Color.Red;
             this.labelRepliesT2.Location = new System.Drawing.Point(97, 86);
             this.labelRepliesT2.Name = "labelRepliesT2";
-            this.labelRepliesT2.Size = new System.Drawing.Size(51, 13);
+            this.labelRepliesT2.Size = new System.Drawing.Size(59, 17);
             this.labelRepliesT2.TabIndex = 4;
             this.labelRepliesT2.Text = "1 Replies";
             this.labelRepliesT2.Click += new System.EventHandler(this.panelThread2_Click);
@@ -568,7 +568,7 @@
             this.labelTitleT2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.12727F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitleT2.Location = new System.Drawing.Point(84, 10);
             this.labelTitleT2.Name = "labelTitleT2";
-            this.labelTitleT2.Size = new System.Drawing.Size(199, 20);
+            this.labelTitleT2.Size = new System.Drawing.Size(223, 23);
             this.labelTitleT2.TabIndex = 3;
             this.labelTitleT2.Text = "New aviation club founded!";
             this.labelTitleT2.Click += new System.EventHandler(this.panelThread2_Click);
@@ -597,7 +597,7 @@
             this.labelUsernameT3.ForeColor = System.Drawing.Color.Gray;
             this.labelUsernameT3.Location = new System.Drawing.Point(430, 60);
             this.labelUsernameT3.Name = "labelUsernameT3";
-            this.labelUsernameT3.Size = new System.Drawing.Size(63, 13);
+            this.labelUsernameT3.Size = new System.Drawing.Size(70, 15);
             this.labelUsernameT3.TabIndex = 13;
             this.labelUsernameT3.Text = "usernameT3";
             // 
@@ -608,7 +608,7 @@
             this.labelUpvotesT3.ForeColor = System.Drawing.Color.ForestGreen;
             this.labelUpvotesT3.Location = new System.Drawing.Point(9, 86);
             this.labelUpvotesT3.Name = "labelUpvotesT3";
-            this.labelUpvotesT3.Size = new System.Drawing.Size(65, 13);
+            this.labelUpvotesT3.Size = new System.Drawing.Size(76, 17);
             this.labelUpvotesT3.TabIndex = 9;
             this.labelUpvotesT3.Text = "55 Upvotes";
             this.labelUpvotesT3.Click += new System.EventHandler(this.panel6_Click);
@@ -621,7 +621,7 @@
             this.labelPreviewT3.Location = new System.Drawing.Point(85, 40);
             this.labelPreviewT3.MaximumSize = new System.Drawing.Size(349, 42);
             this.labelPreviewT3.Name = "labelPreviewT3";
-            this.labelPreviewT3.Size = new System.Drawing.Size(275, 26);
+            this.labelPreviewT3.Size = new System.Drawing.Size(335, 34);
             this.labelPreviewT3.TabIndex = 8;
             this.labelPreviewT3.Text = "Ms. Barnum here! I wanted to alert everyone about\r\nthe library closure this Wedne" +
     "sday for a staff meeting at 1.";
@@ -629,7 +629,7 @@
             // 
             // pictureBoxT3
             // 
-            this.pictureBoxT3.Image = global::Software_Development.Properties.Resources.man1;
+            this.pictureBoxT3.Image = global::Software_Development.Properties.Resources.woman1;
             this.pictureBoxT3.Location = new System.Drawing.Point(18, 20);
             this.pictureBoxT3.Name = "pictureBoxT3";
             this.pictureBoxT3.Size = new System.Drawing.Size(50, 49);
@@ -645,7 +645,7 @@
             this.labelTimestampT3.ForeColor = System.Drawing.Color.Gray;
             this.labelTimestampT3.Location = new System.Drawing.Point(430, 90);
             this.labelTimestampT3.Name = "labelTimestampT3";
-            this.labelTimestampT3.Size = new System.Drawing.Size(86, 26);
+            this.labelTimestampT3.Size = new System.Drawing.Size(102, 34);
             this.labelTimestampT3.TabIndex = 7;
             this.labelTimestampT3.Text = "Added 1 day ago\r\n\r\n";
             this.labelTimestampT3.Click += new System.EventHandler(this.panel6_Click);
@@ -657,7 +657,7 @@
             this.labelViewsT3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.labelViewsT3.Location = new System.Drawing.Point(176, 86);
             this.labelViewsT3.Name = "labelViewsT3";
-            this.labelViewsT3.Size = new System.Drawing.Size(57, 13);
+            this.labelViewsT3.Size = new System.Drawing.Size(67, 17);
             this.labelViewsT3.TabIndex = 6;
             this.labelViewsT3.Text = "623 Views";
             this.labelViewsT3.Click += new System.EventHandler(this.panel6_Click);
@@ -669,7 +669,7 @@
             this.labelRepliesT3.ForeColor = System.Drawing.Color.Red;
             this.labelRepliesT3.Location = new System.Drawing.Point(96, 86);
             this.labelRepliesT3.Name = "labelRepliesT3";
-            this.labelRepliesT3.Size = new System.Drawing.Size(53, 13);
+            this.labelRepliesT3.Size = new System.Drawing.Size(61, 17);
             this.labelRepliesT3.TabIndex = 4;
             this.labelRepliesT3.Text = "0 Replies";
             this.labelRepliesT3.Click += new System.EventHandler(this.panel6_Click);
@@ -680,7 +680,7 @@
             this.labelTitleT3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.12727F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitleT3.Location = new System.Drawing.Point(84, 10);
             this.labelTitleT3.Name = "labelTitleT3";
-            this.labelTitleT3.Size = new System.Drawing.Size(166, 20);
+            this.labelTitleT3.Size = new System.Drawing.Size(185, 23);
             this.labelTitleT3.TabIndex = 3;
             this.labelTitleT3.Text = "Weekly Library Update";
             this.labelTitleT3.Click += new System.EventHandler(this.panel6_Click);
@@ -721,7 +721,7 @@
             this.labelnumpages.ForeColor = System.Drawing.Color.White;
             this.labelnumpages.Location = new System.Drawing.Point(76, 115);
             this.labelnumpages.Name = "labelnumpages";
-            this.labelnumpages.Size = new System.Drawing.Size(21, 19);
+            this.labelnumpages.Size = new System.Drawing.Size(24, 21);
             this.labelnumpages.TabIndex = 48;
             this.labelnumpages.Text = "of";
             // 
@@ -734,7 +734,7 @@
             this.textBoxPage.Location = new System.Drawing.Point(52, 113);
             this.textBoxPage.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPage.Name = "textBoxPage";
-            this.textBoxPage.Size = new System.Drawing.Size(21, 26);
+            this.textBoxPage.Size = new System.Drawing.Size(21, 28);
             this.textBoxPage.TabIndex = 46;
             this.textBoxPage.Text = "1";
             this.textBoxPage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -746,7 +746,7 @@
             this.labelPageSelect.ForeColor = System.Drawing.Color.White;
             this.labelPageSelect.Location = new System.Drawing.Point(10, 114);
             this.labelPageSelect.Name = "labelPageSelect";
-            this.labelPageSelect.Size = new System.Drawing.Size(39, 19);
+            this.labelPageSelect.Size = new System.Drawing.Size(43, 21);
             this.labelPageSelect.TabIndex = 47;
             this.labelPageSelect.Text = "Page";
             // 
@@ -796,7 +796,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(4, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 119);
+            this.label4.Size = new System.Drawing.Size(116, 133);
             this.label4.TabIndex = 50;
             this.label4.Text = "Click on a thread\r\nto learn more or \r\nto upvote!\r\n\r\nAnswer questions\r\nand help ot" +
     "her\r\nstudents.";
@@ -823,6 +823,7 @@
             this.Name = "ForumPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Forum";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ForumPage_FormClosing);
             this.Shown += new System.EventHandler(this.ForumPage_Shown);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();

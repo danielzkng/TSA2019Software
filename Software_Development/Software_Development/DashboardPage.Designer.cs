@@ -114,7 +114,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 30);
+            this.label2.Size = new System.Drawing.Size(130, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Dashboard";
             // 
@@ -149,7 +149,7 @@
             this.labelProfile.ForeColor = System.Drawing.Color.White;
             this.labelProfile.Location = new System.Drawing.Point(69, 24);
             this.labelProfile.Name = "labelProfile";
-            this.labelProfile.Size = new System.Drawing.Size(76, 17);
+            this.labelProfile.Size = new System.Drawing.Size(83, 19);
             this.labelProfile.TabIndex = 1;
             this.labelProfile.Text = "My Account";
             this.labelProfile.Click += new System.EventHandler(this.labelProfile_Click);
@@ -251,7 +251,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 38);
+            this.label3.Size = new System.Drawing.Size(132, 45);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -315,7 +315,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(28, 83);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(319, 95);
+            this.label5.Size = new System.Drawing.Size(354, 105);
             this.label5.TabIndex = 27;
             this.label5.Text = "Hey Hawks, hope everyone is having a great week!\r\nImportant News:\r\n- Orchestra Co" +
     "ncert coming up\r\n- Spring sports - Athletic Meeting for Parents\r\n- Volunteer for" +
@@ -328,7 +328,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(25, 33);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(221, 41);
+            this.label4.Size = new System.Drawing.Size(257, 47);
             this.label4.TabIndex = 26;
             this.label4.Text = "School Update:";
             // 
@@ -374,30 +374,30 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Software_Development.Properties.Resources.messagesdashboard;
-            this.pictureBox5.Location = new System.Drawing.Point(714, 350);
+            this.pictureBox5.Image = global::Software_Development.Properties.Resources.icons8_speech_bubble_100;
+            this.pictureBox5.Location = new System.Drawing.Point(717, 353);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(112, 105);
+            this.pictureBox5.Size = new System.Drawing.Size(109, 102);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 81;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Software_Development.Properties.Resources.forumdashboard;
-            this.pictureBox4.Location = new System.Drawing.Point(506, 350);
+            this.pictureBox4.Image = global::Software_Development.Properties.Resources.icons8_user_account_filled_100;
+            this.pictureBox4.Location = new System.Drawing.Point(509, 353);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(112, 105);
+            this.pictureBox4.Size = new System.Drawing.Size(109, 102);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 79;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Software_Development.Properties.Resources.polldashboard;
-            this.pictureBox2.Location = new System.Drawing.Point(295, 350);
+            this.pictureBox2.Image = global::Software_Development.Properties.Resources.icons8_poll_filled_100;
+            this.pictureBox2.Location = new System.Drawing.Point(298, 353);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(112, 105);
+            this.pictureBox2.Size = new System.Drawing.Size(109, 102);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
@@ -425,6 +425,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.dashboard_FormClosing);
+            this.Load += new System.EventHandler(this.DashboardPage_Shown);
             this.Shown += new System.EventHandler(this.DashboardPage_Shown);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();

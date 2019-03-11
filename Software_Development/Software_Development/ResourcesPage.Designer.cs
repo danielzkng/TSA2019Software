@@ -104,7 +104,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(47, 13);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 21);
+            this.label6.Size = new System.Drawing.Size(129, 25);
             this.label6.TabIndex = 1;
             this.label6.Text = "Staff Directory";
             // 
@@ -141,7 +141,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 30);
+            this.label2.Size = new System.Drawing.Size(121, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Resources";
             // 
@@ -174,7 +174,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(69, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(83, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "My Account";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -316,7 +316,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 38);
+            this.label3.Size = new System.Drawing.Size(132, 45);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -334,7 +334,7 @@
             this.listBoxTeachers.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxTeachers.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxTeachers.FormattingEnabled = true;
-            this.listBoxTeachers.ItemHeight = 17;
+            this.listBoxTeachers.ItemHeight = 20;
             this.listBoxTeachers.Items.AddRange(new object[] {
             "Mrs. Adams",
             "Ms. Black",
@@ -349,7 +349,7 @@
             this.listBoxTeachers.Location = new System.Drawing.Point(10, 7);
             this.listBoxTeachers.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxTeachers.Name = "listBoxTeachers";
-            this.listBoxTeachers.Size = new System.Drawing.Size(196, 259);
+            this.listBoxTeachers.Size = new System.Drawing.Size(196, 244);
             this.listBoxTeachers.TabIndex = 0;
             // 
             // panel8
@@ -366,7 +366,7 @@
             this.listBoxResources.Font = new System.Drawing.Font("Segoe UI Semilight", 9.818182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxResources.ForeColor = System.Drawing.Color.DimGray;
             this.listBoxResources.FormattingEnabled = true;
-            this.listBoxResources.ItemHeight = 17;
+            this.listBoxResources.ItemHeight = 20;
             this.listBoxResources.Items.AddRange(new object[] {
             "Google Classroom",
             "Google Drive",
@@ -377,7 +377,7 @@
             this.listBoxResources.Location = new System.Drawing.Point(12, 7);
             this.listBoxResources.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxResources.Name = "listBoxResources";
-            this.listBoxResources.Size = new System.Drawing.Size(196, 259);
+            this.listBoxResources.Size = new System.Drawing.Size(196, 244);
             this.listBoxResources.TabIndex = 1;
             this.listBoxResources.SelectedIndexChanged += new System.EventHandler(this.listBoxResources_SelectedIndexChanged);
             // 
@@ -397,7 +397,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(62, 13);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 21);
+            this.label7.Size = new System.Drawing.Size(94, 25);
             this.label7.TabIndex = 1;
             this.label7.Text = "Resources";
             // 
@@ -418,7 +418,7 @@
             this.labelInfo.Location = new System.Drawing.Point(14, 187);
             this.labelInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(168, 95);
+            this.labelInfo.Size = new System.Drawing.Size(190, 105);
             this.labelInfo.TabIndex = 1;
             this.labelInfo.Text = "123 Happy Street\r\nCity, WA\r\n12345-6789\r\nTelephone: (555)-555-5555\r\nEmail: admin@s" +
     "chool.org";
@@ -451,7 +451,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(32, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 21);
+            this.label4.Size = new System.Drawing.Size(167, 25);
             this.label4.TabIndex = 1;
             this.label4.Text = "School Information";
             // 
@@ -508,6 +508,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resources";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ResourcesPage_FormClosing);
             this.Shown += new System.EventHandler(this.ResourcesPage_Shown);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

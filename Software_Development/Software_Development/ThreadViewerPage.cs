@@ -130,6 +130,7 @@ namespace Software_Development
 
         private void buttonForum_Click(object sender, EventArgs e)
         {
+            WindowManager.forumInUse.Show();
             this.Close();
         }
 

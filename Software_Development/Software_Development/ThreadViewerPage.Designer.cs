@@ -94,7 +94,7 @@
             this.buttonReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReport.Font = new System.Drawing.Font("Segoe UI", 9.163636F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReport.ForeColor = System.Drawing.Color.White;
-            this.buttonReport.Location = new System.Drawing.Point(623, 9);
+            this.buttonReport.Location = new System.Drawing.Point(477, 66);
             this.buttonReport.Margin = new System.Windows.Forms.Padding(2);
             this.buttonReport.Name = "buttonReport";
             this.buttonReport.Size = new System.Drawing.Size(83, 37);
@@ -110,7 +110,7 @@
             this.labelFullPost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.labelFullPost.Location = new System.Drawing.Point(85, 60);
             this.labelFullPost.Name = "labelFullPost";
-            this.labelFullPost.Size = new System.Drawing.Size(82, 13);
+            this.labelFullPost.Size = new System.Drawing.Size(101, 17);
             this.labelFullPost.TabIndex = 13;
             this.labelFullPost.Text = "Click for full post";
             this.labelFullPost.Visible = false;
@@ -122,7 +122,7 @@
             this.labelUsernameT1.ForeColor = System.Drawing.Color.Gray;
             this.labelUsernameT1.Location = new System.Drawing.Point(580, 60);
             this.labelUsernameT1.Name = "labelUsernameT1";
-            this.labelUsernameT1.Size = new System.Drawing.Size(62, 13);
+            this.labelUsernameT1.Size = new System.Drawing.Size(69, 15);
             this.labelUsernameT1.TabIndex = 12;
             this.labelUsernameT1.Text = "usernameT1";
             // 
@@ -133,7 +133,7 @@
             this.labelUpvotesT1.ForeColor = System.Drawing.Color.ForestGreen;
             this.labelUpvotesT1.Location = new System.Drawing.Point(9, 86);
             this.labelUpvotesT1.Name = "labelUpvotesT1";
-            this.labelUpvotesT1.Size = new System.Drawing.Size(59, 13);
+            this.labelUpvotesT1.Size = new System.Drawing.Size(71, 17);
             this.labelUpvotesT1.TabIndex = 11;
             this.labelUpvotesT1.Text = "55 Upvotes";
             // 
@@ -144,7 +144,7 @@
             this.labelPreviewT1.ForeColor = System.Drawing.Color.Gray;
             this.labelPreviewT1.Location = new System.Drawing.Point(85, 33);
             this.labelPreviewT1.Name = "labelPreviewT1";
-            this.labelPreviewT1.Size = new System.Drawing.Size(285, 13);
+            this.labelPreviewT1.Size = new System.Drawing.Size(343, 17);
             this.labelPreviewT1.TabIndex = 8;
             this.labelPreviewT1.Text = "After joining the computer science course I am looking for a";
             // 
@@ -155,7 +155,7 @@
             this.labelTimestampT1.ForeColor = System.Drawing.Color.Gray;
             this.labelTimestampT1.Location = new System.Drawing.Point(580, 88);
             this.labelTimestampT1.Name = "labelTimestampT1";
-            this.labelTimestampT1.Size = new System.Drawing.Size(97, 26);
+            this.labelTimestampT1.Size = new System.Drawing.Size(114, 34);
             this.labelTimestampT1.TabIndex = 7;
             this.labelTimestampT1.Text = "Added 4 hours ago\r\n\r\n";
             // 
@@ -166,7 +166,7 @@
             this.labelViewsT1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.labelViewsT1.Location = new System.Drawing.Point(167, 86);
             this.labelViewsT1.Name = "labelViewsT1";
-            this.labelViewsT1.Size = new System.Drawing.Size(49, 13);
+            this.labelViewsT1.Size = new System.Drawing.Size(58, 17);
             this.labelViewsT1.TabIndex = 6;
             this.labelViewsT1.Text = "43 Views";
             // 
@@ -177,7 +177,7 @@
             this.labelRepliesT1.ForeColor = System.Drawing.Color.Red;
             this.labelRepliesT1.Location = new System.Drawing.Point(85, 86);
             this.labelRepliesT1.Name = "labelRepliesT1";
-            this.labelRepliesT1.Size = new System.Drawing.Size(64, 13);
+            this.labelRepliesT1.Size = new System.Drawing.Size(76, 17);
             this.labelRepliesT1.TabIndex = 4;
             this.labelRepliesT1.Text = "5 Responses";
             // 
@@ -187,7 +187,7 @@
             this.labelTitleT1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.12727F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitleT1.Location = new System.Drawing.Point(84, 10);
             this.labelTitleT1.Name = "labelTitleT1";
-            this.labelTitleT1.Size = new System.Drawing.Size(327, 20);
+            this.labelTitleT1.Size = new System.Drawing.Size(369, 23);
             this.labelTitleT1.TabIndex = 3;
             this.labelTitleT1.Text = "What clubs are available to learn how to code?";
             // 
@@ -260,7 +260,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 30);
+            this.label2.Size = new System.Drawing.Size(84, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Forum";
             // 
@@ -293,7 +293,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(69, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(83, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "My Account";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -436,7 +436,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(23, 414);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 38);
+            this.label3.Size = new System.Drawing.Size(132, 45);
             this.label3.TabIndex = 27;
             this.label3.Text = "Edutalk";
             // 
@@ -445,7 +445,7 @@
             this.listBoxMessages.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxMessages.FormattingEnabled = true;
             this.listBoxMessages.IntegralHeight = false;
-            this.listBoxMessages.ItemHeight = 19;
+            this.listBoxMessages.ItemHeight = 21;
             this.listBoxMessages.Location = new System.Drawing.Point(212, 196);
             this.listBoxMessages.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxMessages.Name = "listBoxMessages";

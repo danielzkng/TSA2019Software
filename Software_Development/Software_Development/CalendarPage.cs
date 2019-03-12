@@ -141,6 +141,8 @@ namespace Software_Development
                 }
             }
             GlobalData.CurrentUser.TasksToDo = newtasks;
+
+            WindowManager.CurrentLocation = Location;
         }
 
         private void buttonHome_Click_1(object sender, EventArgs e)
@@ -230,6 +232,8 @@ namespace Software_Development
             {
                 comboBoxFilters.Items.Add(c.Name);
             }
+
+            Location = WindowManager.CurrentLocation;
         }
 
         private void panelProfile_Click(object sender, EventArgs e)
@@ -253,17 +257,7 @@ namespace Software_Development
 
         private void CalendarPage_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //WindowManager.CurrentLocation = this.Location;
-        }
-
-        private void CalendarPage_LocationChanged(object sender, EventArgs e)
-        {
             WindowManager.CurrentLocation = this.Location;
-        }
-
-        private void CalendarPage_Load(object sender, EventArgs e)
-        {
-            Location = WindowManager.CurrentLocation;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -154,6 +154,8 @@ namespace Software_Development
                 messagingInUse.Close();
                 resourcesInUse.Close();
                 GlobalData.CurrentUser = null;
+                GlobalData.firstLoad = true;
+                
                 notifier.Dispose();
             }
 
@@ -235,7 +237,26 @@ namespace Software_Development
                 dashboardInUse.Activate();
             }
 
-            public static Point CurrentLocation { get; set; }
+            private static Point location;
+
+            public static Point CurrentLocation
+            {
+                get
+                {
+                    return location;
+                }
+                set
+                {
+                    location = value;
+                    dashboardInUse.Location = value;
+                    calInUse.Location = value;
+                    forumInUse.Location = value;
+                    messagingInUse.Location = value;
+                    resourcesInUse.Location = value;
+                    profileInUse.Location = value;
+                    loginInUse.Location = value;
+                }
+            }
         }
 
         /// <summary>

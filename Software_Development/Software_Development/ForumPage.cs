@@ -82,38 +82,44 @@ namespace Software_Development
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            WindowManager.profileInUse.Show();
             this.Hide();
+            WindowManager.profileInUse.Show();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            WindowManager.profileInUse.Show();
             this.Hide();
+            WindowManager.profileInUse.Show();
+            
         }
 
         private void buttonHome_Click_1(object sender, EventArgs e)
         {
-            WindowManager.dashboardInUse.Show();
             this.Hide();
+            WindowManager.dashboardInUse.Show();
+            
         }
 
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
-            WindowManager.calInUse.Show();
             this.Hide();
+            WindowManager.calInUse.Show();
+            
         }
 
         private void buttonMessaging_Click(object sender, EventArgs e)
         {
-            WindowManager.messagingInUse.Show();
             this.Hide();
+            WindowManager.messagingInUse.Show();
+            
         }
 
         private void buttonResources_Click(object sender, EventArgs e)
         {
-            WindowManager.resourcesInUse.Show();
             this.Hide();
+            WindowManager.resourcesInUse.Show();
+            
         }
 
         private void pictureBoxLogout_Click(object sender, EventArgs e)
@@ -169,7 +175,7 @@ namespace Software_Development
 
         private void ForumPage_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //this.Location = WindowManager.CurrentLocation;
+            WindowManager.CurrentLocation = this.Location;
         }
 
         private void pictureBoxClose_Click(object sender, EventArgs e)
@@ -180,6 +186,11 @@ namespace Software_Development
         private void pictureBoxMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void ForumPage_Activated(object sender, EventArgs e)
+        {
+            this.Location = WindowManager.CurrentLocation;
         }
 
         private void buttonHome_Click(object sender, EventArgs e)

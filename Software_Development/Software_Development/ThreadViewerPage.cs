@@ -111,7 +111,14 @@ namespace Software_Development
                 //get the message
                 Message toAdd = GlobalData.GetMessage(i);
                 User poster = GlobalData.GetUser(toAdd.PosterID);
-                listBoxMessages.Items.Add(poster.Username + ": " + toAdd.Content);
+                if (toAdd.Content.Length > 100)
+                {
+                    listBoxMessages.Items.Add(poster.Username + ": " + toAdd.Content.Substring(0, 97) + "...");
+                }
+                else
+                {
+                    listBoxMessages.Items.Add(poster.Username + ": " + toAdd.Content);
+                }
                 listBoxMessages.Items.Add("");
             }
         }
@@ -138,7 +145,7 @@ namespace Software_Development
         {
             if(listBoxMessages.SelectedIndex != -1)
             {
-                richTextBoxFullMsg.Text = listBoxMessages.Items[listBoxMessages.SelectedIndex].ToString();
+                richTextBoxFullMsg.Text = GlobalData.GetMessage(displayed.Replies[listBoxMessages.SelectedIndex / 2]).ToString();
             }
             else
             {

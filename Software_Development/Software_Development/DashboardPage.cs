@@ -30,6 +30,7 @@ namespace Software_Development
         private void buttonCalendar_Click(object sender, EventArgs e)
         {
             this.Hide();
+            WindowManager.CurrentLocation = Location;
             WindowManager.calInUse.Show();
         }
 
@@ -145,7 +146,7 @@ namespace Software_Development
         {
             // When mouse is not being held down on form
             mouseDown = false;
-            WindowManager.CurrentLocation = Location;
+            WindowManager.CurrentLocation = this.Location;
         }
 
         private void DashboardPage_Shown(object sender, EventArgs e)
@@ -153,6 +154,7 @@ namespace Software_Development
             if (GlobalData.firstLoad == true)
             {
                 this.CenterToScreen();
+                GlobalData.firstLoad = false;
             }
             else
             {

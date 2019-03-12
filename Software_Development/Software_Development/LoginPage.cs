@@ -45,7 +45,7 @@ namespace Software_Development
                 passwords.Add((string)serializer.Deserialize(logins));
             }
             logins.Close();
-            WindowManager.CurrentLocation = new Point(277, 119);
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -74,6 +74,8 @@ namespace Software_Development
                         success = true;
 
                         WindowManager.initializeForms();
+
+                        WindowManager.CurrentLocation = new Point(277, 119);
 
                         //generate the user ID by adding 1000000 to i
                         int UID = 1000000 + i;

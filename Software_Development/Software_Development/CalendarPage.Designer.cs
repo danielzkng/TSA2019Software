@@ -619,9 +619,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CalendarPage_FormClosing);
-            this.Load += new System.EventHandler(this.CalendarPage_Load);
             this.Shown += new System.EventHandler(this.CalendarPage_Shown);
-            this.LocationChanged += new System.EventHandler(this.CalendarPage_LocationChanged);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

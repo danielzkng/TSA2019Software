@@ -215,14 +215,19 @@ namespace Software_Development
 
             private static void notifier_BalloonClick(object Sender, EventArgs e)
             {
-                dashboardInUse.Show();
                 calInUse.Hide();
                 forumInUse.Hide();
                 messagingInUse.Hide();
                 resourcesInUse.Hide();
                 profileInUse.Hide();
                 loginInUse.Hide();
-                dashboardInUse.Activate();
+
+                //create and show a new daily poll form
+                DailyPoll poll = new DailyPoll();
+                dashboardInUse.Hide();
+                dashboardInUse.ShowInTaskbar = false;
+                poll.Show();
+                dashboardInUse.ShowInTaskbar = true;
             }
 
             private static void notifier_DoubleClick(object Sender, EventArgs e)

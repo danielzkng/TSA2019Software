@@ -160,7 +160,7 @@ namespace Software_Development
             {
                 this.Location = WindowManager.CurrentLocation;
             }
-            WindowManager.notifier.ShowBalloonTip(30000, "Edutalk • Surprise", "Abort!", ToolTipIcon.Warning);
+            WindowManager.notifier.ShowBalloonTip(30000, "Edutalk • Daily Poll", "A new daily poll has been posted. Check it out!", ToolTipIcon.Info);
         }
 
         private void DashboardPage_Load(object sender, EventArgs e)

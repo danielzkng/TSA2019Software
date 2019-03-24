@@ -18,6 +18,12 @@ namespace Software_Development
             InitializeComponent();
         }
 
+        public void messageTeacher(string first, string last)
+        {
+            listBoxTeachers.Items.Add(first + last);
+            listBoxTeachers.SelectedIndex = listBoxTeachers.Items.Count - 1;
+        }
+
         private void labelProfile_Click(object sender, EventArgs e)
         {
             WindowManager.profileInUse.Show();

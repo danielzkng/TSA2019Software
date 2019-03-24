@@ -156,5 +156,42 @@ namespace Software_Development
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void buttonSendMSG_Click(object sender, EventArgs e)
+        {
+            //user has requested to send a message
+            //randomize a letter of the alphabet to use as their first name
+            Random rng = new Random();
+            int letter = rng.Next(1, 27) + 96;
+            char c = (char)letter;
+            string first = c.ToString();
+
+            //get the last name
+            string s = "";
+            string current = listBoxTeachers.SelectedItem.ToString();
+            bool hasPeriod = false;
+            bool hasSpace = false;
+
+            //loop over current
+            foreach (char p in current)
+            {
+                if(p == '.')
+                {
+                    hasPeriod = true;
+                }
+                else if(p == ' ')
+                {
+                    hasSpace = true;
+                }
+                else if(hasPeriod && hasSpace)
+                {
+                    s += p.ToString().ToLower();
+                }
+            }
+
+            WindowManager.messagingInUse.messageTeacher(first, s);
+            this.Hide();
+            WindowManager.messagingInUse.Show();
+        }
     }
 }
